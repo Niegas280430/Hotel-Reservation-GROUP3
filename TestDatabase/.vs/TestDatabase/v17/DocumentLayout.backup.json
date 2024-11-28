@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\a\\source\\repos\\TestDatabase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|c:\\users\\a\\source\\repos\\testdatabase\\testdatabase\\forgotpassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\forgotpassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|c:\\users\\a\\source\\repos\\testdatabase\\testdatabase\\guestform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\guestform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|C:\\Users\\a\\source\\repos\\TestDatabase\\testdatabase\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|c:\\users\\a\\source\\repos\\testdatabase\\testdatabase\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|C:\\Users\\a\\source\\repos\\TestDatabase\\testdatabase\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|c:\\users\\a\\source\\repos\\testdatabase\\testdatabase\\forgotpassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\forgotpassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|C:\\Users\\a\\source\\repos\\TestDatabase\\testdatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|C:\\Users\\a\\source\\repos\\TestDatabase\\testdatabase\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|C:\\Users\\a\\source\\repos\\TestDatabase\\testdatabase\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E74CA20-9B91-45EC-9A59-7D28C64895A2}|TestDatabase\\TestDatabase.csproj|solutionrelative:testdatabase\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GuestForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\GuestForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\GuestForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\GuestForm.cs [Design]",
+              "RelativeToolTip": "TestDatabase\\GuestForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:20:32.988Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForgotPassForm.cs",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\ForgotPassForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\ForgotPassForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\ForgotPassForm.cs",
+              "RelativeToolTip": "TestDatabase\\ForgotPassForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAArwB0AAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T09:27:02.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForgotPassForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\ForgotPassForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\ForgotPassForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\ForgotPassForm.cs [Design]",
+              "RelativeToolTip": "TestDatabase\\ForgotPassForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T09:26:02.919Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\RegisterForm.cs",
+              "RelativeToolTip": "TestDatabase\\RegisterForm.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T18:15:55.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\LoginForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\LoginForm.cs",
+              "RelativeToolTip": "TestDatabase\\LoginForm.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAASwFcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T18:09:09.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\LoginForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\LoginForm.cs [Design]",
+              "RelativeToolTip": "TestDatabase\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T18:07:58.372Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\Program.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\Program.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\Program.cs",
+              "RelativeToolTip": "TestDatabase\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:39:39.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainMenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\MainMenuForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\MainMenuForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\MainMenuForm.cs",
+              "RelativeToolTip": "TestDatabase\\MainMenuForm.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAEwBoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T17:52:22.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainMenuForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\MainMenuForm.cs",
+              "RelativeDocumentMoniker": "TestDatabase\\MainMenuForm.cs",
+              "ToolTip": "C:\\Users\\a\\source\\repos\\TestDatabase\\TestDatabase\\MainMenuForm.cs [Design]",
+              "RelativeToolTip": "TestDatabase\\MainMenuForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:10:42.887Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

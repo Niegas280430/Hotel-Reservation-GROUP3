@@ -1,0 +1,13 @@
+C:\Users\a\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.exe.config
+C:\Users\a\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.exe
+C:\Users\a\source\repos\TestDatabase\TestDatabase\bin\Debug\TestDatabase.pdb
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.csproj.AssemblyReference.cache
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.Properties.Resources.resources
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.csproj.GenerateResource.cache
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.csproj.CoreCompileInputs.cache
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.exe
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.pdb
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.LoginForm.resources
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.MainMenuForm.resources
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.RegisterForm.resources
+C:\Users\a\source\repos\TestDatabase\TestDatabase\obj\Debug\TestDatabase.ForgotPassForm.resources
