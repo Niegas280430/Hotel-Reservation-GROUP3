@@ -10,7 +10,7 @@ Applications used
 ### USER SIDE
 - Reservation Management - Bamo | Abejar
 - Room Discovery - Lucas | Paghubasan
-- Notification - Angeles | Quiambao | Abejar
+- Popup Ads - Angeles | Quiambao | Abejar
 - Payment Processing - Niegas | Cruz | Paghubasan
 - Review and Feedback - Niegas | Cruz | Lucas
 
