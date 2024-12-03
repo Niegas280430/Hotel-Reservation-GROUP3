@@ -1,0 +1,30 @@
+SqlConnection con = cd.getConnection();
+           
+con.Open();
+SqlCommand check = new SqlCommand("SELECT COUNT(*) FROM Information WHERE email = @Email", con);
+check.Parameters.AddWithValue("@Email", registeremailTxtBox.Text);
+
+int count = (int)check.ExecuteScalar(); 
+if (count > 0)
+{
+    MessageBox.Show("Email already exist!");
+    return;
+}
+else {
+
+    SqlCommand register = new SqlCommand("insert into Information(email, userpass) values (@Email, @Password)", con);
+    register.Parameters.AddWithValue("@Email", registeremailTxtBox.Text);
+    register.Parameters.AddWithValue("@Password", registerpassTxtBox.Text);
+
+    int i = register.ExecuteNonQuery();
+
+    if (i != 0)
+    {
+        MessageBox.Show("Registered Successfully");
+        registeremailTxtBox.Clear();
+        registerpassTxtBox.Clear();
+    }
+    else
+    {
+        MessageBox.Show("Error!");
+    }
