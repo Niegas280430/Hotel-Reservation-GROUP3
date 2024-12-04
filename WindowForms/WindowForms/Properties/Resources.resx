@@ -117,4 +117,101 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="midlogo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\midlogo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standard room image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standard room image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitness (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitness (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HOTEL LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HOTEL LOGO1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ORIGINAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ORIGINAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TINY LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TINY LOGO1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DISCOUNT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DISCOUNT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitness" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitness.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HOTEL LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HOTEL LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Single bedroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Single bedroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2ndpicmain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2ndpicmain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BUTTOM FRAME" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BUTTOM FRAME.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOGO HOTEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO HOTEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOGO HOTEL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO HOTEL1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="midlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\midlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAIN HOME PAGE IMAGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAIN HOME PAGE IMAGE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitness1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitness1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitness (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitness (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2nd MAIN Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2nd MAIN Image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TREADMILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TREADMILL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="For UI Buttom Frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\For UI Buttom Frame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2ndmain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2ndmain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="midlogo (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\midlogo (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DELUXE BEDROOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DELUXE BEDROOM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NEWDELUZE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NEWDELUZE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TINY LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TINY LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MID LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MID LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitness (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitness (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Get the rest you deserve Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Get the rest you deserve Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

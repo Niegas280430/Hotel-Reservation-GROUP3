@@ -117,4 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>27, 28</value>
+  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>As soon as you enter the lobby, the accommodating, professional staff is on hand and accessible for support, and you're sure to be on the right foot. Located in a large, accessible, and bright entryway accented with soft, comfortably upholstered seating and pieces of artwork as focal points. The selection is intentional for your pleasure and comfort, like you'd feel at home the second you step through the front door.</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Experience a vibrant stay at our hotel, offering excellent facilities for every guest. Stay active in our modern fitness center or unwind by the sparkling swimming pool. Savor delicious meals at our onsite restaurant, featuring a diverse menu of local and international cuisine. For entertainment, enjoy the gaming room featuring traditional games, pool tables, and cozy seating for a enjoyable experience.</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

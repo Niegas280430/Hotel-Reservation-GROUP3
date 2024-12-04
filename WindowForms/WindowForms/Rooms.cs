@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowForms
 {
-    public partial class UC_HOME : UserControl
+    public partial class Rooms : Form
     {
-        public UC_HOME()
+        public Rooms()
         {
             InitializeComponent();
         }
