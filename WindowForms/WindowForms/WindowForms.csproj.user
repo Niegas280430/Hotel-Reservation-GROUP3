@@ -2,6 +2,12 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AvailabilityForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="BookingConfirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Deluxe Frame Cancellation Frame.cs">
       <SubType>UserControl</SubType>
     </Compile>
