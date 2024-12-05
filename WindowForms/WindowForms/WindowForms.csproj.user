@@ -8,6 +8,27 @@
     <Compile Update="Rooms.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UC_ABOUT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_FAQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_FEEDBACK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_HOME.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_OFFERS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_RESERVATIONS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_ROOMS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UpdatedMainHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
