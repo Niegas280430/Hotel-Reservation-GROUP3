@@ -35,6 +35,9 @@
     <Compile Update="Suite Room Frame.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TermsAndCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="TRIPLE BEDROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
