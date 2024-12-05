@@ -2,11 +2,38 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Deluxe Frame Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="DiscountCodePopUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Rooms.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Single Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Single Room Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Standard Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Standard Room Framecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Suite Frame Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Suite Room Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="TRIPLE BEDROOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Triple Frame Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UC_ABOUT.cs">
       <SubType>UserControl</SubType>
@@ -31,6 +58,9 @@
     </Compile>
     <Compile Update="UpdatedMainHomePage.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Deluxe Room Frame.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>
