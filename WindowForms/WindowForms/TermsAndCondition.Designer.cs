@@ -55,22 +55,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox7
-            // 
-            pictureBox7.BackgroundImage = Properties.Resources.For_UI_Buttom_Frame;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(13, 1257);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(1146, 206);
-            pictureBox7.TabIndex = 110;
-            pictureBox7.TabStop = false;
-            // 
             // label13
             // 
             label13.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.Black;
-            label13.Location = new Point(93, 1135);
+            label13.Location = new Point(93, 1109);
             label13.Name = "label13";
             label13.Size = new Size(1001, 48);
             label13.TabIndex = 109;
@@ -80,28 +69,17 @@
             // 
             label12.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.Black;
-            label12.Location = new Point(93, 1078);
+            label12.Location = new Point(93, 1052);
             label12.Name = "label12";
             label12.Size = new Size(1001, 43);
             label12.TabIndex = 108;
             label12.Text = "1. Rates are quoted in Philippine Peso.";
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.DarkGoldenrod;
-            label11.Location = new Point(78, 976);
-            label11.Name = "label11";
-            label11.Size = new Size(248, 26);
-            label11.TabIndex = 107;
-            label11.Text = "PAYMENT POLICIES";
-            // 
             // label10
             // 
             label10.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(93, 844);
+            label10.Location = new Point(93, 823);
             label10.Name = "label10";
             label10.Size = new Size(1001, 61);
             label10.TabIndex = 106;
@@ -111,7 +89,7 @@
             // 
             label9.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(93, 770);
+            label9.Location = new Point(93, 749);
             label9.Name = "label9";
             label9.Size = new Size(1001, 61);
             label9.TabIndex = 105;
@@ -121,7 +99,7 @@
             // 
             label8.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(93, 721);
+            label8.Location = new Point(93, 700);
             label8.Name = "label8";
             label8.Size = new Size(1001, 35);
             label8.TabIndex = 104;
@@ -131,7 +109,7 @@
             // 
             label7.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(93, 626);
+            label7.Location = new Point(93, 605);
             label7.Name = "label7";
             label7.Size = new Size(1001, 83);
             label7.TabIndex = 103;
@@ -141,7 +119,7 @@
             // 
             label6.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(93, 575);
+            label6.Location = new Point(93, 554);
             label6.Name = "label6";
             label6.Size = new Size(1001, 35);
             label6.TabIndex = 102;
@@ -151,17 +129,39 @@
             // 
             label5.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(93, 524);
+            label5.Location = new Point(93, 503);
             label5.Name = "label5";
             label5.Size = new Size(1001, 40);
             label5.TabIndex = 101;
             label5.Text = "3. Pets are encouraged at STILO Hotel.";
             // 
+            // pictureBox7
+            // 
+            pictureBox7.BackgroundImage = Properties.Resources.For_UI_Buttom_Frame;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Location = new Point(3, 1282);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(1146, 206);
+            pictureBox7.TabIndex = 110;
+            pictureBox7.TabStop = false;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.DarkGoldenrod;
+            label11.Location = new Point(78, 950);
+            label11.Name = "label11";
+            label11.Size = new Size(248, 26);
+            label11.TabIndex = 107;
+            label11.Text = "PAYMENT POLICIES";
+            // 
             // label4
             // 
             label4.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(93, 451);
+            label4.Location = new Point(93, 430);
             label4.Name = "label4";
             label4.Size = new Size(1001, 61);
             label4.TabIndex = 100;
@@ -172,7 +172,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(93, 398);
+            label3.Location = new Point(93, 377);
             label3.Name = "label3";
             label3.Size = new Size(613, 23);
             label3.TabIndex = 99;
@@ -183,7 +183,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.DarkGoldenrod;
-            label2.Location = new Point(78, 310);
+            label2.Location = new Point(78, 289);
             label2.Name = "label2";
             label2.Size = new Size(187, 26);
             label2.TabIndex = 98;
@@ -194,7 +194,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkGoldenrod;
-            label1.Location = new Point(93, 178);
+            label1.Location = new Point(145, 170);
             label1.Name = "label1";
             label1.Size = new Size(902, 46);
             label1.TabIndex = 97;
@@ -203,10 +203,11 @@
             // btnBack
             // 
             btnBack.BackColor = SystemColors.Control;
+            btnBack.BackgroundImage = Properties.Resources.back_arrow_icon_png_23;
             btnBack.BackgroundImageLayout = ImageLayout.Stretch;
             btnBack.Location = new Point(50, 24);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(122, 73);
+            btnBack.Size = new Size(123, 86);
             btnBack.TabIndex = 96;
             btnBack.UseVisualStyleBackColor = false;
             // 
