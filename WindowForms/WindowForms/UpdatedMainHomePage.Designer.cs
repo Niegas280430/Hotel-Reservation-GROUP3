@@ -672,12 +672,13 @@
             // 
             // btnFeedback
             // 
+            btnFeedback.Dock = DockStyle.Fill;
             btnFeedback.FlatAppearance.BorderSize = 0;
             btnFeedback.FlatStyle = FlatStyle.Flat;
             btnFeedback.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFeedback.Location = new Point(3, 3);
             btnFeedback.Name = "btnFeedback";
-            btnFeedback.Size = new Size(138, 81);
+            btnFeedback.Size = new Size(147, 81);
             btnFeedback.TabIndex = 4;
             btnFeedback.Text = "FEEDBACK";
             btnFeedback.UseVisualStyleBackColor = true;
