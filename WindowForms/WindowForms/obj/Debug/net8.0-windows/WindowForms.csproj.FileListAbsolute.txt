@@ -38,3 +38,13 @@ C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\o
 C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.pdb
 C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.genruntimeconfig.cache
 C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\ref\WindowForms.dll
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_ABOUT.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_FAQ.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_FEEDBACK.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_HOME.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_OFFERS.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_RESERVATIONS.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_ROOMS.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.Deluxe_Frame_Cancellation_Frame.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UserControl1.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.Single_Cancellation_Frame.resources
