@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label7.Text" xml:space="preserve">
+  <data name="label3.Text" xml:space="preserve">
     <value>Our Triple Rooms are just what you need! With enough space for three guests, these rooms are perfect for groups who want to stay together while still enjoying plenty of comfort. Relax in cozy beds, take advantage of modern amenities, and make memories in a space designed for sharing. Whether it’s a fun vacation or a quick getaway, our Triple Rooms have everything to make your stay enjoyable.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -3517,22 +3517,6 @@
         kw8aju5SDqBpRZX/2Q==
 </value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>
-Terrace
-Wireless Internet access
-Television
-Bathtub
-Smart Thermostat
-Air-Conditioned Unit
-Hot and Cold Shower
-Bathroom Essentials
-Personal Care Kit
-Tea/Coffee Making
-Mini Fridge
-Telephone
-Room Service</value>
-  </data>
   <data name="pictureBox10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
@@ -5780,7 +5764,7 @@ Room Service</value>
         tFFSxoUfNnPrimk4PAFFFSMeRtI989aI2JcA4xRRTEPb7ue+abkhsdqKKYkf/9k=
 </value>
   </data>
-  <data name="pictureBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy

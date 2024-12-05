@@ -1,0 +1,336 @@
+﻿namespace WindowForms
+{
+    partial class Single_Room_Frame
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Single_Room_Frame));
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label4 = new Label();
+            pictureBox7 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            label3 = new Label();
+            label5 = new Label();
+            pictureBox2 = new PictureBox();
+            label16 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(94, 312);
+            label2.Name = "label2";
+            label2.Size = new Size(579, 90);
+            label2.TabIndex = 5;
+            label2.Text = "Single Bedroom";
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.FromArgb(248, 246, 240);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(55, 660);
+            label1.Name = "label1";
+            label1.Size = new Size(1026, 78);
+            label1.TabIndex = 4;
+            label1.Text = "Dito lagay yung sinasabi ko";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1146, 693);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Location = new Point(484, 877);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(668, 464);
+            pictureBox3.TabIndex = 44;
+            pictureBox3.TabStop = false;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.Location = new Point(186, 1776);
+            label15.Name = "label15";
+            label15.Size = new Size(113, 20);
+            label15.TabIndex = 56;
+            label15.Text = "King-Size Bed";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Location = new Point(141, 1736);
+            label14.Name = "label14";
+            label14.Size = new Size(51, 20);
+            label14.TabIndex = 55;
+            label14.Text = "20 m²";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.Location = new Point(151, 1697);
+            label13.Name = "label13";
+            label13.Size = new Size(149, 20);
+            label13.TabIndex = 54;
+            label13.Text = "City and Pool View";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.DarkGoldenrod;
+            label12.Location = new Point(94, 1776);
+            label12.Name = "label12";
+            label12.Size = new Size(86, 20);
+            label12.TabIndex = 53;
+            label12.Text = "Bed Type:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.DarkGoldenrod;
+            label11.Location = new Point(94, 1736);
+            label11.Name = "label11";
+            label11.Size = new Size(50, 20);
+            label11.TabIndex = 52;
+            label11.Text = "Size: ";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.DarkGoldenrod;
+            label10.Location = new Point(94, 1697);
+            label10.Name = "label10";
+            label10.Size = new Size(51, 20);
+            label10.TabIndex = 51;
+            label10.Text = "View:";
+            // 
+            // label9
+            // 
+            label9.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(94, 1514);
+            label9.Name = "label9";
+            label9.Size = new Size(256, 197);
+            label9.TabIndex = 50;
+            label9.Text = "Wireless Internet access\nTelevision\nAir-Conditioned Unit\nHot and Cold Shower\nBathroom Essentials\nPersonal Care Kit\nTelephone\nRoom Service";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(151, 1473);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 20);
+            label8.TabIndex = 49;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(167, 1435);
+            label7.Name = "label7";
+            label7.Size = new Size(18, 20);
+            label7.TabIndex = 48;
+            label7.Text = "1";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.DarkGoldenrod;
+            label6.Location = new Point(94, 1473);
+            label6.Name = "label6";
+            label6.Size = new Size(91, 20);
+            label6.TabIndex = 47;
+            label6.Text = "Amenities:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.DarkGoldenrod;
+            label4.Location = new Point(94, 1435);
+            label4.Name = "label4";
+            label4.Size = new Size(66, 20);
+            label4.TabIndex = 46;
+            label4.Text = "Guests:";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackgroundImage = Properties.Resources.For_UI_Buttom_Frame;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Location = new Point(3, 1967);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(1146, 196);
+            pictureBox7.TabIndex = 90;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(556, 1417);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(544, 415);
+            pictureBox4.TabIndex = 91;
+            pictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(248, 246, 240);
+            label3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(604, 1072);
+            label3.Name = "label3";
+            label3.Size = new Size(475, 120);
+            label3.TabIndex = 96;
+            label3.Text = resources.GetString("label3.Text");
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(248, 246, 240);
+            label5.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(604, 1025);
+            label5.Name = "label5";
+            label5.Size = new Size(420, 22);
+            label5.TabIndex = 95;
+            label5.Text = "Traveling alone or just need a snug spot to unwind? ";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(73, 962);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(383, 280);
+            pictureBox2.TabIndex = 94;
+            pictureBox2.TabStop = false;
+            // 
+            // label16
+            // 
+            label16.BackColor = Color.FromArgb(248, 246, 240);
+            label16.Font = new Font("Times New Roman", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.Location = new Point(6, 934);
+            label16.Name = "label16";
+            label16.Padding = new Padding(250, 30, 30, 0);
+            label16.Size = new Size(1146, 346);
+            label16.TabIndex = 93;
+            label16.Text = "Single Bedroom";
+            label16.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // Single_Room_Frame
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label3);
+            Controls.Add(label5);
+            Controls.Add(pictureBox2);
+            Controls.Add(label16);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox7);
+            Controls.Add(label15);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label4);
+            Controls.Add(pictureBox3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
+            Name = "Single_Room_Frame";
+            Size = new Size(1152, 2166);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label4;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox4;
+        private Label label3;
+        private Label label5;
+        private PictureBox pictureBox2;
+        private Label label16;
+    }
+}
