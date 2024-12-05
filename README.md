@@ -22,7 +22,7 @@ Applications used
 - Database - Bamo | Gonzalo | Niegas
 - User Interface - Paghubasan | Lucas | Angeles | Cruz
 
-## Progress
+## Progress 🛠️
 - HomePage
 
 <img src="https://raw.githubusercontent.com/Niegas280430/Hotel-Reservation-GROUP3/main/Screenshots/HomePage.png" width="30%"></img>
