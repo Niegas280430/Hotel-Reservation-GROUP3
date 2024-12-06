@@ -16,5 +16,10 @@ namespace WindowForms
         {
             InitializeComponent();
         }
+
+        private void Single_Cancellation_Frame_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -303,6 +303,16 @@ namespace WindowForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mes {
+            get {
+                object obj = ResourceManager.GetObject("mes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MID_LOGO {
             get {
                 object obj = ResourceManager.GetObject("MID LOGO", resourceCulture);
@@ -476,6 +486,16 @@ namespace WindowForms.Properties {
         internal static System.Drawing.Bitmap TRIPLE_BEDROOMS {
             get {
                 object obj = ResourceManager.GetObject("TRIPLE BEDROOMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uss {
+            get {
+                object obj = ResourceManager.GetObject("uss", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
