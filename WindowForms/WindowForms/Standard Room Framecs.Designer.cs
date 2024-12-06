@@ -166,7 +166,7 @@
             pictureBox2.Location = new Point(75, 745);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(366, 261);
+            pictureBox2.Size = new Size(372, 276);
             pictureBox2.TabIndex = 94;
             pictureBox2.TabStop = false;
             // 
@@ -174,7 +174,7 @@
             // 
             label3.BackColor = Color.FromArgb(248, 246, 240);
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(560, 798);
+            label3.Location = new Point(560, 799);
             label3.Name = "label3";
             label3.Size = new Size(493, 189);
             label3.TabIndex = 95;
