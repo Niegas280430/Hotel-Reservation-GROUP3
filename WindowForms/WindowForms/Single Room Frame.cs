@@ -16,5 +16,15 @@ namespace WindowForms
         {
             InitializeComponent();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Single_Room_Frame_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

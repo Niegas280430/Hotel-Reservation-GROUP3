@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Standard_Room_Framecs));
-            pictureBox7 = new PictureBox();
             pictureBox4 = new PictureBox();
             label15 = new Label();
             label14 = new Label();
@@ -47,29 +46,31 @@
             pictureBox1 = new PictureBox();
             label10 = new Label();
             label13 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            pnlForCheckINandOut = new Panel();
+            btnSubtract = new Button();
+            btnAdd = new Button();
+            dtpCheckOut = new DateTimePicker();
+            pnlNumberOfGuests = new Panel();
+            dtpCheckIn = new DateTimePicker();
+            btnSearch = new Button();
+            label1 = new Label();
+            label4 = new Label();
+            label8 = new Label();
+            pictureBox10 = new PictureBox();
+            vScrollBar1 = new VScrollBar();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnlForCheckINandOut.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackgroundImage = Properties.Resources.For_UI_Buttom_Frame;
-            pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(3, 1797);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(1146, 201);
-            pictureBox7.TabIndex = 110;
-            pictureBox7.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(560, 1221);
+            pictureBox4.Location = new Point(560, 1235);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(556, 431);
@@ -80,7 +81,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label15.Location = new Point(186, 1644);
+            label15.Location = new Point(176, 1642);
             label15.Name = "label15";
             label15.Size = new Size(129, 24);
             label15.TabIndex = 108;
@@ -90,7 +91,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label14.Location = new Point(138, 1602);
+            label14.Location = new Point(130, 1604);
             label14.Name = "label14";
             label14.Size = new Size(56, 24);
             label14.TabIndex = 107;
@@ -101,7 +102,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Microsoft Sans Serif", 13.8F);
             label12.ForeColor = Color.DarkGoldenrod;
-            label12.Location = new Point(83, 1644);
+            label12.Location = new Point(73, 1642);
             label12.Name = "label12";
             label12.Size = new Size(97, 24);
             label12.TabIndex = 105;
@@ -112,7 +113,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Microsoft Sans Serif", 13.8F);
             label11.ForeColor = Color.DarkGoldenrod;
-            label11.Location = new Point(83, 1602);
+            label11.Location = new Point(74, 1604);
             label11.Name = "label11";
             label11.Size = new Size(56, 24);
             label11.TabIndex = 104;
@@ -121,7 +122,7 @@
             // label9
             // 
             label9.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label9.Location = new Point(83, 1315);
+            label9.Location = new Point(75, 1327);
             label9.Name = "label9";
             label9.Size = new Size(224, 231);
             label9.TabIndex = 102;
@@ -131,7 +132,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label7.Location = new Point(144, 1221);
+            label7.Location = new Point(151, 1233);
             label7.Name = "label7";
             label7.Size = new Size(20, 24);
             label7.TabIndex = 100;
@@ -142,7 +143,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 13.8F);
             label6.ForeColor = Color.DarkGoldenrod;
-            label6.Location = new Point(80, 1271);
+            label6.Location = new Point(72, 1277);
             label6.Name = "label6";
             label6.Size = new Size(98, 24);
             label6.TabIndex = 99;
@@ -153,7 +154,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Microsoft Sans Serif", 13.8F);
             label16.ForeColor = Color.DarkGoldenrod;
-            label16.Location = new Point(80, 1221);
+            label16.Location = new Point(72, 1233);
             label16.Name = "label16";
             label16.Size = new Size(73, 24);
             label16.TabIndex = 97;
@@ -163,7 +164,7 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.standard_room_image;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(75, 745);
+            pictureBox2.Location = new Point(75, 780);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(372, 276);
@@ -174,7 +175,7 @@
             // 
             label3.BackColor = Color.FromArgb(248, 246, 240);
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(560, 799);
+            label3.Location = new Point(560, 834);
             label3.Name = "label3";
             label3.Size = new Size(493, 189);
             label3.TabIndex = 95;
@@ -184,7 +185,7 @@
             // 
             label5.BackColor = Color.FromArgb(248, 246, 240);
             label5.Font = new Font("Times New Roman", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(6, 713);
+            label5.Location = new Point(6, 748);
             label5.Name = "label5";
             label5.Padding = new Padding(219, 22, 26, 0);
             label5.Size = new Size(1146, 338);
@@ -196,7 +197,7 @@
             // 
             pictureBox3.BackgroundImage = Properties.Resources.standard_room_image;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(487, 635);
+            pictureBox3.Location = new Point(487, 670);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(662, 503);
@@ -230,7 +231,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 13.8F);
             label10.ForeColor = Color.DarkGoldenrod;
-            label10.Location = new Point(80, 1556);
+            label10.Location = new Point(72, 1568);
             label10.Name = "label10";
             label10.Size = new Size(57, 24);
             label10.TabIndex = 103;
@@ -240,17 +241,153 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Microsoft Sans Serif", 13.8F);
-            label13.Location = new Point(138, 1556);
+            label13.Location = new Point(130, 1568);
             label13.Name = "label13";
             label13.Size = new Size(167, 24);
             label13.TabIndex = 106;
             label13.Text = "City and Pool View";
             // 
+            // pnlForCheckINandOut
+            // 
+            pnlForCheckINandOut.BackColor = Color.FromArgb(248, 246, 240);
+            pnlForCheckINandOut.Controls.Add(btnSubtract);
+            pnlForCheckINandOut.Controls.Add(btnAdd);
+            pnlForCheckINandOut.Controls.Add(dtpCheckOut);
+            pnlForCheckINandOut.Controls.Add(pnlNumberOfGuests);
+            pnlForCheckINandOut.Controls.Add(dtpCheckIn);
+            pnlForCheckINandOut.Controls.Add(btnSearch);
+            pnlForCheckINandOut.Controls.Add(label1);
+            pnlForCheckINandOut.Controls.Add(label4);
+            pnlForCheckINandOut.Controls.Add(label8);
+            pnlForCheckINandOut.Location = new Point(61, 522);
+            pnlForCheckINandOut.Name = "pnlForCheckINandOut";
+            pnlForCheckINandOut.Padding = new Padding(10);
+            pnlForCheckINandOut.Size = new Size(1028, 79);
+            pnlForCheckINandOut.TabIndex = 111;
+            // 
+            // btnSubtract
+            // 
+            btnSubtract.BackColor = Color.WhiteSmoke;
+            btnSubtract.BackgroundImageLayout = ImageLayout.None;
+            btnSubtract.FlatStyle = FlatStyle.Flat;
+            btnSubtract.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            btnSubtract.Location = new Point(668, 40);
+            btnSubtract.Name = "btnSubtract";
+            btnSubtract.Size = new Size(24, 26);
+            btnSubtract.TabIndex = 8;
+            btnSubtract.Text = "-";
+            btnSubtract.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.WhiteSmoke;
+            btnAdd.BackgroundImageLayout = ImageLayout.None;
+            btnAdd.FlatStyle = FlatStyle.Flat;
+            btnAdd.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            btnAdd.Location = new Point(786, 40);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(24, 26);
+            btnAdd.TabIndex = 3;
+            btnAdd.Text = "+";
+            btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // dtpCheckOut
+            // 
+            dtpCheckOut.CalendarTrailingForeColor = SystemColors.ButtonHighlight;
+            dtpCheckOut.CustomFormat = "";
+            dtpCheckOut.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpCheckOut.Location = new Point(341, 40);
+            dtpCheckOut.Name = "dtpCheckOut";
+            dtpCheckOut.Size = new Size(305, 26);
+            dtpCheckOut.TabIndex = 7;
+            dtpCheckOut.Value = new DateTime(2024, 11, 19, 0, 0, 0, 0);
+            // 
+            // pnlNumberOfGuests
+            // 
+            pnlNumberOfGuests.BackColor = Color.White;
+            pnlNumberOfGuests.Location = new Point(698, 40);
+            pnlNumberOfGuests.Name = "pnlNumberOfGuests";
+            pnlNumberOfGuests.Size = new Size(82, 26);
+            pnlNumberOfGuests.TabIndex = 6;
+            // 
+            // dtpCheckIn
+            // 
+            dtpCheckIn.CalendarTrailingForeColor = SystemColors.ButtonHighlight;
+            dtpCheckIn.CustomFormat = "";
+            dtpCheckIn.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpCheckIn.Location = new Point(13, 40);
+            dtpCheckIn.Name = "dtpCheckIn";
+            dtpCheckIn.Size = new Size(305, 26);
+            dtpCheckIn.TabIndex = 3;
+            dtpCheckIn.Value = new DateTime(2024, 11, 19, 0, 0, 0, 0);
+            // 
+            // btnSearch
+            // 
+            btnSearch.BackColor = Color.DarkGoldenrod;
+            btnSearch.FlatAppearance.BorderSize = 0;
+            btnSearch.FlatStyle = FlatStyle.Flat;
+            btnSearch.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSearch.ForeColor = Color.Transparent;
+            btnSearch.Location = new Point(829, 37);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(186, 29);
+            btnSearch.TabIndex = 3;
+            btnSearch.Text = "Reserve";
+            btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 14.25F);
+            label1.Location = new Point(668, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(82, 21);
+            label1.TabIndex = 2;
+            label1.Text = "GUESTS";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 14.25F);
+            label4.Location = new Point(341, 16);
+            label4.Name = "label4";
+            label4.Size = new Size(127, 21);
+            label4.TabIndex = 1;
+            label4.Text = "CHECK-OUT*";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Times New Roman", 14.25F);
+            label8.Location = new Point(13, 16);
+            label8.Name = "label8";
+            label8.Size = new Size(107, 21);
+            label8.TabIndex = 0;
+            label8.Text = "CHECK-IN*";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = Properties.Resources.For_UI_Buttom_Frame;
+            pictureBox10.Location = new Point(3, 1773);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(1146, 224);
+            pictureBox10.TabIndex = 112;
+            pictureBox10.TabStop = false;
+            // 
+            // vScrollBar1
+            // 
+            vScrollBar1.Location = new Point(1128, 0);
+            vScrollBar1.Name = "vScrollBar1";
+            vScrollBar1.Size = new Size(21, 1997);
+            vScrollBar1.TabIndex = 113;
+            // 
             // Standard_Room_Framecs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(pictureBox7);
+            Controls.Add(vScrollBar1);
+            Controls.Add(pictureBox10);
+            Controls.Add(pnlForCheckINandOut);
             Controls.Add(pictureBox4);
             Controls.Add(label15);
             Controls.Add(label14);
@@ -270,18 +407,18 @@
             Controls.Add(pictureBox1);
             Name = "Standard_Room_Framecs";
             Size = new Size(1152, 2000);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnlForCheckINandOut.ResumeLayout(false);
+            pnlForCheckINandOut.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox7;
         private PictureBox pictureBox4;
         private Label label15;
         private Label label14;
@@ -299,5 +436,17 @@
         private PictureBox pictureBox1;
         private Label label10;
         private Label label13;
+        private Panel pnlForCheckINandOut;
+        private Button btnSubtract;
+        private Button btnAdd;
+        private DateTimePicker dtpCheckOut;
+        private Panel pnlNumberOfGuests;
+        private DateTimePicker dtpCheckIn;
+        private Button btnSearch;
+        private Label label1;
+        private Label label4;
+        private Label label8;
+        private PictureBox pictureBox10;
+        private VScrollBar vScrollBar1;
     }
 }
