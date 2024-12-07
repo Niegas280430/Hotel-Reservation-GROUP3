@@ -203,7 +203,6 @@
             // btnBack
             // 
             btnBack.BackColor = SystemColors.Control;
-            btnBack.BackgroundImage = Properties.Resources.back_arrow_icon_png_23;
             btnBack.BackgroundImageLayout = ImageLayout.Stretch;
             btnBack.Location = new Point(50, 24);
             btnBack.Name = "btnBack";

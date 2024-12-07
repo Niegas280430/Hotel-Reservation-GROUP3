@@ -325,7 +325,6 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.BackgroundImage = Properties.Resources.mes;
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox4.Location = new Point(511, 1234);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
@@ -337,7 +336,6 @@
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.FromArgb(248, 246, 240);
-            pictureBox6.BackgroundImage = Properties.Resources.uss;
             pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox6.Location = new Point(502, 1170);
             pictureBox6.Margin = new Padding(3, 2, 3, 2);
@@ -421,7 +419,6 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.BackgroundImage = Properties.Resources.mes;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox5.Location = new Point(511, 1048);
             pictureBox5.Margin = new Padding(3, 2, 3, 2);
@@ -433,7 +430,6 @@
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.FromArgb(248, 246, 240);
-            pictureBox3.BackgroundImage = Properties.Resources.uss;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Location = new Point(502, 984);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);

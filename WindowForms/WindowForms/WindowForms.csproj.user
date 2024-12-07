@@ -2,11 +2,23 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AvailabilityForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="AvailabilityRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BookingConfirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="BookingConfirmationFrame.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Deluxe Frame Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Deluxe Room Frame.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="DeluxeRoomCancellationFrame.cs">
       <SubType>Form</SubType>
@@ -26,8 +38,17 @@
     <Compile Update="NoReserveRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RoomsFrame.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Single Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Single Room Frame.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SingleRoomCancellationFrame.cs">
       <SubType>Form</SubType>
@@ -35,11 +56,23 @@
     <Compile Update="SingleRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Standard Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Standard Room Framecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="StandardRoomCancellationFrame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="StandardRoomFrame.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Suite Frame Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Suite Room Frame.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SuiteRoomCancellationFrame.cs">
       <SubType>Form</SubType>
@@ -47,8 +80,17 @@
     <Compile Update="SuiteRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TermsAndCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Terms_ConditionsFrame.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TRIPLE BEDROOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Triple Frame Cancellation Frame.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="TripleRoomCancellationFrame.cs">
       <SubType>Form</SubType>
@@ -78,6 +120,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UC_NO_RESERVATIONS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_OFFERS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_RESERVATIONS.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UC_ROOMS.cs">
@@ -112,6 +160,9 @@
     </Compile>
     <Compile Update="UC_TRIPLE_ROOM.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UpdatedMainHomePage.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>
