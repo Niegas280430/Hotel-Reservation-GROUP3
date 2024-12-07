@@ -15,6 +15,6 @@ namespace WindowForms
         public UC_HOME()
         {
             InitializeComponent();
-        }
+        }        
     }
 }
