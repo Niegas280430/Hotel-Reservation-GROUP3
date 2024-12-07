@@ -93,9 +93,9 @@ C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\Wi
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.Standard_Room_Framecs.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.Suite_Frame_Cancellation_Frame.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.Suite_Room_Frame.resources
-C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.TermsAndCondition.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.TRIPLE_BEDROOM.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.Triple_Frame_Cancellation_Frame.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_OFFERS.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_RESERVATIONS.resources
 C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UpdatedMainHomePage.resources
+C:\Users\drean\OneDrive\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.OurStoryAboutFrame.resources

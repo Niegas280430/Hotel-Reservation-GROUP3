@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Enjoy our pet-friendly environment, additional services like extra beds and amenities, and easy access to local attractions. We look forward to welcoming you to Stilo Hotel, your perfect home away from home!</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>At Stilo Hotel, we take pride in offering excellent service, making sure your stay is stress-free and enjoyable. 
+Whether you're here for a quick getaway, a business trip, or a family vacation, we strive to provide everything you need for a memorable experience.</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Welcome to Stilo Hotel, where comfort and convenience meet!
+Located in a peaceful and scenic area, we offer a relaxing atmosphere for both business and leisure travelers.  Our rooms are designed with your comfort in mind, featuring modern amenities, cozy beds, and thoughtful touches to make you feel at home.</value>
+  </data>
 </root>

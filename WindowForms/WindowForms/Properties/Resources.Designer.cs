@@ -513,9 +513,39 @@ namespace WindowForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap newRestoPic {
+            get {
+                object obj = ResourceManager.GetObject("newRestoPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ORIGINAL {
             get {
                 object obj = ResourceManager.GetObject("ORIGINAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Our_story_ {
+            get {
+                object obj = ResourceManager.GetObject("Our story ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Our_Story_Main_Image {
+            get {
+                object obj = ResourceManager.GetObject("Our Story Main Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -556,6 +586,16 @@ namespace WindowForms.Properties {
         internal static System.Drawing.Bitmap restaurant {
             get {
                 object obj = ResourceManager.GetObject("restaurant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Resto_Pic_in_Our_Story {
+            get {
+                object obj = ResourceManager.GetObject("Resto Pic in Our Story", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
