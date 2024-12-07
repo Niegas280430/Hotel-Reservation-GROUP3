@@ -98,7 +98,7 @@
             label3.Font = new Font("Times New Roman", 14F);
             label3.Location = new Point(560, 422);
             label3.Name = "label3";
-            label3.Size = new Size(534, 162);
+            label3.Size = new Size(534, 132);
             label3.TabIndex = 93;
             label3.Text = resources.GetString("label3.Text");
             // 

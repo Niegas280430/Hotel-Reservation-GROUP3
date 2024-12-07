@@ -28,16 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tableLayoutPanel1 = new TableLayoutPanel();
-            btnStiloLogo = new Button();
-            btnOffers = new Button();
-            btnRooms = new Button();
-            btnManageReservations = new Button();
-            btnFaq = new Button();
-            btnAbout = new Button();
-            btnFeedback = new Button();
             pnlFill = new Panel();
+            panel2 = new Panel();
             panel1 = new Panel();
+            button4 = new Button();
+            btnTerms_Conditions = new Button();
+            label35 = new Label();
+            checkBox = new CheckBox();
             label34 = new Label();
             label24 = new Label();
             label25 = new Label();
@@ -94,127 +91,11 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
-            checkBox = new CheckBox();
-            label35 = new Label();
-            btnTerms_Conditions = new Button();
-            button4 = new Button();
-            panel2 = new Panel();
-            tableLayoutPanel1.SuspendLayout();
             pnlFill.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
             SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.BackColor = Color.FromArgb(248, 246, 240);
-            tableLayoutPanel1.ColumnCount = 7;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 52.75862F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 47.24138F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 160F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 261F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 156F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 109F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 175F));
-            tableLayoutPanel1.Controls.Add(btnStiloLogo, 3, 0);
-            tableLayoutPanel1.Controls.Add(btnOffers, 2, 0);
-            tableLayoutPanel1.Controls.Add(btnRooms, 1, 0);
-            tableLayoutPanel1.Controls.Add(btnManageReservations, 6, 0);
-            tableLayoutPanel1.Controls.Add(btnFaq, 5, 0);
-            tableLayoutPanel1.Controls.Add(btnAbout, 4, 0);
-            tableLayoutPanel1.Controls.Add(btnFeedback, 0, 0);
-            tableLayoutPanel1.Dock = DockStyle.Top;
-            tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1152, 87);
-            tableLayoutPanel1.TabIndex = 7;
-            // 
-            // btnStiloLogo
-            // 
-            btnStiloLogo.BackgroundImage = Properties.Resources.HOTEL_LOGO1;
-            btnStiloLogo.FlatAppearance.BorderSize = 0;
-            btnStiloLogo.FlatStyle = FlatStyle.Flat;
-            btnStiloLogo.Location = new Point(453, 3);
-            btnStiloLogo.Name = "btnStiloLogo";
-            btnStiloLogo.Size = new Size(255, 81);
-            btnStiloLogo.TabIndex = 9;
-            btnStiloLogo.UseVisualStyleBackColor = true;
-            // 
-            // btnOffers
-            // 
-            btnOffers.FlatAppearance.BorderSize = 0;
-            btnOffers.FlatStyle = FlatStyle.Flat;
-            btnOffers.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnOffers.Location = new Point(293, 3);
-            btnOffers.Name = "btnOffers";
-            btnOffers.Size = new Size(154, 81);
-            btnOffers.TabIndex = 6;
-            btnOffers.Text = "OFFERS";
-            btnOffers.UseVisualStyleBackColor = true;
-            // 
-            // btnRooms
-            // 
-            btnRooms.FlatAppearance.BorderSize = 0;
-            btnRooms.FlatStyle = FlatStyle.Flat;
-            btnRooms.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRooms.Location = new Point(156, 3);
-            btnRooms.Name = "btnRooms";
-            btnRooms.Size = new Size(131, 81);
-            btnRooms.TabIndex = 5;
-            btnRooms.Text = "ROOMS";
-            btnRooms.UseVisualStyleBackColor = true;
-            // 
-            // btnManageReservations
-            // 
-            btnManageReservations.FlatAppearance.BorderSize = 0;
-            btnManageReservations.FlatStyle = FlatStyle.Flat;
-            btnManageReservations.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnManageReservations.Location = new Point(979, 3);
-            btnManageReservations.Name = "btnManageReservations";
-            btnManageReservations.Size = new Size(158, 81);
-            btnManageReservations.TabIndex = 1;
-            btnManageReservations.Text = "MANAGE RESERVATIONS";
-            btnManageReservations.UseVisualStyleBackColor = true;
-            // 
-            // btnFaq
-            // 
-            btnFaq.FlatAppearance.BorderSize = 0;
-            btnFaq.FlatStyle = FlatStyle.Flat;
-            btnFaq.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnFaq.Location = new Point(870, 3);
-            btnFaq.Name = "btnFaq";
-            btnFaq.Size = new Size(103, 81);
-            btnFaq.TabIndex = 3;
-            btnFaq.Text = "FAQ";
-            btnFaq.UseVisualStyleBackColor = true;
-            // 
-            // btnAbout
-            // 
-            btnAbout.FlatAppearance.BorderSize = 0;
-            btnAbout.FlatStyle = FlatStyle.Flat;
-            btnAbout.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAbout.Location = new Point(714, 3);
-            btnAbout.Name = "btnAbout";
-            btnAbout.Size = new Size(150, 81);
-            btnAbout.TabIndex = 2;
-            btnAbout.Text = "ABOUT";
-            btnAbout.UseVisualStyleBackColor = true;
-            // 
-            // btnFeedback
-            // 
-            btnFeedback.Dock = DockStyle.Fill;
-            btnFeedback.FlatAppearance.BorderSize = 0;
-            btnFeedback.FlatStyle = FlatStyle.Flat;
-            btnFeedback.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnFeedback.Location = new Point(3, 3);
-            btnFeedback.Name = "btnFeedback";
-            btnFeedback.Size = new Size(147, 81);
-            btnFeedback.TabIndex = 4;
-            btnFeedback.Text = "FEEDBACK";
-            btnFeedback.UseVisualStyleBackColor = true;
             // 
             // pnlFill
             // 
@@ -224,10 +105,17 @@
             pnlFill.Controls.Add(pictureBox1);
             pnlFill.Controls.Add(pbButtomFrame);
             pnlFill.Dock = DockStyle.Fill;
-            pnlFill.Location = new Point(0, 87);
+            pnlFill.Location = new Point(0, 0);
             pnlFill.Name = "pnlFill";
-            pnlFill.Size = new Size(1152, 1013);
+            pnlFill.Size = new Size(1152, 1100);
             pnlFill.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(0, 1624);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1152, 28);
+            panel2.TabIndex = 93;
             // 
             // panel1
             // 
@@ -295,6 +183,54 @@
             panel1.Padding = new Padding(10);
             panel1.Size = new Size(1081, 1125);
             panel1.TabIndex = 40;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.DarkGoldenrod;
+            button4.BackgroundImageLayout = ImageLayout.None;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(39, 1068);
+            button4.Name = "button4";
+            button4.Size = new Size(157, 29);
+            button4.TabIndex = 96;
+            button4.Text = "Book Now";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // btnTerms_Conditions
+            // 
+            btnTerms_Conditions.BackColor = Color.FromArgb(248, 246, 240);
+            btnTerms_Conditions.BackgroundImageLayout = ImageLayout.None;
+            btnTerms_Conditions.FlatAppearance.BorderSize = 0;
+            btnTerms_Conditions.FlatStyle = FlatStyle.Flat;
+            btnTerms_Conditions.Font = new Font("Times New Roman", 14.25F, FontStyle.Underline);
+            btnTerms_Conditions.Location = new Point(305, 1014);
+            btnTerms_Conditions.Name = "btnTerms_Conditions";
+            btnTerms_Conditions.Size = new Size(196, 32);
+            btnTerms_Conditions.TabIndex = 95;
+            btnTerms_Conditions.Text = "Terms and Conditions*";
+            btnTerms_Conditions.UseVisualStyleBackColor = false;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Times New Roman", 14.25F);
+            label35.Location = new Point(77, 1020);
+            label35.Name = "label35";
+            label35.Size = new Size(228, 21);
+            label35.TabIndex = 94;
+            label35.Text = "I have read and accepted the ";
+            // 
+            // checkBox
+            // 
+            checkBox.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox.Location = new Point(46, 1022);
+            checkBox.Name = "checkBox";
+            checkBox.Size = new Size(15, 14);
+            checkBox.TabIndex = 93;
+            checkBox.UseVisualStyleBackColor = true;
             // 
             // label34
             // 
@@ -872,61 +808,6 @@
             pbButtomFrame.TabIndex = 38;
             pbButtomFrame.TabStop = false;
             // 
-            // checkBox
-            // 
-            checkBox.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox.Location = new Point(46, 1022);
-            checkBox.Name = "checkBox";
-            checkBox.Size = new Size(15, 14);
-            checkBox.TabIndex = 93;
-            checkBox.UseVisualStyleBackColor = true;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Times New Roman", 14.25F);
-            label35.Location = new Point(77, 1020);
-            label35.Name = "label35";
-            label35.Size = new Size(228, 21);
-            label35.TabIndex = 94;
-            label35.Text = "I have read and accepted the ";
-            // 
-            // btnTerms_Conditions
-            // 
-            btnTerms_Conditions.BackColor = Color.FromArgb(248, 246, 240);
-            btnTerms_Conditions.BackgroundImageLayout = ImageLayout.None;
-            btnTerms_Conditions.FlatAppearance.BorderSize = 0;
-            btnTerms_Conditions.FlatStyle = FlatStyle.Flat;
-            btnTerms_Conditions.Font = new Font("Times New Roman", 14.25F, FontStyle.Underline);
-            btnTerms_Conditions.Location = new Point(305, 1014);
-            btnTerms_Conditions.Name = "btnTerms_Conditions";
-            btnTerms_Conditions.Size = new Size(196, 32);
-            btnTerms_Conditions.TabIndex = 95;
-            btnTerms_Conditions.Text = "Terms and Conditions*";
-            btnTerms_Conditions.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.DarkGoldenrod;
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(39, 1068);
-            button4.Name = "button4";
-            button4.Size = new Size(157, 29);
-            button4.TabIndex = 96;
-            button4.Text = "Book Now";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            panel2.Location = new Point(0, 1624);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1152, 28);
-            panel2.TabIndex = 93;
-            // 
             // UC_BOOKING_CONFIRMATION
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -934,10 +815,8 @@
             AutoScroll = true;
             BackColor = Color.White;
             Controls.Add(pnlFill);
-            Controls.Add(tableLayoutPanel1);
             Name = "UC_BOOKING_CONFIRMATION";
             Size = new Size(1152, 1100);
-            tableLayoutPanel1.ResumeLayout(false);
             pnlFill.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -947,15 +826,6 @@
         }
 
         #endregion
-
-        private TableLayoutPanel tableLayoutPanel1;
-        private Button btnStiloLogo;
-        private Button btnOffers;
-        private Button btnRooms;
-        private Button btnManageReservations;
-        private Button btnFaq;
-        private Button btnAbout;
-        private Button btnFeedback;
         private Panel pnlFill;
         private PictureBox pbButtomFrame;
         private PictureBox pictureBox1;

@@ -122,9 +122,6 @@
     <Compile Update="UC_NO_RESERVATIONS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_OFFERS.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="UC_ROOMS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,9 +154,6 @@
     </Compile>
     <Compile Update="UC_TRIPLE_ROOM.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UpdatedMainHomePage.cs">
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>
