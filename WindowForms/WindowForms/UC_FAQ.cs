@@ -15,6 +15,12 @@ namespace WindowForms
         public UC_FAQ()
         {
             InitializeComponent();
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
