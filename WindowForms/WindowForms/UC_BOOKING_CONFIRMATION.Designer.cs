@@ -31,7 +31,7 @@
             pnlFill = new Panel();
             panel2 = new Panel();
             panel1 = new Panel();
-            button4 = new Button();
+            booknowBtn = new Button();
             btnTerms_Conditions = new Button();
             label35 = new Label();
             checkBox = new CheckBox();
@@ -74,16 +74,16 @@
             label9 = new Label();
             label8 = new Label();
             label12 = new Label();
-            label7 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            lblNumberOfGuests = new Label();
-            btnSubtract = new Button();
+            lblNumberOfChildren = new Label();
+            btnSubChildren = new Button();
+            btnAddChildren = new Button();
+            lblNumberOfAdults = new Label();
+            btnSubAdult = new Button();
             btnAdd = new Button();
             txtDiscountCode = new TextBox();
             label6 = new Label();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
+            dateTimeCheckout = new DateTimePicker();
+            dateTimeCheckin = new DateTimePicker();
             label4 = new Label();
             label3 = new Label();
             label5 = new Label();
@@ -120,7 +120,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(248, 246, 240);
-            panel1.Controls.Add(button4);
+            panel1.Controls.Add(booknowBtn);
             panel1.Controls.Add(btnTerms_Conditions);
             panel1.Controls.Add(label35);
             panel1.Controls.Add(checkBox);
@@ -163,16 +163,16 @@
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label12);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(lblNumberOfGuests);
-            panel1.Controls.Add(btnSubtract);
+            panel1.Controls.Add(lblNumberOfChildren);
+            panel1.Controls.Add(btnSubChildren);
+            panel1.Controls.Add(btnAddChildren);
+            panel1.Controls.Add(lblNumberOfAdults);
+            panel1.Controls.Add(btnSubAdult);
             panel1.Controls.Add(btnAdd);
             panel1.Controls.Add(txtDiscountCode);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(dateTimePicker2);
-            panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(dateTimeCheckout);
+            panel1.Controls.Add(dateTimeCheckin);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label5);
@@ -184,20 +184,21 @@
             panel1.Size = new Size(1081, 1125);
             panel1.TabIndex = 40;
             // 
-            // button4
+            // booknowBtn
             // 
-            button4.BackColor = Color.DarkGoldenrod;
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(39, 1068);
-            button4.Name = "button4";
-            button4.Size = new Size(157, 29);
-            button4.TabIndex = 96;
-            button4.Text = "Book Now";
-            button4.UseVisualStyleBackColor = false;
+            booknowBtn.BackColor = Color.DarkGoldenrod;
+            booknowBtn.BackgroundImageLayout = ImageLayout.None;
+            booknowBtn.FlatAppearance.BorderSize = 0;
+            booknowBtn.FlatStyle = FlatStyle.Flat;
+            booknowBtn.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            booknowBtn.ForeColor = Color.White;
+            booknowBtn.Location = new Point(39, 1068);
+            booknowBtn.Name = "booknowBtn";
+            booknowBtn.Size = new Size(157, 29);
+            booknowBtn.TabIndex = 96;
+            booknowBtn.Text = "Book Now";
+            booknowBtn.UseVisualStyleBackColor = false;
+            booknowBtn.Click += button4_Click;
             // 
             // btnTerms_Conditions
             // 
@@ -627,68 +628,71 @@
             label12.TabIndex = 49;
             label12.Text = "Your Information";
             // 
-            // label7
+            // lblNumberOfChildren
             // 
-            label7.BackColor = Color.White;
-            label7.BorderStyle = BorderStyle.FixedSingle;
-            label7.Font = new Font("Times New Roman", 12F);
-            label7.Location = new Point(217, 225);
-            label7.Name = "label7";
-            label7.Size = new Size(82, 26);
-            label7.TabIndex = 48;
-            label7.Text = "0";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            lblNumberOfChildren.BackColor = Color.White;
+            lblNumberOfChildren.BorderStyle = BorderStyle.FixedSingle;
+            lblNumberOfChildren.Font = new Font("Times New Roman", 12F);
+            lblNumberOfChildren.Location = new Point(217, 225);
+            lblNumberOfChildren.Name = "lblNumberOfChildren";
+            lblNumberOfChildren.Size = new Size(82, 26);
+            lblNumberOfChildren.TabIndex = 48;
+            lblNumberOfChildren.Text = "0";
+            lblNumberOfChildren.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnSubChildren
             // 
-            button1.BackColor = Color.WhiteSmoke;
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button1.Location = new Point(187, 225);
-            button1.Name = "button1";
-            button1.Size = new Size(24, 26);
-            button1.TabIndex = 47;
-            button1.Text = "-";
-            button1.UseVisualStyleBackColor = false;
+            btnSubChildren.BackColor = Color.WhiteSmoke;
+            btnSubChildren.BackgroundImageLayout = ImageLayout.None;
+            btnSubChildren.FlatStyle = FlatStyle.Flat;
+            btnSubChildren.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            btnSubChildren.Location = new Point(187, 225);
+            btnSubChildren.Name = "btnSubChildren";
+            btnSubChildren.Size = new Size(24, 26);
+            btnSubChildren.TabIndex = 47;
+            btnSubChildren.Text = "-";
+            btnSubChildren.UseVisualStyleBackColor = false;
+            btnSubChildren.Click += btnSubChildren_Click;
             // 
-            // button2
+            // btnAddChildren
             // 
-            button2.BackColor = Color.WhiteSmoke;
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button2.Location = new Point(305, 225);
-            button2.Name = "button2";
-            button2.Size = new Size(24, 26);
-            button2.TabIndex = 46;
-            button2.Text = "+";
-            button2.UseVisualStyleBackColor = false;
+            btnAddChildren.BackColor = Color.WhiteSmoke;
+            btnAddChildren.BackgroundImageLayout = ImageLayout.None;
+            btnAddChildren.FlatStyle = FlatStyle.Flat;
+            btnAddChildren.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            btnAddChildren.Location = new Point(305, 225);
+            btnAddChildren.Name = "btnAddChildren";
+            btnAddChildren.Size = new Size(24, 26);
+            btnAddChildren.TabIndex = 46;
+            btnAddChildren.Text = "+";
+            btnAddChildren.UseVisualStyleBackColor = false;
+            btnAddChildren.Click += btnAddChildren_Click;
             // 
-            // lblNumberOfGuests
+            // lblNumberOfAdults
             // 
-            lblNumberOfGuests.BackColor = Color.White;
-            lblNumberOfGuests.BorderStyle = BorderStyle.FixedSingle;
-            lblNumberOfGuests.Font = new Font("Times New Roman", 12F);
-            lblNumberOfGuests.Location = new Point(217, 180);
-            lblNumberOfGuests.Name = "lblNumberOfGuests";
-            lblNumberOfGuests.Size = new Size(82, 26);
-            lblNumberOfGuests.TabIndex = 45;
-            lblNumberOfGuests.Text = "0";
-            lblNumberOfGuests.TextAlign = ContentAlignment.MiddleCenter;
+            lblNumberOfAdults.BackColor = Color.White;
+            lblNumberOfAdults.BorderStyle = BorderStyle.FixedSingle;
+            lblNumberOfAdults.Font = new Font("Times New Roman", 12F);
+            lblNumberOfAdults.Location = new Point(217, 180);
+            lblNumberOfAdults.Name = "lblNumberOfAdults";
+            lblNumberOfAdults.Size = new Size(82, 26);
+            lblNumberOfAdults.TabIndex = 45;
+            lblNumberOfAdults.Text = "0";
+            lblNumberOfAdults.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnSubtract
+            // btnSubAdult
             // 
-            btnSubtract.BackColor = Color.WhiteSmoke;
-            btnSubtract.BackgroundImageLayout = ImageLayout.None;
-            btnSubtract.FlatStyle = FlatStyle.Flat;
-            btnSubtract.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            btnSubtract.Location = new Point(187, 180);
-            btnSubtract.Name = "btnSubtract";
-            btnSubtract.Size = new Size(24, 26);
-            btnSubtract.TabIndex = 44;
-            btnSubtract.Text = "-";
-            btnSubtract.UseVisualStyleBackColor = false;
+            btnSubAdult.BackColor = Color.WhiteSmoke;
+            btnSubAdult.BackgroundImageLayout = ImageLayout.None;
+            btnSubAdult.FlatStyle = FlatStyle.Flat;
+            btnSubAdult.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            btnSubAdult.Location = new Point(187, 180);
+            btnSubAdult.Name = "btnSubAdult";
+            btnSubAdult.Size = new Size(24, 26);
+            btnSubAdult.TabIndex = 44;
+            btnSubAdult.Text = "-";
+            btnSubAdult.UseVisualStyleBackColor = false;
+            btnSubAdult.Click += btnSubAdult_Click;
             // 
             // btnAdd
             // 
@@ -702,6 +706,7 @@
             btnAdd.TabIndex = 43;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // txtDiscountCode
             // 
@@ -722,21 +727,21 @@
             label6.TabIndex = 31;
             label6.Text = "Discount Code:";
             // 
-            // dateTimePicker2
+            // dateTimeCheckout
             // 
-            dateTimePicker2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker2.Location = new Point(187, 135);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(239, 26);
-            dateTimePicker2.TabIndex = 30;
+            dateTimeCheckout.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimeCheckout.Location = new Point(187, 135);
+            dateTimeCheckout.Name = "dateTimeCheckout";
+            dateTimeCheckout.Size = new Size(239, 26);
+            dateTimeCheckout.TabIndex = 30;
             // 
-            // dateTimePicker1
+            // dateTimeCheckin
             // 
-            dateTimePicker1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(187, 90);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(239, 26);
-            dateTimePicker1.TabIndex = 29;
+            dateTimeCheckin.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimeCheckin.Location = new Point(187, 90);
+            dateTimeCheckin.Name = "dateTimeCheckin";
+            dateTimeCheckin.Size = new Size(239, 26);
+            dateTimeCheckin.TabIndex = 29;
             // 
             // label4
             // 
@@ -832,18 +837,18 @@
         private Panel panel1;
         private TextBox txtDiscountCode;
         private Label label6;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimeCheckout;
+        private DateTimePicker dateTimeCheckin;
         private Label label4;
         private Label label3;
         private Label label5;
         private Label label2;
         private Label label1;
-        private Label label7;
-        private Button button1;
-        private Button button2;
-        private Label lblNumberOfGuests;
-        private Button btnSubtract;
+        private Label lblNumberOfChildren;
+        private Button btnSubChildren;
+        private Button btnAddChildren;
+        private Label lblNumberOfAdults;
+        private Button btnSubAdult;
         private Button btnAdd;
         private TextBox TxtPhone;
         private TextBox TxtEmail;
@@ -888,6 +893,6 @@
         private Button btnTerms_Conditions;
         private Label label35;
         private Panel panel2;
-        private Button button4;
+        private Button booknowBtn;
     }
 }

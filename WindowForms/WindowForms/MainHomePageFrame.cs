@@ -74,5 +74,15 @@ namespace WindowForms
                 MessageBox.Show("Unexpected sender type in MenuItem_Click", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnManageReservations_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_home1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

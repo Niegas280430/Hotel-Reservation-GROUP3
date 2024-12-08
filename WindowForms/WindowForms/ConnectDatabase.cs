@@ -11,7 +11,7 @@ namespace WindowForms
     {
         public SqlConnection DatabaseConnect()
         {
-            SqlConnection conn = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=UserDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+            SqlConnection conn = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=UserDB;Integrated Security=True;Encrypt=True;");
             return conn;
         }
     }
