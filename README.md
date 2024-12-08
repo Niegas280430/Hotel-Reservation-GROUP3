@@ -21,3 +21,9 @@ Applications used
 ### SYSTEM DESIGN AND MANAGEMENT
 - Database - Bamo | Gonzalo | Niegas
 - User Interface - Paghubasan | Lucas | Angeles | Cruz
+
+## Progress 🛠️
+- HomePage
+
+<img src="https://raw.githubusercontent.com/Niegas280430/Hotel-Reservation-GROUP3/main/Screenshots/HomePage.png" width="30%"></img>
+<img src="https://raw.githubusercontent.com/Niegas280430/Hotel-Reservation-GROUP3/main/Screenshots/HomeROOMS.jpg" width="30%"></img>
