@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
+            closeCode = new Label();
             label1 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -40,11 +41,23 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(239, 228, 201);
+            panel2.Controls.Add(closeCode);
             panel2.Controls.Add(label1);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(392, 70);
             panel2.TabIndex = 6;
+            // 
+            // closeCode
+            // 
+            closeCode.AutoSize = true;
+            closeCode.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            closeCode.Location = new Point(347, 14);
+            closeCode.Name = "closeCode";
+            closeCode.Size = new Size(24, 30);
+            closeCode.TabIndex = 1;
+            closeCode.Text = "x";
+            closeCode.Click += closeCode_Click;
             // 
             // label1
             // 
@@ -75,6 +88,7 @@
             label3.Size = new Size(155, 21);
             label3.TabIndex = 14;
             label3.Text = "“10%STILOHotel”";
+            label3.Click += label3_Click_1;
             // 
             // label2
             // 
@@ -99,6 +113,7 @@
             btnOkay.TabIndex = 16;
             btnOkay.Text = "Okay";
             btnOkay.UseVisualStyleBackColor = false;
+            btnOkay.Click += btnOkay_Click;
             // 
             // DiscountCode_PopUp
             // 
@@ -113,6 +128,7 @@
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "DiscountCode_PopUp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DiscountCodePopUp";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -128,5 +144,6 @@
         private Label label3;
         private Label label2;
         private Button btnOkay;
+        private Label closeCode;
     }
 }

@@ -32,5 +32,23 @@ namespace WindowForms
         {
             e.Handled = true;
         }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+            string textToCopy = "10%STILOHotel";
+            Clipboard.SetText(textToCopy);
+            MessageBox.Show($"Copied to Clipboard: {textToCopy}", "Text Copied", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnOkay_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void closeCode_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+

@@ -17,9 +17,6 @@ namespace WindowForms
             InitializeComponent();
         }
 
-        private void btnAbout_Click(object sender, EventArgs e)
-        {
-            cmsAbout.Show(btnAbout, 0, btnAbout.Height);
-        }
+
     }
 }

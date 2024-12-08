@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tableLayoutPanel1 = new TableLayoutPanel();
             btnStiloLogo = new Button();
             btnOffers = new Button();
@@ -37,7 +38,13 @@
             btnAbout = new Button();
             btnFeedback = new Button();
             parentPanel = new Panel();
+            uC_home1 = new UC_HOME();
+            cmsAbout = new ContextMenuStrip(components);
+            ourStoryToolStripMenuItem = new ToolStripMenuItem();
+            termsAndConditionsToolStripMenuItem = new ToolStripMenuItem();
             tableLayoutPanel1.SuspendLayout();
+            parentPanel.SuspendLayout();
+            cmsAbout.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -76,6 +83,7 @@
             btnStiloLogo.Size = new Size(255, 81);
             btnStiloLogo.TabIndex = 9;
             btnStiloLogo.UseVisualStyleBackColor = true;
+            btnStiloLogo.Click += Btn_Click;
             // 
             // btnOffers
             // 
@@ -88,6 +96,7 @@
             btnOffers.TabIndex = 6;
             btnOffers.Text = "OFFERS";
             btnOffers.UseVisualStyleBackColor = true;
+            btnOffers.Click += Btn_Click;
             // 
             // btnRooms
             // 
@@ -100,6 +109,7 @@
             btnRooms.TabIndex = 5;
             btnRooms.Text = "ROOMS";
             btnRooms.UseVisualStyleBackColor = true;
+            btnRooms.Click += Btn_Click;
             // 
             // btnManageReservations
             // 
@@ -124,6 +134,7 @@
             btnFaq.TabIndex = 3;
             btnFaq.Text = "FAQ";
             btnFaq.UseVisualStyleBackColor = true;
+            btnFaq.Click += Btn_Click;
             // 
             // btnAbout
             // 
@@ -136,6 +147,7 @@
             btnAbout.TabIndex = 2;
             btnAbout.Text = "ABOUT";
             btnAbout.UseVisualStyleBackColor = true;
+            btnAbout.Click += btnAbout_Click;
             // 
             // btnFeedback
             // 
@@ -149,26 +161,65 @@
             btnFeedback.TabIndex = 4;
             btnFeedback.Text = "FEEDBACK";
             btnFeedback.UseVisualStyleBackColor = true;
+            btnFeedback.Click += Btn_Click;
             // 
             // parentPanel
             // 
+            parentPanel.AutoScroll = true;
+            parentPanel.Controls.Add(uC_home1);
             parentPanel.Dock = DockStyle.Fill;
             parentPanel.Location = new Point(0, 87);
             parentPanel.Name = "parentPanel";
             parentPanel.Size = new Size(1152, 1013);
             parentPanel.TabIndex = 5;
             // 
+            // uC_home1
+            // 
+            uC_home1.BackColor = Color.White;
+            uC_home1.Dock = DockStyle.Fill;
+            uC_home1.Location = new Point(0, 0);
+            uC_home1.Name = "uC_home1";
+            uC_home1.Size = new Size(1152, 1013);
+            uC_home1.TabIndex = 0;
+            uC_home1.Click += Btn_Click;
+            // 
+            // cmsAbout
+            // 
+            cmsAbout.BackColor = Color.FromArgb(239, 228, 201);
+            cmsAbout.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cmsAbout.Items.AddRange(new ToolStripItem[] { ourStoryToolStripMenuItem, termsAndConditionsToolStripMenuItem });
+            cmsAbout.Name = "cmsAbout";
+            cmsAbout.Size = new Size(247, 56);
+            // 
+            // ourStoryToolStripMenuItem
+            // 
+            ourStoryToolStripMenuItem.Name = "ourStoryToolStripMenuItem";
+            ourStoryToolStripMenuItem.Size = new Size(246, 26);
+            ourStoryToolStripMenuItem.Text = "Our Story";
+            ourStoryToolStripMenuItem.Click += MenuItem_Click;
+            // 
+            // termsAndConditionsToolStripMenuItem
+            // 
+            termsAndConditionsToolStripMenuItem.Name = "termsAndConditionsToolStripMenuItem";
+            termsAndConditionsToolStripMenuItem.Size = new Size(246, 26);
+            termsAndConditionsToolStripMenuItem.Text = "Terms and Conditions";
+            termsAndConditionsToolStripMenuItem.Click += MenuItem_Click;
+            // 
             // MainHomePageFrame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(1152, 1100);
             Controls.Add(parentPanel);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "MainHomePageFrame";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RunForm";
             tableLayoutPanel1.ResumeLayout(false);
+            parentPanel.ResumeLayout(false);
+            cmsAbout.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -183,5 +234,9 @@
         private Button btnAbout;
         private Button btnFeedback;
         private Panel parentPanel;
+        private UC_HOME uC_home1;
+        private ContextMenuStrip cmsAbout;
+        private ToolStripMenuItem ourStoryToolStripMenuItem;
+        private ToolStripMenuItem termsAndConditionsToolStripMenuItem;
     }
 }

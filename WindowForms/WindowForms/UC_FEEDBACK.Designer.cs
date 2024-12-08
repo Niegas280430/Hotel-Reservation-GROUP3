@@ -36,11 +36,11 @@
             cbAnonymousUsername = new CheckBox();
             label5 = new Label();
             textBox2 = new TextBox();
-            pbStar5 = new PictureBox();
-            pbStar4 = new PictureBox();
-            pbStar3 = new PictureBox();
-            pbStar2 = new PictureBox();
-            pbStar1 = new PictureBox();
+            picStar5 = new PictureBox();
+            picStar4 = new PictureBox();
+            picStar3 = new PictureBox();
+            picStar2 = new PictureBox();
+            picStar1 = new PictureBox();
             label7 = new Label();
             dateTimePicker1 = new DateTimePicker();
             button6 = new Button();
@@ -54,11 +54,11 @@
             pnlFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbStar5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picStar5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picStar4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picStar3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picStar2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picStar1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbMainImage).BeginInit();
             SuspendLayout();
@@ -100,11 +100,11 @@
             panel1.Controls.Add(cbAnonymousUsername);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(pbStar5);
-            panel1.Controls.Add(pbStar4);
-            panel1.Controls.Add(pbStar3);
-            panel1.Controls.Add(pbStar2);
-            panel1.Controls.Add(pbStar1);
+            panel1.Controls.Add(picStar5);
+            panel1.Controls.Add(picStar4);
+            panel1.Controls.Add(picStar3);
+            panel1.Controls.Add(picStar2);
+            panel1.Controls.Add(picStar1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(button6);
@@ -129,7 +129,6 @@
             label10.Size = new Size(243, 19);
             label10.TabIndex = 58;
             label10.Text = "Leave your feedback anonymously";
-            label10.Click += label10_Click;
             // 
             // cbAnonymousUsername
             // 
@@ -165,65 +164,65 @@
             textBox2.Size = new Size(473, 115);
             textBox2.TabIndex = 48;
             // 
-            // pbStar5
+            // picStar5
             // 
-            pbStar5.ErrorImage = Properties.Resources.fullStar;
-            pbStar5.Image = Properties.Resources.fullStar;
-            pbStar5.Location = new Point(404, 181);
-            pbStar5.Name = "pbStar5";
-            pbStar5.Size = new Size(50, 50);
-            pbStar5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbStar5.TabIndex = 47;
-            pbStar5.TabStop = false;
-            pbStar5.Click += Star_Click;
+            picStar5.ErrorImage = Properties.Resources.fullStar;
+            picStar5.Image = Properties.Resources.fullStar;
+            picStar5.Location = new Point(404, 181);
+            picStar5.Name = "picStar5";
+            picStar5.Size = new Size(50, 50);
+            picStar5.SizeMode = PictureBoxSizeMode.StretchImage;
+            picStar5.TabIndex = 47;
+            picStar5.TabStop = false;
+            picStar5.Click += Star_Click;
             // 
-            // pbStar4
+            // picStar4
             // 
-            pbStar4.ErrorImage = Properties.Resources.fullStar;
-            pbStar4.Image = Properties.Resources.fullStar;
-            pbStar4.Location = new Point(329, 181);
-            pbStar4.Name = "pbStar4";
-            pbStar4.Size = new Size(50, 50);
-            pbStar4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbStar4.TabIndex = 46;
-            pbStar4.TabStop = false;
-            pbStar4.Click += Star_Click;
+            picStar4.ErrorImage = Properties.Resources.fullStar;
+            picStar4.Image = Properties.Resources.fullStar;
+            picStar4.Location = new Point(329, 181);
+            picStar4.Name = "picStar4";
+            picStar4.Size = new Size(50, 50);
+            picStar4.SizeMode = PictureBoxSizeMode.StretchImage;
+            picStar4.TabIndex = 46;
+            picStar4.TabStop = false;
+            picStar4.Click += Star_Click;
             // 
-            // pbStar3
+            // picStar3
             // 
-            pbStar3.ErrorImage = Properties.Resources.fullStar;
-            pbStar3.Image = Properties.Resources.fullStar;
-            pbStar3.Location = new Point(254, 181);
-            pbStar3.Name = "pbStar3";
-            pbStar3.Size = new Size(50, 50);
-            pbStar3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbStar3.TabIndex = 45;
-            pbStar3.TabStop = false;
-            pbStar3.Click += Star_Click;
+            picStar3.ErrorImage = Properties.Resources.fullStar;
+            picStar3.Image = Properties.Resources.fullStar;
+            picStar3.Location = new Point(254, 181);
+            picStar3.Name = "picStar3";
+            picStar3.Size = new Size(50, 50);
+            picStar3.SizeMode = PictureBoxSizeMode.StretchImage;
+            picStar3.TabIndex = 45;
+            picStar3.TabStop = false;
+            picStar3.Click += Star_Click;
             // 
-            // pbStar2
+            // picStar2
             // 
-            pbStar2.ErrorImage = Properties.Resources.fullStar;
-            pbStar2.Image = Properties.Resources.fullStar;
-            pbStar2.Location = new Point(179, 181);
-            pbStar2.Name = "pbStar2";
-            pbStar2.Size = new Size(50, 50);
-            pbStar2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbStar2.TabIndex = 44;
-            pbStar2.TabStop = false;
-            pbStar2.Click += Star_Click;
+            picStar2.ErrorImage = Properties.Resources.fullStar;
+            picStar2.Image = Properties.Resources.fullStar;
+            picStar2.Location = new Point(179, 181);
+            picStar2.Name = "picStar2";
+            picStar2.Size = new Size(50, 50);
+            picStar2.SizeMode = PictureBoxSizeMode.StretchImage;
+            picStar2.TabIndex = 44;
+            picStar2.TabStop = false;
+            picStar2.Click += Star_Click;
             // 
-            // pbStar1
+            // picStar1
             // 
-            pbStar1.ErrorImage = Properties.Resources.fullStar;
-            pbStar1.Image = Properties.Resources.fullStar;
-            pbStar1.Location = new Point(104, 181);
-            pbStar1.Name = "pbStar1";
-            pbStar1.Size = new Size(50, 50);
-            pbStar1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbStar1.TabIndex = 43;
-            pbStar1.TabStop = false;
-            pbStar1.Click += Star_Click;
+            picStar1.ErrorImage = Properties.Resources.fullStar;
+            picStar1.Image = Properties.Resources.fullStar;
+            picStar1.Location = new Point(104, 181);
+            picStar1.Name = "picStar1";
+            picStar1.Size = new Size(50, 50);
+            picStar1.SizeMode = PictureBoxSizeMode.StretchImage;
+            picStar1.TabIndex = 43;
+            picStar1.TabStop = false;
+            picStar1.Click += Star_Click;
             // 
             // label7
             // 
@@ -353,11 +352,11 @@
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbStar5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbStar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picStar5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picStar4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picStar3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picStar2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picStar1).EndInit();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbMainImage).EndInit();
             ResumeLayout(false);
@@ -368,11 +367,11 @@
         private PictureBox pbMainImage;
         private Panel panel4;
         private Panel panel1;
-        private PictureBox pbStar5;
-        private PictureBox pbStar4;
-        private PictureBox pbStar3;
-        private PictureBox pbStar2;
-        private PictureBox pbStar1;
+        private PictureBox picStar5;
+        private PictureBox picStar4;
+        private PictureBox picStar3;
+        private PictureBox picStar2;
+        private PictureBox picStar1;
         private Label label7;
         private DateTimePicker dateTimePicker1;
         private Button button6;

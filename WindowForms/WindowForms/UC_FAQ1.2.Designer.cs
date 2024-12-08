@@ -98,7 +98,7 @@
             // 
             // label2
             // 
-            label2.BackColor = Color.Cornsilk;
+            label2.BackColor = Color.FromArgb(248, 246, 240);
             label2.ForeColor = Color.Cornsilk;
             label2.Location = new Point(110, 786);
             label2.Name = "label2";
@@ -108,7 +108,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
+            label3.BackColor = Color.FromArgb(248, 246, 240);
             label3.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(156, 825);
             label3.Name = "label3";
@@ -118,7 +118,7 @@
             // 
             // label4
             // 
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = Color.FromArgb(248, 246, 240);
             label4.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(156, 884);
             label4.Name = "label4";
@@ -128,7 +128,7 @@
             // 
             // label5
             // 
-            label5.BackColor = Color.Transparent;
+            label5.BackColor = Color.FromArgb(248, 246, 240);
             label5.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(156, 1187);
             label5.Name = "label5";
@@ -139,7 +139,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
+            label6.BackColor = Color.FromArgb(248, 246, 240);
             label6.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(156, 1128);
             label6.Name = "label6";
@@ -149,7 +149,7 @@
             // 
             // label7
             // 
-            label7.BackColor = Color.Cornsilk;
+            label7.BackColor = Color.FromArgb(248, 246, 240);
             label7.ForeColor = Color.Cornsilk;
             label7.Location = new Point(110, 1089);
             label7.Name = "label7";
@@ -158,7 +158,7 @@
             // 
             // label8
             // 
-            label8.BackColor = Color.Transparent;
+            label8.BackColor = Color.FromArgb(248, 246, 240);
             label8.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.Location = new Point(156, 1427);
             label8.Name = "label8";
@@ -169,7 +169,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
+            label9.BackColor = Color.FromArgb(248, 246, 240);
             label9.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.Location = new Point(156, 1368);
             label9.Name = "label9";
@@ -179,7 +179,7 @@
             // 
             // label10
             // 
-            label10.BackColor = Color.Cornsilk;
+            label10.BackColor = Color.FromArgb(248, 246, 240);
             label10.ForeColor = Color.Cornsilk;
             label10.Location = new Point(110, 1329);
             label10.Name = "label10";
@@ -188,7 +188,7 @@
             // 
             // label11
             // 
-            label11.BackColor = Color.Transparent;
+            label11.BackColor = Color.FromArgb(248, 246, 240);
             label11.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.Location = new Point(156, 1673);
             label11.Name = "label11";
@@ -199,7 +199,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
+            label12.BackColor = Color.FromArgb(248, 246, 240);
             label12.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.Location = new Point(156, 1614);
             label12.Name = "label12";
@@ -209,7 +209,7 @@
             // 
             // label13
             // 
-            label13.BackColor = Color.Cornsilk;
+            label13.BackColor = Color.FromArgb(248, 246, 240);
             label13.ForeColor = Color.Cornsilk;
             label13.Location = new Point(110, 1575);
             label13.Name = "label13";
@@ -218,7 +218,7 @@
             // 
             // label14
             // 
-            label14.BackColor = Color.Transparent;
+            label14.BackColor = Color.FromArgb(248, 246, 240);
             label14.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.Location = new Point(156, 1936);
             label14.Name = "label14";
@@ -229,7 +229,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.BackColor = Color.Transparent;
+            label15.BackColor = Color.FromArgb(248, 246, 240);
             label15.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.Location = new Point(156, 1877);
             label15.Name = "label15";
@@ -239,7 +239,7 @@
             // 
             // label16
             // 
-            label16.BackColor = Color.Cornsilk;
+            label16.BackColor = Color.FromArgb(248, 246, 240);
             label16.ForeColor = Color.Cornsilk;
             label16.Location = new Point(110, 1838);
             label16.Name = "label16";
@@ -248,7 +248,7 @@
             // 
             // label17
             // 
-            label17.BackColor = Color.Transparent;
+            label17.BackColor = Color.FromArgb(248, 246, 240);
             label17.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.Location = new Point(156, 2151);
             label17.Name = "label17";
@@ -259,7 +259,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.BackColor = Color.Transparent;
+            label18.BackColor = Color.FromArgb(248, 246, 240);
             label18.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label18.Location = new Point(156, 2092);
             label18.Name = "label18";
@@ -269,7 +269,7 @@
             // 
             // label19
             // 
-            label19.BackColor = Color.Cornsilk;
+            label19.BackColor = Color.FromArgb(248, 246, 240);
             label19.ForeColor = Color.Cornsilk;
             label19.Location = new Point(110, 2053);
             label19.Name = "label19";
@@ -278,7 +278,7 @@
             // 
             // label20
             // 
-            label20.BackColor = Color.Transparent;
+            label20.BackColor = Color.FromArgb(248, 246, 240);
             label20.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.Location = new Point(156, 2423);
             label20.Name = "label20";
@@ -289,7 +289,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.BackColor = Color.Transparent;
+            label21.BackColor = Color.FromArgb(248, 246, 240);
             label21.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.Location = new Point(156, 2364);
             label21.Name = "label21";
@@ -299,7 +299,7 @@
             // 
             // label22
             // 
-            label22.BackColor = Color.Cornsilk;
+            label22.BackColor = Color.FromArgb(248, 246, 240);
             label22.ForeColor = Color.Cornsilk;
             label22.Location = new Point(110, 2325);
             label22.Name = "label22";
@@ -308,7 +308,7 @@
             // 
             // label23
             // 
-            label23.BackColor = Color.Transparent;
+            label23.BackColor = Color.FromArgb(248, 246, 240);
             label23.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label23.Location = new Point(156, 2694);
             label23.Name = "label23";
@@ -319,7 +319,7 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.BackColor = Color.Transparent;
+            label24.BackColor = Color.FromArgb(248, 246, 240);
             label24.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label24.Location = new Point(156, 2635);
             label24.Name = "label24";
@@ -329,7 +329,7 @@
             // 
             // label25
             // 
-            label25.BackColor = Color.Cornsilk;
+            label25.BackColor = Color.FromArgb(248, 246, 240);
             label25.ForeColor = Color.Cornsilk;
             label25.Location = new Point(110, 2596);
             label25.Name = "label25";
@@ -338,7 +338,7 @@
             // 
             // label26
             // 
-            label26.BackColor = Color.Transparent;
+            label26.BackColor = Color.FromArgb(248, 246, 240);
             label26.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label26.Location = new Point(156, 2919);
             label26.Name = "label26";
@@ -349,7 +349,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.BackColor = Color.Transparent;
+            label27.BackColor = Color.FromArgb(248, 246, 240);
             label27.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.Location = new Point(156, 2860);
             label27.Name = "label27";
@@ -359,7 +359,7 @@
             // 
             // label28
             // 
-            label28.BackColor = Color.Cornsilk;
+            label28.BackColor = Color.FromArgb(248, 246, 240);
             label28.ForeColor = Color.Cornsilk;
             label28.Location = new Point(110, 2821);
             label28.Name = "label28";
@@ -386,6 +386,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.White;
             Controls.Add(vScrollBar1);
             Controls.Add(pictureBox3);
             Controls.Add(label26);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             pnlFill = new Panel();
             panel1 = new Panel();
             panel2 = new Panel();
@@ -77,9 +76,6 @@
             label1 = new Label();
             pbMainImage = new PictureBox();
             pbButtomFrame = new PictureBox();
-            cmsAbout = new ContextMenuStrip(components);
-            ourStoryToolStripMenuItem = new ToolStripMenuItem();
-            termsAndConditionsToolStripMenuItem = new ToolStripMenuItem();
             pnlFill.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -94,7 +90,6 @@
             pnlForCheckINandOut.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbMainImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
-            cmsAbout.SuspendLayout();
             SuspendLayout();
             // 
             // pnlFill
@@ -652,26 +647,6 @@
             pbButtomFrame.TabIndex = 34;
             pbButtomFrame.TabStop = false;
             // 
-            // cmsAbout
-            // 
-            cmsAbout.BackColor = Color.FromArgb(239, 228, 201);
-            cmsAbout.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cmsAbout.Items.AddRange(new ToolStripItem[] { ourStoryToolStripMenuItem, termsAndConditionsToolStripMenuItem });
-            cmsAbout.Name = "cmsAbout";
-            cmsAbout.Size = new Size(247, 56);
-            // 
-            // ourStoryToolStripMenuItem
-            // 
-            ourStoryToolStripMenuItem.Name = "ourStoryToolStripMenuItem";
-            ourStoryToolStripMenuItem.Size = new Size(246, 26);
-            ourStoryToolStripMenuItem.Text = "Our Story";
-            // 
-            // termsAndConditionsToolStripMenuItem
-            // 
-            termsAndConditionsToolStripMenuItem.Name = "termsAndConditionsToolStripMenuItem";
-            termsAndConditionsToolStripMenuItem.Size = new Size(246, 26);
-            termsAndConditionsToolStripMenuItem.Text = "Terms and Conditions";
-            // 
             // UC_HOME
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -697,7 +672,6 @@
             pnlForCheckINandOut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pbMainImage).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
-            cmsAbout.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -750,8 +724,5 @@
         private PictureBox pictureBox6;
         private Panel panel2;
         private Label lblNumberOfGuests;
-        private ContextMenuStrip cmsAbout;
-        private ToolStripMenuItem ourStoryToolStripMenuItem;
-        private ToolStripMenuItem termsAndConditionsToolStripMenuItem;
     }
 }
