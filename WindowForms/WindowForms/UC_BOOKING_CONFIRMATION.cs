@@ -43,7 +43,14 @@ namespace WindowForms
                 {
                     if (totalguest > 6)
                     {
-
+                        MessageBox.Show("Number of Guest exceeds the 6 amount!");
+                        adultsguest = 1;
+                        childrenguest = 1;
+                        lblNumberOfAdults.Text = Convert.ToString(adultsguest);
+                        lblNumberOfChildren.Text = Convert.ToString(childrenguest);
+                    }
+                    else
+                    {
                         bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text);
                         bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text);
                         bookinginfo.Parameters.AddWithValue("@email", TxtEmail.Text);
@@ -70,14 +77,6 @@ namespace WindowForms
                             TxtPhone.Clear();
                         }
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Number of Guest exceeds the 6 amount!");
-                    adultsguest = 1;
-                    childrenguest = 1;
-                    lblNumberOfAdults.Text = Convert.ToString(adultsguest);
-                    lblNumberOfChildren.Text = Convert.ToString(childrenguest);
                 }
             }
             catch (Exception ex) // iibahin pato ng message
