@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Experience a vibrant stay at our hotel, offering excellent facilities for every guest. Stay active in our modern fitness center or unwind by the sparkling swimming pool. Savor delicious meals at our onsite restaurant, featuring a diverse menu of local and international cuisine. For entertainment, enjoy the gaming room featuring traditional games, pool tables, and cozy seating for a enjoyable experience.</value>
+  </data>
 </root>
