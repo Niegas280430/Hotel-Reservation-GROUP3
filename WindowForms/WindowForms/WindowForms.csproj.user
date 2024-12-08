@@ -83,9 +83,6 @@
     <Compile Update="UC_DELUXE_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_FAQ.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="UC_FEEDBACK.cs">
       <SubType>UserControl</SubType>
     </Compile>
