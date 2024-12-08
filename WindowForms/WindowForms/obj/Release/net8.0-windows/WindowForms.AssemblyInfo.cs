@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WindowForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e94b2b75abf1f63fce5972d95b456642263f19ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b29ee06f5814f82b5999a2c6e43e97753d7c465c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WindowForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WindowForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
