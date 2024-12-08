@@ -32,6 +32,8 @@
             pbButtomFrame = new PictureBox();
             panel4 = new Panel();
             panel1 = new Panel();
+            label10 = new Label();
+            cbAnonymousUsername = new CheckBox();
             label5 = new Label();
             textBox2 = new TextBox();
             pbStar5 = new PictureBox();
@@ -39,9 +41,6 @@
             pbStar3 = new PictureBox();
             pbStar2 = new PictureBox();
             pbStar1 = new PictureBox();
-            label10 = new Label();
-            label9 = new Label();
-            textBox1 = new TextBox();
             label7 = new Label();
             dateTimePicker1 = new DateTimePicker();
             button6 = new Button();
@@ -81,7 +80,7 @@
             // 
             pbButtomFrame.Dock = DockStyle.Bottom;
             pbButtomFrame.Image = Properties.Resources.For_UI_Buttom_Frame;
-            pbButtomFrame.Location = new Point(0, 883);
+            pbButtomFrame.Location = new Point(0, 922);
             pbButtomFrame.Name = "pbButtomFrame";
             pbButtomFrame.Size = new Size(1152, 224);
             pbButtomFrame.TabIndex = 45;
@@ -89,7 +88,7 @@
             // 
             // panel4
             // 
-            panel4.Location = new Point(0, 856);
+            panel4.Location = new Point(0, 895);
             panel4.Name = "panel4";
             panel4.Size = new Size(1152, 27);
             panel4.TabIndex = 44;
@@ -97,6 +96,8 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(cbAnonymousUsername);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(pbStar5);
@@ -104,9 +105,6 @@
             panel1.Controls.Add(pbStar3);
             panel1.Controls.Add(pbStar2);
             panel1.Controls.Add(pbStar1);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(button6);
@@ -115,11 +113,33 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(288, 15);
+            panel1.Location = new Point(288, 68);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(40);
-            panel1.Size = new Size(559, 839);
+            panel1.Size = new Size(559, 812);
             panel1.TabIndex = 43;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.White;
+            label10.Font = new Font("Times New Roman", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(86, 663);
+            label10.Name = "label10";
+            label10.Size = new Size(243, 19);
+            label10.TabIndex = 58;
+            label10.Text = "Leave your feedback anonymously";
+            label10.Click += label10_Click;
+            // 
+            // cbAnonymousUsername
+            // 
+            cbAnonymousUsername.AutoSize = true;
+            cbAnonymousUsername.BackColor = Color.FromArgb(239, 228, 201);
+            cbAnonymousUsername.Location = new Point(43, 665);
+            cbAnonymousUsername.Name = "cbAnonymousUsername";
+            cbAnonymousUsername.Size = new Size(15, 14);
+            cbAnonymousUsername.TabIndex = 56;
+            cbAnonymousUsername.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -205,40 +225,6 @@
             pbStar1.TabStop = false;
             pbStar1.Click += Star_Click;
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.FlatStyle = FlatStyle.Flat;
-            label10.Font = new Font("Times New Roman", 9F, FontStyle.Italic);
-            label10.ForeColor = Color.Red;
-            label10.Location = new Point(175, 676);
-            label10.Name = "label10";
-            label10.Size = new Size(55, 15);
-            label10.TabIndex = 22;
-            label10.Text = "Optional*";
-            // 
-            // label9
-            // 
-            label9.BackColor = Color.FromArgb(239, 228, 201);
-            label9.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.DarkGoldenrod;
-            label9.Location = new Point(43, 656);
-            label9.Name = "label9";
-            label9.Size = new Size(122, 35);
-            label9.TabIndex = 21;
-            label9.Text = "Input Name";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(248, 246, 240);
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Times New Roman", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(43, 703);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(473, 27);
-            textBox1.TabIndex = 20;
-            // 
             // label7
             // 
             label7.BackColor = Color.FromArgb(239, 228, 201);
@@ -267,7 +253,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.Transparent;
-            button6.Location = new Point(43, 773);
+            button6.Location = new Point(43, 733);
             button6.Name = "button6";
             button6.Size = new Size(108, 29);
             button6.TabIndex = 17;
@@ -281,7 +267,7 @@
             btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSearch.ForeColor = Color.Transparent;
-            btnSearch.Location = new Point(408, 773);
+            btnSearch.Location = new Point(408, 733);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(108, 29);
             btnSearch.TabIndex = 16;
@@ -387,9 +373,6 @@
         private PictureBox pbStar3;
         private PictureBox pbStar2;
         private PictureBox pbStar1;
-        private Label label10;
-        private Label label9;
-        private TextBox textBox1;
         private Label label7;
         private DateTimePicker dateTimePicker1;
         private Button button6;
@@ -402,5 +385,12 @@
         private Label label1;
         private PictureBox pbButtomFrame;
         private TextBox textBox2;
+        private CheckBox cbAnonymousUserName;
+        private CheckBox cbVisibleUserName;
+        private Label label6;
+        private Label label9;
+        private Label label10;
+        private CheckBox cbAnonymousUsername;
+        private Label label8;
     }
 }

@@ -181,8 +181,8 @@
   <data name="4 half star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4 half star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="angry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\angry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fitness (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitness (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SuiteBathroomPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SuiteBathroomPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,8 +262,8 @@
   <data name="MEssage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MEssage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="newRestoPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newRestoPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dc2b7c4b26f22817dcb3d712a57d2194" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dc2b7c4b26f22817dcb3d712a57d2194.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,20 +286,23 @@
   <data name="fitness (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fitness (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TREADMILL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TREADMILL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="angry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\angry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Our Story Main Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Our Story Main Image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Single bedroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Single bedroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fitness (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fitness (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGO HOTEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO HOTEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,7 +322,19 @@
   <data name="Picon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Picon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="newRestoPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\newRestoPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HeadDeluxeRoomImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeadDeluxeRoomImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeadSingleRoomImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeadSingleRoomImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeadStandardRoomImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeadStandardRoomImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeadSuiteRoomImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeadSuiteRoomImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeadTripleRoomImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeadTripleRoomImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

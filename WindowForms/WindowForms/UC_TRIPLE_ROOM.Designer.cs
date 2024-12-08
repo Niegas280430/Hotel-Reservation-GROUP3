@@ -30,17 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_TRIPLE_ROOM));
             pnlFill = new Panel();
-            panel1 = new Panel();
             label15 = new Label();
             label14 = new Label();
             label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
             label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             label16 = new Label();
+            label17 = new Label();
             label18 = new Label();
+            panel1 = new Panel();
             pictureBox4 = new PictureBox();
             pnlForCheckINandOut = new Panel();
             lblNumberOfGuests = new Label();
@@ -72,17 +73,18 @@
             // pnlFill
             // 
             pnlFill.AutoScroll = true;
-            pnlFill.Controls.Add(panel1);
             pnlFill.Controls.Add(label15);
             pnlFill.Controls.Add(label14);
             pnlFill.Controls.Add(label13);
-            pnlFill.Controls.Add(label12);
-            pnlFill.Controls.Add(label11);
-            pnlFill.Controls.Add(label10);
-            pnlFill.Controls.Add(label9);
             pnlFill.Controls.Add(label8);
+            pnlFill.Controls.Add(label9);
+            pnlFill.Controls.Add(label10);
+            pnlFill.Controls.Add(label11);
+            pnlFill.Controls.Add(label12);
             pnlFill.Controls.Add(label16);
+            pnlFill.Controls.Add(label17);
             pnlFill.Controls.Add(label18);
+            pnlFill.Controls.Add(panel1);
             pnlFill.Controls.Add(pictureBox4);
             pnlFill.Controls.Add(pnlForCheckINandOut);
             pnlFill.Controls.Add(label4);
@@ -99,125 +101,133 @@
             pnlFill.Size = new Size(1152, 1100);
             pnlFill.TabIndex = 12;
             // 
-            // panel1
-            // 
-            panel1.Location = new Point(0, 1295);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1152, 40);
-            panel1.TabIndex = 146;
-            // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(148, 1275);
+            label15.Font = new Font("Times New Roman", 14.25F);
+            label15.Location = new Point(161, 1523);
             label15.Name = "label15";
-            label15.Size = new Size(93, 17);
-            label15.TabIndex = 145;
+            label15.Size = new Size(117, 21);
+            label15.TabIndex = 281;
             label15.Text = "King-Size Bed";
             // 
             // label14
             // 
             label14.AutoSize = true;
-            label14.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(108, 1240);
+            label14.Font = new Font("Times New Roman", 14.25F);
+            label14.Location = new Point(121, 1485);
             label14.Name = "label14";
-            label14.Size = new Size(42, 17);
-            label14.TabIndex = 144;
+            label14.Size = new Size(53, 21);
+            label14.TabIndex = 280;
             label14.Text = "50 m²";
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(116, 1205);
+            label13.Font = new Font("Times New Roman", 14.25F);
+            label13.Location = new Point(121, 1425);
             label13.Name = "label13";
-            label13.Size = new Size(395, 17);
-            label13.TabIndex = 143;
+            label13.Size = new Size(387, 52);
+            label13.TabIndex = 279;
             label13.Text = "Showcases a beautiful view of the urban skyline and the pool area";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.DarkGoldenrod;
-            label12.Location = new Point(66, 1274);
-            label12.Name = "label12";
-            label12.Size = new Size(76, 17);
-            label12.TabIndex = 142;
-            label12.Text = "Bed Type:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.DarkGoldenrod;
-            label11.Location = new Point(66, 1239);
-            label11.Name = "label11";
-            label11.Size = new Size(43, 17);
-            label11.TabIndex = 141;
-            label11.Text = "Size: ";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.DarkGoldenrod;
-            label10.Location = new Point(66, 1204);
-            label10.Name = "label10";
-            label10.Size = new Size(44, 17);
-            label10.TabIndex = 140;
-            label10.Text = "View:";
-            // 
-            // label9
-            // 
-            label9.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(66, 963);
-            label9.Name = "label9";
-            label9.Size = new Size(224, 223);
-            label9.TabIndex = 139;
-            label9.Text = "Terrace\nWireless Internet access\nTelevision\nBathtub\nSmart Thermostat\nAir-Conditioned Unit\nHot and Cold Shower\nBathroom Essentials\nPersonal Care Kit\nTea/Coffee Making\nMini Fridge\nTelephone\nRoom Service";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(131, 894);
+            label8.Font = new Font("Times New Roman", 14.25F);
+            label8.ForeColor = Color.DarkGoldenrod;
+            label8.Location = new Point(58, 1523);
             label8.Name = "label8";
-            label8.Size = new Size(15, 17);
-            label8.TabIndex = 138;
-            label8.Text = "3";
+            label8.Size = new Size(87, 21);
+            label8.TabIndex = 278;
+            label8.Text = "Bed Type:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Times New Roman", 14.25F);
+            label9.ForeColor = Color.DarkGoldenrod;
+            label9.Location = new Point(59, 1485);
+            label9.Name = "label9";
+            label9.Size = new Size(50, 21);
+            label9.TabIndex = 277;
+            label9.Text = "Size: ";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Times New Roman", 14.25F);
+            label10.ForeColor = Color.DarkGoldenrod;
+            label10.Location = new Point(58, 1425);
+            label10.Name = "label10";
+            label10.Size = new Size(51, 21);
+            label10.TabIndex = 276;
+            label10.Text = "View:";
+            // 
+            // label11
+            // 
+            label11.Font = new Font("Times New Roman", 14.25F);
+            label11.Location = new Point(57, 1124);
+            label11.Name = "label11";
+            label11.Size = new Size(224, 286);
+            label11.TabIndex = 275;
+            label11.Text = "Terrace\nWireless Internet access\nTelevision\nBathtub\nSmart Thermostat\nAir-Conditioned Unit\nHot and Cold Shower\nBathroom Essentials\nPersonal Care Kit\nTea/Coffee Making\nMini Fridge\nTelephone\nRoom Service";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Times New Roman", 14.25F);
+            label12.Location = new Point(107, 1100);
+            label12.Name = "label12";
+            label12.Size = new Size(0, 21);
+            label12.TabIndex = 274;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.DarkGoldenrod;
-            label16.Location = new Point(66, 928);
+            label16.Font = new Font("Times New Roman", 14.25F);
+            label16.Location = new Point(137, 1039);
             label16.Name = "label16";
-            label16.Size = new Size(80, 17);
-            label16.TabIndex = 137;
-            label16.Text = "Amenities:";
+            label16.Size = new Size(19, 21);
+            label16.TabIndex = 273;
+            label16.Text = "3";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Times New Roman", 14.25F);
+            label17.ForeColor = Color.DarkGoldenrod;
+            label17.Location = new Point(58, 1077);
+            label17.Name = "label17";
+            label17.Size = new Size(87, 21);
+            label17.TabIndex = 272;
+            label17.Text = "Amenities:";
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Times New Roman", 14.25F);
             label18.ForeColor = Color.DarkGoldenrod;
-            label18.Location = new Point(66, 893);
+            label18.Location = new Point(58, 1039);
             label18.Name = "label18";
-            label18.Size = new Size(59, 17);
-            label18.TabIndex = 136;
+            label18.Size = new Size(66, 21);
+            label18.TabIndex = 271;
             label18.Text = "Guests:";
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(0, 1547);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1152, 40);
+            panel1.TabIndex = 146;
             // 
             // pictureBox4
             // 
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(605, 893);
+            pictureBox4.Location = new Point(538, 1039);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(476, 311);
+            pictureBox4.Size = new Size(556, 431);
             pictureBox4.TabIndex = 135;
             pictureBox4.TabStop = false;
             // 
@@ -346,8 +356,8 @@
             // label4
             // 
             label4.BackColor = Color.FromArgb(248, 246, 240);
-            label4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(597, 679);
+            label4.Font = new Font("Times New Roman", 14.25F);
+            label4.Location = new Point(575, 713);
             label4.Name = "label4";
             label4.Size = new Size(493, 106);
             label4.TabIndex = 123;
@@ -357,10 +367,10 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.FromArgb(248, 246, 240);
-            label7.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(597, 649);
+            label7.Font = new Font("Times New Roman", 14.25F);
+            label7.Location = new Point(575, 677);
             label7.Name = "label7";
-            label7.Size = new Size(234, 19);
+            label7.Size = new Size(292, 21);
             label7.TabIndex = 122;
             label7.Text = "Planning a trip with friends or family? ";
             // 
@@ -369,7 +379,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.FromArgb(248, 246, 240);
             label6.Font = new Font("Times New Roman", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(597, 594);
+            label6.Location = new Point(551, 615);
             label6.Name = "label6";
             label6.Size = new Size(252, 40);
             label6.TabIndex = 121;
@@ -380,10 +390,10 @@
             pictureBox2.BackgroundImage = Properties.Resources.standard_room_image;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Image = Properties.Resources.TRIPLE_BEDROOMS;
-            pictureBox2.Location = new Point(99, 594);
+            pictureBox2.Location = new Point(58, 615);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(335, 210);
+            pictureBox2.Size = new Size(366, 281);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 120;
             pictureBox2.TabStop = false;
@@ -391,9 +401,9 @@
             // label5
             // 
             label5.BackColor = Color.FromArgb(248, 246, 240);
-            label5.Location = new Point(0, 566);
+            label5.Location = new Point(0, 578);
             label5.Name = "label5";
-            label5.Size = new Size(1152, 266);
+            label5.Size = new Size(1149, 354);
             label5.TabIndex = 119;
             // 
             // pictureBox3
@@ -401,10 +411,10 @@
             pictureBox3.BackgroundImage = Properties.Resources.standard_room_image;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Image = Properties.Resources.TRIPLE_BEDROOMS;
-            pictureBox3.Location = new Point(553, 546);
+            pictureBox3.Location = new Point(489, 538);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(584, 308);
+            pictureBox3.Size = new Size(662, 433);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 118;
             pictureBox3.TabStop = false;
@@ -422,7 +432,7 @@
             // 
             pbButtomFrame.Dock = DockStyle.Bottom;
             pbButtomFrame.Image = Properties.Resources.For_UI_Buttom_Frame;
-            pbButtomFrame.Location = new Point(0, 1335);
+            pbButtomFrame.Location = new Point(0, 1587);
             pbButtomFrame.Name = "pbButtomFrame";
             pbButtomFrame.Size = new Size(1152, 224);
             pbButtomFrame.TabIndex = 48;
@@ -470,16 +480,17 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox4;
+        private Panel panel1;
         private Label label15;
         private Label label14;
         private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
         private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
         private Label label16;
+        private Label label17;
         private Label label18;
-        private Panel panel1;
     }
 }

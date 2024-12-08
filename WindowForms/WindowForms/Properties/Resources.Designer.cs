@@ -333,9 +333,29 @@ namespace WindowForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HeadDeluxeRoomImage1 {
+            get {
+                object obj = ResourceManager.GetObject("HeadDeluxeRoomImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HeadSingleRoomImage {
             get {
                 object obj = ResourceManager.GetObject("HeadSingleRoomImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HeadSingleRoomImage1 {
+            get {
+                object obj = ResourceManager.GetObject("HeadSingleRoomImage1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,6 +373,16 @@ namespace WindowForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HeadStandardRoomImage1 {
+            get {
+                object obj = ResourceManager.GetObject("HeadStandardRoomImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HeadSuiteRoomImage {
             get {
                 object obj = ResourceManager.GetObject("HeadSuiteRoomImage", resourceCulture);
@@ -363,9 +393,29 @@ namespace WindowForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HeadSuiteRoomImage1 {
+            get {
+                object obj = ResourceManager.GetObject("HeadSuiteRoomImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HeadTripleRoomImage {
             get {
                 object obj = ResourceManager.GetObject("HeadTripleRoomImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HeadTripleRoomImage1 {
+            get {
+                object obj = ResourceManager.GetObject("HeadTripleRoomImage1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

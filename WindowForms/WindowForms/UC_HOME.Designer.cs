@@ -516,7 +516,7 @@
             btnViewAllRooms.FlatStyle = FlatStyle.Flat;
             btnViewAllRooms.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnViewAllRooms.ForeColor = Color.White;
-            btnViewAllRooms.Location = new Point(859, 38);
+            btnViewAllRooms.Location = new Point(859, 29);
             btnViewAllRooms.Name = "btnViewAllRooms";
             btnViewAllRooms.Size = new Size(254, 57);
             btnViewAllRooms.TabIndex = 13;
@@ -530,7 +530,7 @@
             label10.FlatStyle = FlatStyle.Flat;
             label10.Font = new Font("Times New Roman", 44.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.DarkGoldenrod;
-            label10.Location = new Point(15, 29);
+            label10.Location = new Point(15, 20);
             label10.Name = "label10";
             label10.Size = new Size(312, 66);
             label10.TabIndex = 12;
@@ -615,7 +615,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 36F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(351, 651);
+            label4.Location = new Point(342, 651);
             label4.Name = "label4";
             label4.Size = new Size(451, 55);
             label4.TabIndex = 38;
@@ -624,7 +624,7 @@
             // pbHotelLogo
             // 
             pbHotelLogo.Image = Properties.Resources.midlogo__2_;
-            pbHotelLogo.Location = new Point(278, 500);
+            pbHotelLogo.Location = new Point(269, 500);
             pbHotelLogo.Name = "pbHotelLogo";
             pbHotelLogo.Size = new Size(596, 168);
             pbHotelLogo.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -783,13 +783,13 @@
             // ourStoryToolStripMenuItem
             // 
             ourStoryToolStripMenuItem.Name = "ourStoryToolStripMenuItem";
-            ourStoryToolStripMenuItem.Size = new Size(189, 22);
+            ourStoryToolStripMenuItem.Size = new Size(246, 26);
             ourStoryToolStripMenuItem.Text = "Our Story";
             // 
             // termsAndConditionsToolStripMenuItem
             // 
             termsAndConditionsToolStripMenuItem.Name = "termsAndConditionsToolStripMenuItem";
-            termsAndConditionsToolStripMenuItem.Size = new Size(189, 22);
+            termsAndConditionsToolStripMenuItem.Size = new Size(246, 26);
             termsAndConditionsToolStripMenuItem.Text = "Terms and Conditions";
             // 
             // UC_HOME

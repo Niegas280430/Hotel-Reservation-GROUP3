@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label5.Text" xml:space="preserve">
+    <value>When traveling with the entire family, you may find it ideal to share a single large room. This not only helps you make the most of your travel budget, but also facilitates memorable bonding experiences you can look back on long after your trip is over. Our standard rooms are the best options for guests in search of family hotel rooms, particularly those traveling with young children.  Ensure privacy by staying in our Standard Room. This accommodation is good for 2 – 3 adults.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10361,8 +10364,5 @@
         xq6bg1kxr+X/j8DCVRhLXBAkv7NSF2eq6oUo6WI9K+7NEtcKpQuF1SxxyqzTEKhCV/0zW9Wtxdr2Un17
         qf7/BWcqIyW2LgCvAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>When traveling with the entire family, you may find it ideal to share a single large room. This not only helps you make the most of your travel budget, but also facilitates memorable bonding experiences you can look back on long after your trip is over. Our standard rooms are the best options for guests in search of family hotel rooms, particularly those traveling with young children.  Ensure privacy by staying in our Standard Room. This accommodation is good for 2 – 3 adults.</value>
   </data>
 </root>
