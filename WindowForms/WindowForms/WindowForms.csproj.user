@@ -92,6 +92,9 @@
     <Compile Update="UC_HOME.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UC_LEARNMORE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UC_NO_RESERVATIONS.cs">
       <SubType>UserControl</SubType>
     </Compile>
