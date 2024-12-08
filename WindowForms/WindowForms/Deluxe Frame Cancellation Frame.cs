@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowForms
 {
+
     public partial class Deluxe_Frame_Cancellation_Frame : UserControl
     {
+
         public Deluxe_Frame_Cancellation_Frame()
         {
             InitializeComponent();
         }
+
     }
 }
