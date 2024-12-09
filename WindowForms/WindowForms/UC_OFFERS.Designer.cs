@@ -427,6 +427,7 @@
             btnLearnMore.TabIndex = 45;
             btnLearnMore.Text = "LEARN MORE";
             btnLearnMore.UseVisualStyleBackColor = false;
+            btnLearnMore.Click += btnLearnMore_Click;
             // 
             // label9
             // 

@@ -15,19 +15,22 @@ namespace WindowForms
         public MainHomePageFrame()
         {
             InitializeComponent();
-            LoadUC_HOME();
+            LoadUC(new UC_OFFERS());
+            LoadUC(new UC_HOME());
         }
 
-        private void LoadUC_HOME()
+        private void LoadUC<T>(T userControl) where T : UserControl
         {
-            var uC_Home = new UC_HOME();
-            uC_Home.LearnMoreClicked += UC_Home_LearnMoreClicked;
-            add_UControls(uC_Home);
-        }
+            if (userControl is UC_HOME homeControl)
+            {
+                homeControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
+            }
+            else if (userControl is UC_OFFERS offersControl)
+            {
+                offersControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
+            }
 
-        private void UC_Home_LearnMoreClicked(object sender, EventArgs e)
-        {
-            add_UControls(new UC_LEARNMORE());
+            add_UControls(userControl); 
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
@@ -43,7 +46,6 @@ namespace WindowForms
             userControl.BringToFront();
         }
 
-
         private void Btn_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -57,13 +59,13 @@ namespace WindowForms
                     add_UControls(new UC_ROOMS());
                     break;
                 case "btnStiloLogo":
-                    LoadUC_HOME();
+                    LoadUC(new UC_HOME());
                     break;
                 case "btnFaq":
                     add_UControls(new UC_FAQ1());
                     break;
                 case "btnOffers":
-                    add_UControls(new UC_OFFERS());
+                    LoadUC(new UC_OFFERS());
                     break;
             }
         }
