@@ -400,6 +400,7 @@
             Controls.Add(panel1);
             Name = "UC_LEARNMORE";
             Size = new Size(1152, 1100);
+            Load += UC_LEARNMORE_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();

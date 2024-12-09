@@ -2,7 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="AvailabilityRoomFrame.cs">
+    <Compile Update="LoginFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RoomFrame\AvailabilityRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="BookingConfirmationFrame.cs">
@@ -11,10 +14,10 @@
     <Compile Update="Cancel_Reservation_PopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DeluxeRoomCancellationFrame.cs">
+    <Compile Update="RoomCancellationFrames\DeluxeRoomCancellationFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DeluxeRoomFrame.cs">
+    <Compile Update="RoomFrame\DeluxeRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DiscountCode_PopUp.cs">
@@ -29,7 +32,7 @@
     <Compile Update="MainHomePageFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="NoReserveRoomFrame.cs">
+    <Compile Update="RoomFrame\NoReserveRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="OurStoryAboutFrame.cs">
@@ -38,37 +41,37 @@
     <Compile Update="Reservation_Successful_PopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Rooms.cs">
+    <Compile Update="RoomFrame\Rooms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RoomsFrame.cs">
+    <Compile Update="RoomFrame\RoomsFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SingleRoomCancellationFrame.cs">
+    <Compile Update="RoomCancellationFrames\SingleRoomCancellationFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SingleRoomFrame.cs">
+    <Compile Update="RoomFrame\SingleRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StandardRoomCancellationFrame.cs">
+    <Compile Update="RoomCancellationFrames\StandardRoomCancellationFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StandardRoomFrame.cs">
+    <Compile Update="RoomFrame\StandardRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SuiteRoomCancellationFrame.cs">
+    <Compile Update="RoomCancellationFrames\SuiteRoomCancellationFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SuiteRoomFrame.cs">
+    <Compile Update="RoomFrame\SuiteRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Terms_ConditionsFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TripleRoomCancellationFrame.cs">
+    <Compile Update="RoomCancellationFrames\TripleRoomCancellationFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TripleRoomFrame.cs">
+    <Compile Update="RoomFrame\TripleRoomFrame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UC_ABOUT.cs">
@@ -77,10 +80,13 @@
     <Compile Update="UC_BOOKING_CONFIRMATION.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_DELUXEROOM_CANCELLATION.cs">
+    <Compile Update="RoomCancellationPanel\UC_DELUXEROOM_CANCELLATION.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_DELUXE_ROOM.cs">
+    <Compile Update="RoomPanel\UC_DELUXE_ROOM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_BOOKING_CONFIRMATION2nd.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UC_FAQ1.2.cs">
@@ -95,43 +101,43 @@
     <Compile Update="UC_LEARNMORE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_NO_RESERVATIONS.cs">
+    <Compile Update="RoomPanel\UC_NO_RESERVATIONS.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UC_OFFERS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_ROOMS.cs">
+    <Compile Update="RoomPanel\UC_ROOMS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_ROOM_AVAILABILITY.cs">
+    <Compile Update="RoomPanel\UC_ROOM_AVAILABILITY.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_SINGLEROOM_CANCELLATION.cs">
+    <Compile Update="RoomCancellationPanel\UC_SINGLEROOM_CANCELLATION.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_SINGLE_ROOM.cs">
+    <Compile Update="RoomPanel\UC_SINGLE_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_STANDARDROOM_CANCELLATION.cs">
+    <Compile Update="RoomCancellationPanel\UC_STANDARDROOM_CANCELLATION.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_STANDARD_ROOM.cs">
+    <Compile Update="RoomPanel\UC_STANDARD_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_SUITEROOM_CANCELLATION.cs">
+    <Compile Update="RoomCancellationPanel\UC_SUITEROOM_CANCELLATION.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_SUITE_ROOM.cs">
+    <Compile Update="RoomPanel\UC_SUITE_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UC_TERMS_CONDITIONS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_TRIPLEROOM_CANCELLATION.cs">
+    <Compile Update="RoomCancellationPanel\UC_TRIPLEROOM_CANCELLATION.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_TRIPLE_ROOM.cs">
+    <Compile Update="RoomPanel\UC_TRIPLE_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

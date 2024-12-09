@@ -12,6 +12,8 @@ namespace WindowForms
 {
     public partial class UC_OFFERS : UserControl
     {
+        public event EventHandler LearnMoreClicked,
+            roomAVAILClicked, viewRoomsClicked;
         public UC_OFFERS()
         {
             InitializeComponent();
@@ -36,6 +38,21 @@ namespace WindowForms
         {
             DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
             discountCode_PopUp.Show();
+        }
+
+        private void btnLearnMore_Click(object sender, EventArgs e)
+        {
+            LearnMoreClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void btnViewAllRooms_Click(object sender, EventArgs e)
+        {
+            viewRoomsClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            roomAVAILClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }
