@@ -131,6 +131,9 @@
     <Compile Update="RoomPanel\UC_SUITE_ROOM.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UC_ROOM_AVAILABILITY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UC_TERMS_CONDITIONS.cs">
       <SubType>UserControl</SubType>
     </Compile>

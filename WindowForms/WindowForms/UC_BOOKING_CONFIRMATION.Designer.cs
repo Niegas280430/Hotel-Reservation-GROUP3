@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             pnlFill = new Panel();
-            pbArrow1st = new PictureBox();
             panel2 = new Panel();
             panel1 = new Panel();
             booknowBtn = new Button();
@@ -41,7 +40,7 @@
             label25 = new Label();
             lblTotalPrice1 = new Label();
             label33 = new Label();
-            label32 = new Label();
+            percentLbl = new Label();
             label13 = new Label();
             label18 = new Label();
             label23 = new Label();
@@ -93,7 +92,6 @@
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
             pnlFill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbArrow1st).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
@@ -102,7 +100,6 @@
             // pnlFill
             // 
             pnlFill.AutoScroll = true;
-            pnlFill.Controls.Add(pbArrow1st);
             pnlFill.Controls.Add(panel2);
             pnlFill.Controls.Add(panel1);
             pnlFill.Controls.Add(pictureBox1);
@@ -112,17 +109,6 @@
             pnlFill.Name = "pnlFill";
             pnlFill.Size = new Size(1152, 1100);
             pnlFill.TabIndex = 8;
-            // 
-            // pbArrow1st
-            // 
-            pbArrow1st.Image = Properties.Resources.lefit_arrow;
-            pbArrow1st.Location = new Point(27, 43);
-            pbArrow1st.Name = "pbArrow1st";
-            pbArrow1st.Size = new Size(60, 60);
-            pbArrow1st.SizeMode = PictureBoxSizeMode.Zoom;
-            pbArrow1st.TabIndex = 254;
-            pbArrow1st.TabStop = false;
-            pbArrow1st.Click += pbArrow1st_Click;
             // 
             // panel2
             // 
@@ -143,7 +129,7 @@
             panel1.Controls.Add(label25);
             panel1.Controls.Add(lblTotalPrice1);
             panel1.Controls.Add(label33);
-            panel1.Controls.Add(label32);
+            panel1.Controls.Add(percentLbl);
             panel1.Controls.Add(label13);
             panel1.Controls.Add(label18);
             panel1.Controls.Add(label23);
@@ -298,15 +284,15 @@
             label33.TabIndex = 88;
             label33.Text = "12%";
             // 
-            // label32
+            // percentLbl
             // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label32.Location = new Point(330, 763);
-            label32.Name = "label32";
-            label32.Size = new Size(35, 21);
-            label32.TabIndex = 87;
-            label32.Text = "0%";
+            percentLbl.AutoSize = true;
+            percentLbl.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            percentLbl.Location = new Point(330, 763);
+            percentLbl.Name = "percentLbl";
+            percentLbl.Size = new Size(35, 21);
+            percentLbl.TabIndex = 87;
+            percentLbl.Text = "0%";
             // 
             // label13
             // 
@@ -399,6 +385,7 @@
             button3.TabIndex = 79;
             button3.Text = "Add";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // txtBT
             // 
@@ -837,7 +824,6 @@
             Name = "UC_BOOKING_CONFIRMATION";
             Size = new Size(1152, 1100);
             pnlFill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbArrow1st).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -900,7 +886,7 @@
         private Label label23;
         private Label lblTotalPrice1;
         private Label label33;
-        private Label label32;
+        private Label percentLbl;
         private Label label34;
         private Label label24;
         private Label label25;
@@ -909,6 +895,5 @@
         private Label label35;
         private Panel panel2;
         private Button booknowBtn;
-        private PictureBox pbArrow1st;
     }
 }

@@ -13,7 +13,8 @@ namespace WindowForms
     public partial class UC_HOME : UserControl
     {
         public event EventHandler LearnMoreClicked,
-            roomAVAILClicked, viewRoomsClicked;
+            roomAVAILClicked, viewRoomsClicked, bookingClicked;
+
         int guestnum = 1;
         public UC_HOME()
         {
@@ -26,7 +27,6 @@ namespace WindowForms
             if (guestnum >= 7)
             {
                 guestnum = 1;
-                lblNumberOfGuests.Text = Convert.ToString(guestnum);
             }
             lblNumberOfGuests.Text = Convert.ToString(guestnum);
         }
@@ -53,8 +53,9 @@ namespace WindowForms
 
         private void btnViewCode_Click(object sender, EventArgs e)
         {
-            DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
-            discountCode_PopUp.Show();
+            bookingClicked?.Invoke(this, EventArgs.Empty);
+            /* DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
+             discountCode_PopUp.Show();*/
         }
 
         private void btnViewAllRooms_Click(object sender, EventArgs e)

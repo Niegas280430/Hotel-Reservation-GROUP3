@@ -13,7 +13,7 @@ namespace WindowForms
     public partial class UC_OFFERS : UserControl
     {
         public event EventHandler LearnMoreClicked,
-            roomAVAILClicked, viewRoomsClicked;
+            roomAVAILClicked, viewRoomsClicked, bookingClicked;
         public UC_OFFERS()
         {
             InitializeComponent();

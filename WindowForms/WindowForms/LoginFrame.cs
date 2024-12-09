@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace WindowForms
 {
@@ -24,9 +25,11 @@ namespace WindowForms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if ()
+            GenerateCode gc = new GenerateCode();
+            gc.generateCode();
+            if (txtboxAccountID.Text == Convert.ToString(gc.generateCode()))
             {
-
+                MessageBox.Show("Success");
             }
         }
     }
