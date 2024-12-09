@@ -263,3 +263,5 @@ C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\b
 C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.csproj.AssemblyReference.cache
 C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_LEARNMORE.resources
 C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowFo.D5357063.Up2Date
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.UC_BOOKING_CONFIRMATION2nd.resources
+C:\Users\NGR\Documents\GitHub\Hotel-Reservation-GROUP3\WindowForms\WindowForms\obj\Debug\net8.0-windows\WindowForms.LoginFrame.resources

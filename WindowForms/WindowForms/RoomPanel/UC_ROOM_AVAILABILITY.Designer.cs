@@ -519,6 +519,7 @@
             button14.TabIndex = 98;
             button14.Text = "Book Now";
             button14.UseVisualStyleBackColor = false;
+            button14.Click += button14_Click;
             // 
             // label49
             // 
@@ -632,6 +633,7 @@
             button11.TabIndex = 83;
             button11.Text = "Book Now";
             button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
             // 
             // label40
             // 
@@ -745,6 +747,7 @@
             button8.TabIndex = 68;
             button8.Text = "Book Now";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // label31
             // 
@@ -868,6 +871,7 @@
             button5.TabIndex = 52;
             button5.Text = "Book Now";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label20
             // 
@@ -981,6 +985,7 @@
             button1.TabIndex = 9;
             button1.Text = "Book Now";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label11
             // 

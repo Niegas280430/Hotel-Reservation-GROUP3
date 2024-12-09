@@ -20,8 +20,8 @@ namespace WindowForms
 
         private void InitializeLoad()
         {
+            LoadUC_NORESERVATION(new UC_NO_RESERVATIONS());
             LoadUC_ROOMS(new UC_ROOMS());
-            LoadUC(new UC_ROOM_AVAILABILITY());
             LoadUC(new UC_OFFERS());
             LoadUC(new UC_HOME());
         }
@@ -31,23 +31,61 @@ namespace WindowForms
             if (userControl is UC_HOME homeControl)
             {
                 homeControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
-                homeControl.viewRoomsClicked += (sender, e) => LoadUC(new UC_ROOMS());
+                homeControl.viewRoomsClicked += (sender, e) => LoadUC_ROOMS(new UC_ROOMS());
                 homeControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
             }
             else if (userControl is UC_OFFERS offersControl)
             {
                 offersControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
-                offersControl.viewRoomsClicked += (sender, e) => LoadUC(new UC_ROOMS());
+                offersControl.viewRoomsClicked += (sender, e) => LoadUC_ROOMS(new UC_ROOMS());
                 offersControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
             }
 
-            add_UControls(userControl); 
+            if (userControl is UC_ROOM_AVAILABILITY roomAvailability)
+            {
+                roomAvailability.Room1Clicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION2nd());
+                };
+
+                roomAvailability.Room2Clicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION2nd());
+                };
+
+                roomAvailability.Room3Clicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION2nd());
+                };
+
+                roomAvailability.Room4Clicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION2nd());
+                };
+
+                roomAvailability.Room5Clicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION2nd());
+                };
+            }
+
+            if (userControl is UC_BOOKING_CONFIRMATION2nd booking2nd)
+            {
+                booking2nd.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOM_AVAILABILITY());
+                };
+            }
+
+
+            add_UControls(userControl);
         }
 
         private void LoadUC_ROOMS<T>(T userControl) where T : UserControl
         {
             if (userControl is UC_ROOMS roomsControl)
             {
+                roomsControl.roomSearchClicked += (sender, e) => LoadUC_ROOMS(new UC_ROOM_AVAILABILITY());
                 roomsControl.StandardRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_STANDARD_ROOM());
                 roomsControl.SingleRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_SINGLE_ROOM());
                 roomsControl.TripleRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_TRIPLE_ROOM());
@@ -61,6 +99,85 @@ namespace WindowForms
                 {
                     LoadUC(new UC_BOOKING_CONFIRMATION());
                 };
+
+                standardRoomControl.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOMS());
+                };
+            }
+
+            if (userControl is UC_SINGLE_ROOM singleRoomControl)
+            {
+                singleRoomControl.SingleReserveClicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION());
+                };
+
+                singleRoomControl.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOMS());
+                };
+            }
+
+            if (userControl is UC_TRIPLE_ROOM tripleRoomControl)
+            {
+                tripleRoomControl.TripleReserveClicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION());
+                };
+
+                tripleRoomControl.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOMS());
+                };
+            }
+
+            if (userControl is UC_SUITE_ROOM suiteRoomControl)
+            {
+                suiteRoomControl.SuiteReserveClicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION());
+                };
+
+                suiteRoomControl.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOMS());
+                };
+            }
+
+            if (userControl is UC_DELUXE_ROOM deluxeRoomControl)
+            {
+                deluxeRoomControl.DeluxeReserveClicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION());
+                };
+
+                deluxeRoomControl.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOMS());
+                };
+            }
+
+            if (userControl is UC_BOOKING_CONFIRMATION booking1st)
+            {
+                booking1st.arrowClicked += (sender, e) =>
+                {
+                    LoadUC_ROOMS(new UC_ROOMS());
+                };
+            }
+
+            add_UControls(userControl);
+        }
+
+        private void LoadUC_NORESERVATION<T>(T userControl) where T : UserControl
+        {
+            if (userControl is UC_NO_RESERVATIONS searchControl)
+            {
+                searchControl.searchClicked1 += (sender, e) => LoadUC_ROOMS(new UC_STANDARD_ROOM());
+                searchControl.searchClicked2 += (sender, e) => LoadUC_ROOMS(new UC_SINGLE_ROOM());
+                searchControl.searchClicked3 += (sender, e) => LoadUC_ROOMS(new UC_TRIPLE_ROOM());
+                searchControl.searchClicked4 += (sender, e) => LoadUC_ROOMS(new UC_SUITE_ROOM());
+                searchControl.searchClicked5 += (sender, e) => LoadUC_ROOMS(new UC_DELUXE_ROOM());
             }
 
             add_UControls(userControl);
@@ -69,6 +186,11 @@ namespace WindowForms
         private void btnAbout_Click(object sender, EventArgs e)
         {
             cmsAbout.Show(btnAbout, 0, btnAbout.Height);
+        }
+
+        private void btnManageReservations_Click(object sender, EventArgs e)
+        {
+            cmsAccount.Show(btnAccount, 0, btnAccount.Height);
         }
 
         private void add_UControls(UserControl userControl)
@@ -115,12 +237,21 @@ namespace WindowForms
                     case "termsAndConditionsToolStripMenuItem":
                         add_UControls(new UC_TERMS_CONDITIONS());
                         break;
+                    case "menuManageReserve":
+                        LoadUC_NORESERVATION(new UC_NO_RESERVATIONS());
+                        break;
                 }
             }
             else
             {
                 MessageBox.Show("Unexpected sender type in MenuItem_Click", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void menuLogin_Click(object sender, EventArgs e)
+        {
+            LoginFrame loginFrame = new LoginFrame();
+            loginFrame.Show();
         }
     }
 }

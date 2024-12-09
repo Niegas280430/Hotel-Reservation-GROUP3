@@ -12,9 +12,20 @@ namespace WindowForms
 {
     public partial class UC_SUITE_ROOM : UserControl
     {
+        public event EventHandler SuiteReserveClicked, arrowClicked;
         public UC_SUITE_ROOM()
         {
             InitializeComponent();
+        }
+
+        private void btnReserve_Click(object sender, EventArgs e)
+        {
+            SuiteReserveClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void pbArrow3_Click(object sender, EventArgs e)
+        {
+            arrowClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

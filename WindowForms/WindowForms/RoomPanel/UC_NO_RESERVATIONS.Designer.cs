@@ -30,32 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_NO_RESERVATIONS));
             panel1 = new Panel();
-            button4 = new Button();
+            btnSearch5 = new Button();
             panel3 = new Panel();
             label17 = new Label();
             label18 = new Label();
             label19 = new Label();
             pictureBox6 = new PictureBox();
             label20 = new Label();
-            button3 = new Button();
+            btnSearch4 = new Button();
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
             pictureBox5 = new PictureBox();
             label16 = new Label();
-            button2 = new Button();
+            btnSearch3 = new Button();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
             pictureBox4 = new PictureBox();
             label12 = new Label();
-            button1 = new Button();
+            btnSearch2 = new Button();
             label7 = new Label();
             label2 = new Label();
             label3 = new Label();
             pictureBox3 = new PictureBox();
             label8 = new Label();
-            btnSearch = new Button();
+            btnSearch1 = new Button();
             label1 = new Label();
             pictureBox2 = new PictureBox();
             label4 = new Label();
@@ -77,32 +77,32 @@
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.Controls.Add(button4);
+            panel1.Controls.Add(btnSearch5);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(label17);
             panel1.Controls.Add(label18);
             panel1.Controls.Add(label19);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(label20);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(btnSearch4);
             panel1.Controls.Add(label13);
             panel1.Controls.Add(label14);
             panel1.Controls.Add(label15);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(label16);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnSearch3);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label11);
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(label12);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnSearch2);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(label8);
-            panel1.Controls.Add(btnSearch);
+            panel1.Controls.Add(btnSearch1);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label4);
@@ -117,19 +117,20 @@
             panel1.Size = new Size(1152, 1100);
             panel1.TabIndex = 14;
             // 
-            // button4
+            // btnSearch5
             // 
-            button4.BackColor = Color.DarkGoldenrod;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.Transparent;
-            button4.Location = new Point(934, 2064);
-            button4.Name = "button4";
-            button4.Size = new Size(156, 29);
-            button4.TabIndex = 158;
-            button4.Text = "Open For Reserve";
-            button4.UseVisualStyleBackColor = false;
+            btnSearch5.BackColor = Color.DarkGoldenrod;
+            btnSearch5.FlatAppearance.BorderSize = 0;
+            btnSearch5.FlatStyle = FlatStyle.Flat;
+            btnSearch5.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSearch5.ForeColor = Color.Transparent;
+            btnSearch5.Location = new Point(934, 2064);
+            btnSearch5.Name = "btnSearch5";
+            btnSearch5.Size = new Size(156, 29);
+            btnSearch5.TabIndex = 158;
+            btnSearch5.Text = "Open For Reserve";
+            btnSearch5.UseVisualStyleBackColor = false;
+            btnSearch5.Click += btnSearch5_Click;
             // 
             // panel3
             // 
@@ -191,19 +192,20 @@
             label20.Size = new Size(1152, 266);
             label20.TabIndex = 148;
             // 
-            // button3
+            // btnSearch4
             // 
-            button3.BackColor = Color.DarkGoldenrod;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(934, 1773);
-            button3.Name = "button3";
-            button3.Size = new Size(156, 29);
-            button3.TabIndex = 147;
-            button3.Text = "Open For Reserve";
-            button3.UseVisualStyleBackColor = false;
+            btnSearch4.BackColor = Color.DarkGoldenrod;
+            btnSearch4.FlatAppearance.BorderSize = 0;
+            btnSearch4.FlatStyle = FlatStyle.Flat;
+            btnSearch4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSearch4.ForeColor = Color.Transparent;
+            btnSearch4.Location = new Point(934, 1773);
+            btnSearch4.Name = "btnSearch4";
+            btnSearch4.Size = new Size(156, 29);
+            btnSearch4.TabIndex = 147;
+            btnSearch4.Text = "Open For Reserve";
+            btnSearch4.UseVisualStyleBackColor = false;
+            btnSearch4.Click += btnSearch4_Click;
             // 
             // label13
             // 
@@ -258,19 +260,20 @@
             label16.Size = new Size(1152, 266);
             label16.TabIndex = 142;
             // 
-            // button2
+            // btnSearch3
             // 
-            button2.BackColor = Color.DarkGoldenrod;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Transparent;
-            button2.Location = new Point(934, 1485);
-            button2.Name = "button2";
-            button2.Size = new Size(156, 29);
-            button2.TabIndex = 141;
-            button2.Text = "Open For Reserve";
-            button2.UseVisualStyleBackColor = false;
+            btnSearch3.BackColor = Color.DarkGoldenrod;
+            btnSearch3.FlatAppearance.BorderSize = 0;
+            btnSearch3.FlatStyle = FlatStyle.Flat;
+            btnSearch3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSearch3.ForeColor = Color.Transparent;
+            btnSearch3.Location = new Point(934, 1485);
+            btnSearch3.Name = "btnSearch3";
+            btnSearch3.Size = new Size(156, 29);
+            btnSearch3.TabIndex = 141;
+            btnSearch3.Text = "Open For Reserve";
+            btnSearch3.UseVisualStyleBackColor = false;
+            btnSearch3.Click += btnSearch3_Click;
             // 
             // label9
             // 
@@ -281,7 +284,6 @@
             label9.Size = new Size(493, 85);
             label9.TabIndex = 140;
             label9.Text = resources.GetString("label9.Text");
-            label9.Click += label9_Click;
             // 
             // label10
             // 
@@ -326,19 +328,20 @@
             label12.Size = new Size(1152, 266);
             label12.TabIndex = 136;
             // 
-            // button1
+            // btnSearch2
             // 
-            button1.BackColor = Color.DarkGoldenrod;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(934, 1198);
-            button1.Name = "button1";
-            button1.Size = new Size(156, 29);
-            button1.TabIndex = 135;
-            button1.Text = "Open For Reserve";
-            button1.UseVisualStyleBackColor = false;
+            btnSearch2.BackColor = Color.DarkGoldenrod;
+            btnSearch2.FlatAppearance.BorderSize = 0;
+            btnSearch2.FlatStyle = FlatStyle.Flat;
+            btnSearch2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSearch2.ForeColor = Color.Transparent;
+            btnSearch2.Location = new Point(934, 1198);
+            btnSearch2.Name = "btnSearch2";
+            btnSearch2.Size = new Size(156, 29);
+            btnSearch2.TabIndex = 135;
+            btnSearch2.Text = "Open For Reserve";
+            btnSearch2.UseVisualStyleBackColor = false;
+            btnSearch2.Click += btnSearch2_Click;
             // 
             // label7
             // 
@@ -393,19 +396,20 @@
             label8.Size = new Size(1152, 266);
             label8.TabIndex = 130;
             // 
-            // btnSearch
+            // btnSearch1
             // 
-            btnSearch.BackColor = Color.DarkGoldenrod;
-            btnSearch.FlatAppearance.BorderSize = 0;
-            btnSearch.FlatStyle = FlatStyle.Flat;
-            btnSearch.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSearch.ForeColor = Color.Transparent;
-            btnSearch.Location = new Point(934, 912);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(156, 29);
-            btnSearch.TabIndex = 129;
-            btnSearch.Text = "Open For Reserve";
-            btnSearch.UseVisualStyleBackColor = false;
+            btnSearch1.BackColor = Color.DarkGoldenrod;
+            btnSearch1.FlatAppearance.BorderSize = 0;
+            btnSearch1.FlatStyle = FlatStyle.Flat;
+            btnSearch1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSearch1.ForeColor = Color.Transparent;
+            btnSearch1.Location = new Point(934, 912);
+            btnSearch1.Name = "btnSearch1";
+            btnSearch1.Size = new Size(156, 29);
+            btnSearch1.TabIndex = 129;
+            btnSearch1.Text = "Open For Reserve";
+            btnSearch1.UseVisualStyleBackColor = false;
+            btnSearch1.Click += btnSearch_Click;
             // 
             // label1
             // 
@@ -517,8 +521,8 @@
         private PictureBox pictureBox2;
         private Label label4;
         private Label label5;
-        private Button btnSearch;
-        private Button button1;
+        private Button btnSearch1;
+        private Button btnSearch2;
         private Label label7;
         private Label label2;
         private Label label3;
@@ -529,8 +533,8 @@
         private Label label11;
         private PictureBox pictureBox4;
         private Label label12;
-        private Button button2;
-        private Button button3;
+        private Button btnSearch3;
+        private Button btnSearch4;
         private Label label13;
         private Label label14;
         private Label label15;
@@ -542,6 +546,6 @@
         private PictureBox pictureBox6;
         private Label label20;
         private Panel panel3;
-        private Button button4;
+        private Button btnSearch5;
     }
 }

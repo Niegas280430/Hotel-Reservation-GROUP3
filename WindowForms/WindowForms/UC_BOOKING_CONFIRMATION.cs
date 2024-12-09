@@ -12,6 +12,7 @@ using Microsoft.Win32;
 
 namespace WindowForms
 {
+
     public partial class UC_BOOKING_CONFIRMATION : UserControl
     {
         ConnectDatabase cd = new ConnectDatabase();
@@ -88,7 +89,7 @@ namespace WindowForms
         private void btnAdd_Click(object sender, EventArgs e)
         {
             adultsguest++;
-            if (adultsguest >= 7) 
+            if (adultsguest >= 7)
             {
                 adultsguest = 0;
                 lblNumberOfAdults.Text = Convert.ToString(adultsguest);
@@ -99,7 +100,7 @@ namespace WindowForms
         private void btnSubAdult_Click(object sender, EventArgs e)
         {
             adultsguest--;
-            if (adultsguest < 0) 
+            if (adultsguest < 0)
             {
                 adultsguest = 0;
                 lblNumberOfAdults.Text = Convert.ToString(adultsguest);
@@ -119,7 +120,7 @@ namespace WindowForms
         }
 
         private void btnSubChildren_Click(object sender, EventArgs e)
-        {      
+        {
             childrenguest--;
             if (childrenguest < 0)
             {
@@ -127,6 +128,12 @@ namespace WindowForms
                 lblNumberOfChildren.Text = Convert.ToString(childrenguest);
             }
             lblNumberOfChildren.Text = Convert.ToString(childrenguest);
+        }
+
+        public event EventHandler arrowClicked;
+        private void pbArrow1st_Click(object sender, EventArgs e)
+        {
+            arrowClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

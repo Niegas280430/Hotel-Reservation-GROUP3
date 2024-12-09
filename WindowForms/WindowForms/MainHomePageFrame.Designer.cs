@@ -33,7 +33,7 @@
             btnStiloLogo = new Button();
             btnOffers = new Button();
             btnRooms = new Button();
-            btnManageReservations = new Button();
+            btnAccount = new Button();
             btnFaq = new Button();
             btnAbout = new Button();
             btnFeedback = new Button();
@@ -42,9 +42,13 @@
             cmsAbout = new ContextMenuStrip(components);
             ourStoryToolStripMenuItem = new ToolStripMenuItem();
             termsAndConditionsToolStripMenuItem = new ToolStripMenuItem();
+            cmsAccount = new ContextMenuStrip(components);
+            menuLogin = new ToolStripMenuItem();
+            menuManageReserve = new ToolStripMenuItem();
             tableLayoutPanel1.SuspendLayout();
             parentPanel.SuspendLayout();
             cmsAbout.SuspendLayout();
+            cmsAccount.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -61,7 +65,7 @@
             tableLayoutPanel1.Controls.Add(btnStiloLogo, 3, 0);
             tableLayoutPanel1.Controls.Add(btnOffers, 2, 0);
             tableLayoutPanel1.Controls.Add(btnRooms, 1, 0);
-            tableLayoutPanel1.Controls.Add(btnManageReservations, 6, 0);
+            tableLayoutPanel1.Controls.Add(btnAccount, 6, 0);
             tableLayoutPanel1.Controls.Add(btnFaq, 5, 0);
             tableLayoutPanel1.Controls.Add(btnAbout, 4, 0);
             tableLayoutPanel1.Controls.Add(btnFeedback, 0, 0);
@@ -111,17 +115,18 @@
             btnRooms.UseVisualStyleBackColor = true;
             btnRooms.Click += Btn_Click;
             // 
-            // btnManageReservations
+            // btnAccount
             // 
-            btnManageReservations.FlatAppearance.BorderSize = 0;
-            btnManageReservations.FlatStyle = FlatStyle.Flat;
-            btnManageReservations.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnManageReservations.Location = new Point(979, 3);
-            btnManageReservations.Name = "btnManageReservations";
-            btnManageReservations.Size = new Size(170, 81);
-            btnManageReservations.TabIndex = 1;
-            btnManageReservations.Text = "MANAGE RESERVATIONS";
-            btnManageReservations.UseVisualStyleBackColor = true;
+            btnAccount.FlatAppearance.BorderSize = 0;
+            btnAccount.FlatStyle = FlatStyle.Flat;
+            btnAccount.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAccount.Location = new Point(979, 3);
+            btnAccount.Name = "btnAccount";
+            btnAccount.Size = new Size(170, 81);
+            btnAccount.TabIndex = 1;
+            btnAccount.Text = "My Account";
+            btnAccount.UseVisualStyleBackColor = true;
+            btnAccount.Click += btnManageReservations_Click;
             // 
             // btnFaq
             // 
@@ -181,7 +186,6 @@
             uC_home1.Name = "uC_home1";
             uC_home1.Size = new Size(1152, 1013);
             uC_home1.TabIndex = 0;
-            uC_home1.Click += Btn_Click;
             // 
             // cmsAbout
             // 
@@ -205,6 +209,28 @@
             termsAndConditionsToolStripMenuItem.Text = "Terms and Conditions";
             termsAndConditionsToolStripMenuItem.Click += MenuItem_Click;
             // 
+            // cmsAccount
+            // 
+            cmsAccount.BackColor = Color.FromArgb(239, 228, 201);
+            cmsAccount.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cmsAccount.Items.AddRange(new ToolStripItem[] { menuLogin, menuManageReserve });
+            cmsAccount.Name = "cmsAbout";
+            cmsAccount.Size = new Size(232, 78);
+            // 
+            // menuLogin
+            // 
+            menuLogin.Name = "menuLogin";
+            menuLogin.Size = new Size(231, 26);
+            menuLogin.Text = "Login";
+            menuLogin.Click += menuLogin_Click;
+            // 
+            // menuManageReserve
+            // 
+            menuManageReserve.Name = "menuManageReserve";
+            menuManageReserve.Size = new Size(231, 26);
+            menuManageReserve.Text = "Manage Reservation";
+            menuManageReserve.Click += MenuItem_Click;
+            // 
             // MainHomePageFrame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -220,6 +246,7 @@
             tableLayoutPanel1.ResumeLayout(false);
             parentPanel.ResumeLayout(false);
             cmsAbout.ResumeLayout(false);
+            cmsAccount.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -229,14 +256,17 @@
         private Button btnStiloLogo;
         private Button btnOffers;
         private Button btnRooms;
-        private Button btnManageReservations;
+        private Button btnAccount;
         private Button btnFaq;
         private Button btnAbout;
         private Button btnFeedback;
         private Panel parentPanel;
-        private UC_HOME uC_home1;
         private ContextMenuStrip cmsAbout;
         private ToolStripMenuItem ourStoryToolStripMenuItem;
         private ToolStripMenuItem termsAndConditionsToolStripMenuItem;
+        private ContextMenuStrip cmsAccount;
+        private ToolStripMenuItem menuLogin;
+        private ToolStripMenuItem menuManageReserve;
+        private UC_HOME uC_home1;
     }
 }

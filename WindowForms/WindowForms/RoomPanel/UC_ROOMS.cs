@@ -13,7 +13,7 @@ namespace WindowForms
     public partial class UC_ROOMS : UserControl
     {
         public event EventHandler StandardRoomClicked, SingleRoomClicked,
-            TripleRoomClicked, SuiteRoomClicked, DeluxeRoom;
+            TripleRoomClicked, SuiteRoomClicked, DeluxeRoom, roomSearchClicked;
         public UC_ROOMS()
         {
             InitializeComponent();
@@ -42,6 +42,11 @@ namespace WindowForms
         private void btnDeluxeRoomDetails_Click(object sender, EventArgs e)
         {
             DeluxeRoom?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            roomSearchClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

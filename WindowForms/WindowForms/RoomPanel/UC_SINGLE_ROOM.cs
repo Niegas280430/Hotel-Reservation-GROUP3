@@ -12,9 +12,20 @@ namespace WindowForms
 {
     public partial class UC_SINGLE_ROOM : UserControl
     {
+        public event EventHandler SingleReserveClicked, arrowClicked;
         public UC_SINGLE_ROOM()
         {
             InitializeComponent();
+        }
+
+        private void btnReserve_Click(object sender, EventArgs e)
+        {
+            SingleReserveClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void pbArrow1_Click(object sender, EventArgs e)
+        {
+            arrowClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

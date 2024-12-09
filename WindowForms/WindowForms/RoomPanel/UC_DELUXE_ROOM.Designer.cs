@@ -41,6 +41,7 @@
             label32 = new Label();
             label33 = new Label();
             panel2 = new Panel();
+            pictureBox4 = new PictureBox();
             label7 = new Label();
             label4 = new Label();
             label6 = new Label();
@@ -59,19 +60,21 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
-            pictureBox4 = new PictureBox();
+            pbArrow4 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlForCheckINandOut.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow4).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(pbArrow4);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label24);
             panel1.Controls.Add(label25);
@@ -208,6 +211,18 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1152, 40);
             panel2.TabIndex = 147;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Image = Properties.Resources.Bathroom_Deluxe_room;
+            pictureBox4.Location = new Point(538, 1039);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(556, 431);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 125;
+            pictureBox4.TabStop = false;
             // 
             // label7
             // 
@@ -366,6 +381,7 @@
             btnReserve.TabIndex = 3;
             btnReserve.Text = "Reserve";
             btnReserve.UseVisualStyleBackColor = false;
+            btnReserve.Click += btnReserve_Click;
             // 
             // label3
             // 
@@ -416,17 +432,16 @@
             pbButtomFrame.TabIndex = 49;
             pbButtomFrame.TabStop = false;
             // 
-            // pictureBox4
+            // pbArrow4
             // 
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Image = Properties.Resources.Bathroom_Deluxe_room;
-            pictureBox4.Location = new Point(538, 1039);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(556, 431);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 125;
-            pictureBox4.TabStop = false;
+            pbArrow4.Image = Properties.Resources.lefit_arrow;
+            pbArrow4.Location = new Point(53, 51);
+            pbArrow4.Name = "pbArrow4";
+            pbArrow4.Size = new Size(60, 60);
+            pbArrow4.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow4.TabIndex = 281;
+            pbArrow4.TabStop = false;
+            pbArrow4.Click += pbArrow4_Click;
             // 
             // UC_DELUXE_ROOM
             // 
@@ -439,13 +454,14 @@
             Size = new Size(1152, 1100);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             pnlForCheckINandOut.ResumeLayout(false);
             pnlForCheckINandOut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow4).EndInit();
             ResumeLayout(false);
         }
 
@@ -481,5 +497,6 @@
         private Label label32;
         private Label label33;
         private PictureBox pictureBox4;
+        private PictureBox pbArrow4;
     }
 }

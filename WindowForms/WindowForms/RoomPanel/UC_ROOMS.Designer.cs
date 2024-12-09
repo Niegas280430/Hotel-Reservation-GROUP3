@@ -979,6 +979,7 @@
             btnSearch.TabIndex = 3;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // label3
             // 

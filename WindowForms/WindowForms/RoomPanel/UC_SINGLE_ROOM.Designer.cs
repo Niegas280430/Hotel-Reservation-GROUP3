@@ -60,6 +60,7 @@
             label33 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
+            pbArrow1 = new PictureBox();
             pnlFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -67,11 +68,13 @@
             pnlForCheckINandOut.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow1).BeginInit();
             SuspendLayout();
             // 
             // pnlFill
             // 
             pnlFill.AutoScroll = true;
+            pnlFill.Controls.Add(pbArrow1);
             pnlFill.Controls.Add(label8);
             pnlFill.Controls.Add(label7);
             pnlFill.Controls.Add(label24);
@@ -366,6 +369,7 @@
             btnReserve.TabIndex = 3;
             btnReserve.Text = "Reserve";
             btnReserve.UseVisualStyleBackColor = false;
+            btnReserve.Click += btnReserve_Click;
             // 
             // label3
             // 
@@ -427,6 +431,17 @@
             pbButtomFrame.TabIndex = 47;
             pbButtomFrame.TabStop = false;
             // 
+            // pbArrow1
+            // 
+            pbArrow1.Image = Properties.Resources.lefit_arrow;
+            pbArrow1.Location = new Point(53, 48);
+            pbArrow1.Name = "pbArrow1";
+            pbArrow1.Size = new Size(60, 60);
+            pbArrow1.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow1.TabIndex = 188;
+            pbArrow1.TabStop = false;
+            pbArrow1.Click += pbArrow1_Click;
+            // 
             // UC_SINGLE_ROOM
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -444,6 +459,7 @@
             pnlForCheckINandOut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow1).EndInit();
             ResumeLayout(false);
         }
 
@@ -479,5 +495,6 @@
         private Label label31;
         private Label label32;
         private Label label33;
+        private PictureBox pbArrow1;
     }
 }

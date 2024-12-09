@@ -59,6 +59,7 @@
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
             pictureBox3 = new PictureBox();
+            pbArrow = new PictureBox();
             pnlFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -66,11 +67,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).BeginInit();
             SuspendLayout();
             // 
             // pnlFill
             // 
             pnlFill.AutoScroll = true;
+            pnlFill.Controls.Add(pbArrow);
             pnlFill.Controls.Add(label15);
             pnlFill.Controls.Add(label14);
             pnlFill.Controls.Add(label13);
@@ -411,6 +414,17 @@
             pictureBox3.TabIndex = 100;
             pictureBox3.TabStop = false;
             // 
+            // pbArrow
+            // 
+            pbArrow.Image = Properties.Resources.lefit_arrow;
+            pbArrow.Location = new Point(53, 63);
+            pbArrow.Name = "pbArrow";
+            pbArrow.Size = new Size(60, 60);
+            pbArrow.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow.TabIndex = 155;
+            pbArrow.TabStop = false;
+            pbArrow.Click += pbArrow_Click;
+            // 
             // UC_STANDARD_ROOM
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -420,6 +434,7 @@
             Controls.Add(pnlFill);
             Name = "UC_STANDARD_ROOM";
             Size = new Size(1152, 1100);
+            Load += UC_STANDARD_ROOM_Load;
             pnlFill.ResumeLayout(false);
             pnlFill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -429,6 +444,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).EndInit();
             ResumeLayout(false);
         }
 
@@ -463,5 +479,6 @@
         private Label label7;
         private Label label16;
         private Label label18;
+        private PictureBox pbArrow;
     }
 }
