@@ -41,7 +41,7 @@
             label25 = new Label();
             lblTotalPrice1 = new Label();
             label33 = new Label();
-            label32 = new Label();
+            percentLbl = new Label();
             label13 = new Label();
             label18 = new Label();
             label23 = new Label();
@@ -49,7 +49,7 @@
             label19 = new Label();
             label20 = new Label();
             btnRemove = new Button();
-            button3 = new Button();
+            addBtn = new Button();
             txtBT = new TextBox();
             txtBr = new TextBox();
             txtP = new TextBox();
@@ -143,7 +143,7 @@
             panel1.Controls.Add(label25);
             panel1.Controls.Add(lblTotalPrice1);
             panel1.Controls.Add(label33);
-            panel1.Controls.Add(label32);
+            panel1.Controls.Add(percentLbl);
             panel1.Controls.Add(label13);
             panel1.Controls.Add(label18);
             panel1.Controls.Add(label23);
@@ -151,7 +151,7 @@
             panel1.Controls.Add(label19);
             panel1.Controls.Add(label20);
             panel1.Controls.Add(btnRemove);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(addBtn);
             panel1.Controls.Add(txtBT);
             panel1.Controls.Add(txtBr);
             panel1.Controls.Add(txtP);
@@ -298,15 +298,15 @@
             label33.TabIndex = 88;
             label33.Text = "12%";
             // 
-            // label32
+            // percentLbl
             // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label32.Location = new Point(330, 763);
-            label32.Name = "label32";
-            label32.Size = new Size(35, 21);
-            label32.TabIndex = 87;
-            label32.Text = "0%";
+            percentLbl.AutoSize = true;
+            percentLbl.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            percentLbl.Location = new Point(330, 763);
+            percentLbl.Name = "percentLbl";
+            percentLbl.Size = new Size(35, 21);
+            percentLbl.TabIndex = 87;
+            percentLbl.Text = "0%";
             // 
             // label13
             // 
@@ -385,20 +385,21 @@
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // addBtn
             // 
-            button3.BackColor = Color.DarkGoldenrod;
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Times New Roman", 12F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(247, 695);
-            button3.Name = "button3";
-            button3.Size = new Size(82, 29);
-            button3.TabIndex = 79;
-            button3.Text = "Add";
-            button3.UseVisualStyleBackColor = false;
+            addBtn.BackColor = Color.DarkGoldenrod;
+            addBtn.BackgroundImageLayout = ImageLayout.None;
+            addBtn.FlatAppearance.BorderSize = 0;
+            addBtn.FlatStyle = FlatStyle.Flat;
+            addBtn.Font = new Font("Times New Roman", 12F);
+            addBtn.ForeColor = Color.White;
+            addBtn.Location = new Point(247, 695);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(82, 29);
+            addBtn.TabIndex = 79;
+            addBtn.Text = "Add";
+            addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
             // 
             // txtBT
             // 
@@ -877,7 +878,7 @@
         private Label label19;
         private Label label20;
         private Button btnRemove;
-        private Button button3;
+        private Button addBtn;
         private TextBox txtBT;
         private TextBox txtBr;
         private TextBox txtP;
@@ -900,7 +901,7 @@
         private Label label23;
         private Label lblTotalPrice1;
         private Label label33;
-        private Label label32;
+        private Label percentLbl;
         private Label label34;
         private Label label24;
         private Label label25;
