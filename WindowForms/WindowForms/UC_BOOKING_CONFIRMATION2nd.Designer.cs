@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnlFill = new Panel();
+            pbArrow2nd = new PictureBox();
             panel2 = new Panel();
             panel1 = new Panel();
             booknowBtn = new Button();
@@ -91,12 +92,11 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
-            pbArrow2nd = new PictureBox();
             pnlFill.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow2nd).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbArrow2nd).BeginInit();
             SuspendLayout();
             // 
             // pnlFill
@@ -112,6 +112,17 @@
             pnlFill.Name = "pnlFill";
             pnlFill.Size = new Size(1152, 1100);
             pnlFill.TabIndex = 9;
+            // 
+            // pbArrow2nd
+            // 
+            pbArrow2nd.Image = Properties.Resources.lefit_arrow;
+            pbArrow2nd.Location = new Point(27, 53);
+            pbArrow2nd.Name = "pbArrow2nd";
+            pbArrow2nd.Size = new Size(60, 60);
+            pbArrow2nd.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow2nd.TabIndex = 254;
+            pbArrow2nd.TabStop = false;
+            pbArrow2nd.Click += pbArrow2nd_Click;
             // 
             // panel2
             // 
@@ -209,7 +220,7 @@
             btnTerms_Conditions.FlatAppearance.BorderSize = 0;
             btnTerms_Conditions.FlatStyle = FlatStyle.Flat;
             btnTerms_Conditions.Font = new Font("Times New Roman", 14.25F, FontStyle.Underline);
-            btnTerms_Conditions.Location = new Point(305, 1014);
+            btnTerms_Conditions.Location = new Point(305, 1024);
             btnTerms_Conditions.Name = "btnTerms_Conditions";
             btnTerms_Conditions.Size = new Size(196, 32);
             btnTerms_Conditions.TabIndex = 95;
@@ -229,7 +240,7 @@
             // checkBox
             // 
             checkBox.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox.Location = new Point(46, 1022);
+            checkBox.Location = new Point(49, 1035);
             checkBox.Name = "checkBox";
             checkBox.Size = new Size(15, 14);
             checkBox.TabIndex = 93;
@@ -810,17 +821,6 @@
             pbButtomFrame.TabIndex = 38;
             pbButtomFrame.TabStop = false;
             // 
-            // pbArrow2nd
-            // 
-            pbArrow2nd.Image = Properties.Resources.lefit_arrow;
-            pbArrow2nd.Location = new Point(27, 53);
-            pbArrow2nd.Name = "pbArrow2nd";
-            pbArrow2nd.Size = new Size(60, 60);
-            pbArrow2nd.SizeMode = PictureBoxSizeMode.Zoom;
-            pbArrow2nd.TabIndex = 254;
-            pbArrow2nd.TabStop = false;
-            pbArrow2nd.Click += pbArrow2nd_Click;
-            // 
             // UC_BOOKING_CONFIRMATION2nd
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -829,11 +829,11 @@
             Name = "UC_BOOKING_CONFIRMATION2nd";
             Size = new Size(1152, 1100);
             pnlFill.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbArrow2nd).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbArrow2nd).EndInit();
             ResumeLayout(false);
         }
 
