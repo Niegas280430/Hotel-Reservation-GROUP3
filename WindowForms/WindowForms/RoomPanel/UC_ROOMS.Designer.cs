@@ -190,6 +190,7 @@
             btnDeluxeRoomDetails.Text = "Room Details";
             btnDeluxeRoomDetails.TextAlign = ContentAlignment.BottomCenter;
             btnDeluxeRoomDetails.UseVisualStyleBackColor = true;
+            btnDeluxeRoomDetails.Click += btnDeluxeRoomDetails_Click;
             // 
             // pictureBox18
             // 
@@ -281,6 +282,7 @@
             btnSuiteRoomDetails.Text = "Room Details";
             btnSuiteRoomDetails.TextAlign = ContentAlignment.BottomCenter;
             btnSuiteRoomDetails.UseVisualStyleBackColor = true;
+            btnSuiteRoomDetails.Click += btnSuiteRoomDetails_Click;
             // 
             // pictureBox16
             // 
@@ -372,6 +374,7 @@
             btnSingleRoomDetails.Text = "Room Details";
             btnSingleRoomDetails.TextAlign = ContentAlignment.BottomCenter;
             btnSingleRoomDetails.UseVisualStyleBackColor = true;
+            btnSingleRoomDetails.Click += btnSingleRoomDetails_Click;
             // 
             // pictureBox13
             // 
@@ -463,6 +466,7 @@
             btnTripleRoomDetails.Text = "Room Details";
             btnTripleRoomDetails.TextAlign = ContentAlignment.BottomCenter;
             btnTripleRoomDetails.UseVisualStyleBackColor = true;
+            btnTripleRoomDetails.Click += btnTripleRoomDetails_Click;
             // 
             // pictureBox14
             // 
@@ -554,6 +558,7 @@
             btnStandardRoomDetails.Text = "Room Details";
             btnStandardRoomDetails.TextAlign = ContentAlignment.BottomCenter;
             btnStandardRoomDetails.UseVisualStyleBackColor = true;
+            btnStandardRoomDetails.Click += btnStandardRoomDetails_Click;
             // 
             // pictureBox11
             // 

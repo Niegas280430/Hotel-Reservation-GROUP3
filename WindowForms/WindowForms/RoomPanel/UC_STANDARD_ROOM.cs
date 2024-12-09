@@ -12,9 +12,16 @@ namespace WindowForms
 {
     public partial class UC_STANDARD_ROOM : UserControl
     {
+        public event EventHandler StandardReserveClicked;
+
         public UC_STANDARD_ROOM()
         {
             InitializeComponent();
+        }
+
+        private void btnReserve_Click(object sender, EventArgs e)
+        {
+            StandardReserveClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

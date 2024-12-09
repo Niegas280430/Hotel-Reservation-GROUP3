@@ -122,7 +122,6 @@
             btnManageReservations.TabIndex = 1;
             btnManageReservations.Text = "MANAGE RESERVATIONS";
             btnManageReservations.UseVisualStyleBackColor = true;
-            btnManageReservations.Click += btnManageReservations_Click;
             // 
             // btnFaq
             // 
@@ -182,7 +181,6 @@
             uC_home1.Name = "uC_home1";
             uC_home1.Size = new Size(1152, 1013);
             uC_home1.TabIndex = 0;
-            uC_home1.Load += uC_home1_Load;
             uC_home1.Click += Btn_Click;
             // 
             // cmsAbout

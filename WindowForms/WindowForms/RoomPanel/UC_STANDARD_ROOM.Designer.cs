@@ -349,6 +349,7 @@
             btnReserve.TabIndex = 3;
             btnReserve.Text = "Reserve";
             btnReserve.UseVisualStyleBackColor = false;
+            btnReserve.Click += btnReserve_Click;
             // 
             // label3
             // 

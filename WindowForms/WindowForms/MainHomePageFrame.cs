@@ -15,6 +15,13 @@ namespace WindowForms
         public MainHomePageFrame()
         {
             InitializeComponent();
+            InitializeLoad();
+        }
+
+        private void InitializeLoad()
+        {
+            LoadUC_ROOMS(new UC_ROOMS());
+
             LoadUC(new UC_OFFERS());
             LoadUC(new UC_HOME());
         }
@@ -31,6 +38,28 @@ namespace WindowForms
             }
 
             add_UControls(userControl); 
+        }
+
+        private void LoadUC_ROOMS<T>(T userControl) where T : UserControl
+        {
+            if (userControl is UC_ROOMS roomsControl)
+            {
+                roomsControl.StandardRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_STANDARD_ROOM());
+                roomsControl.SingleRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_SINGLE_ROOM());
+                roomsControl.TripleRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_TRIPLE_ROOM());
+                roomsControl.SuiteRoomClicked += (sender, e) => LoadUC_ROOMS(new UC_SUITE_ROOM());
+                roomsControl.DeluxeRoom += (sender, e) => LoadUC_ROOMS(new UC_DELUXE_ROOM());
+            }
+
+            if (userControl is UC_STANDARD_ROOM standardRoomControl)
+            {
+                standardRoomControl.StandardReserveClicked += (sender, e) =>
+                {
+                    LoadUC(new UC_BOOKING_CONFIRMATION());
+                };
+            }
+
+            add_UControls(userControl);
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
@@ -56,7 +85,7 @@ namespace WindowForms
                     add_UControls(new UC_FEEDBACK());
                     break;
                 case "btnRooms":
-                    add_UControls(new UC_ROOMS());
+                    LoadUC_ROOMS(new UC_ROOMS());
                     break;
                 case "btnStiloLogo":
                     LoadUC(new UC_HOME());
@@ -88,16 +117,6 @@ namespace WindowForms
             {
                 MessageBox.Show("Unexpected sender type in MenuItem_Click", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void btnManageReservations_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uC_home1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
