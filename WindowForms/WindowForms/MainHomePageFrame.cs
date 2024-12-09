@@ -15,6 +15,19 @@ namespace WindowForms
         public MainHomePageFrame()
         {
             InitializeComponent();
+            LoadUC_HOME();
+        }
+
+        private void LoadUC_HOME()
+        {
+            var uC_Home = new UC_HOME();
+            uC_Home.LearnMoreClicked += UC_Home_LearnMoreClicked;
+            add_UControls(uC_Home);
+        }
+
+        private void UC_Home_LearnMoreClicked(object sender, EventArgs e)
+        {
+            add_UControls(new UC_LEARNMORE());
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
@@ -44,7 +57,7 @@ namespace WindowForms
                     add_UControls(new UC_ROOMS());
                     break;
                 case "btnStiloLogo":
-                    add_UControls(new UC_HOME());
+                    LoadUC_HOME();
                     break;
                 case "btnFaq":
                     add_UControls(new UC_FAQ1());

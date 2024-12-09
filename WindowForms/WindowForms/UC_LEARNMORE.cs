@@ -16,5 +16,20 @@ namespace WindowForms
         {
             InitializeComponent();
         }
+
+        private void UC_LEARNMORE_Load(object sender, EventArgs e)
+        {
+            pbButtomFrame.TabStop = true;
+            pbButtomFrame.Focus();
+            ScrollToControlLM(pbButtomFrame);
+        }
+
+        private void ScrollToControlLM(Control control)
+        {
+            if (control.Parent is Panel parentPanel && parentPanel.AutoScroll)
+            {
+                parentPanel.ScrollControlIntoView(control);
+            }
+        }
     }
 }

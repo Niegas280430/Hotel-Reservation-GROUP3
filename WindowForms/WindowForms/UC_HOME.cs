@@ -12,6 +12,7 @@ namespace WindowForms
 {
     public partial class UC_HOME : UserControl
     {
+        public event EventHandler LearnMoreClicked;
         int guestnum = 1;
         public UC_HOME()
         {
@@ -34,7 +35,7 @@ namespace WindowForms
             guestnum--;
             if (guestnum <= 0)
             {
-                guestnum = 1; 
+                guestnum = 1;
             }
             lblNumberOfGuests.Text = Convert.ToString(guestnum);
         }
@@ -43,6 +44,17 @@ namespace WindowForms
         {
             BookingConfirmationFrame bcf = new BookingConfirmationFrame();
             bcf.ShowDialog();
+        }
+
+        private void btnLearnMore_Click(object sender, EventArgs e)
+        {
+            LearnMoreClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void btnViewCode_Click(object sender, EventArgs e)
+        {
+            DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
+            discountCode_PopUp.Show();
         }
     }
 }

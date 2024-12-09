@@ -239,6 +239,7 @@
             btnViewCode.TabIndex = 28;
             btnViewCode.Text = "View % Code";
             btnViewCode.UseVisualStyleBackColor = false;
+            btnViewCode.Click += btnViewCode_Click;
             // 
             // label22
             // 
@@ -425,6 +426,7 @@
             btnLearnMore.TabIndex = 45;
             btnLearnMore.Text = "LEARN MORE";
             btnLearnMore.UseVisualStyleBackColor = false;
+            btnLearnMore.Click += btnLearnMore_Click;
             // 
             // label9
             // 
