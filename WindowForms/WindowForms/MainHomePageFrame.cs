@@ -81,6 +81,21 @@ namespace WindowForms
             add_UControls(userControl);
         }
 
+        public void LoadDefaultUserControls()
+        {
+            
+            parentPanel.Controls.Clear();
+
+            var homeControl = new UC_HOME();
+
+            homeControl.Dock = DockStyle.Fill;
+
+            parentPanel.Controls.Add(homeControl);
+
+            homeControl.BringToFront();
+
+        }
+
         private void LoadUC_ROOMS<T>(T userControl) where T : UserControl
         {
             if (userControl is UC_ROOMS roomsControl)

@@ -43,7 +43,7 @@
             picStar1 = new PictureBox();
             label7 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            button6 = new Button();
+            btnCancel = new Button();
             btnSearch = new Button();
             panel2 = new Panel();
             label3 = new Label();
@@ -107,7 +107,7 @@
             panel1.Controls.Add(picStar1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(button6);
+            panel1.Controls.Add(btnCancel);
             panel1.Controls.Add(btnSearch);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label4);
@@ -245,19 +245,20 @@
             dateTimePicker1.Size = new Size(473, 26);
             dateTimePicker1.TabIndex = 19;
             // 
-            // button6
+            // btnCancel
             // 
-            button6.BackColor = Color.FromArgb(0, 123, 167);
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.Transparent;
-            button6.Location = new Point(43, 733);
-            button6.Name = "button6";
-            button6.Size = new Size(108, 29);
-            button6.TabIndex = 17;
-            button6.Text = "Cancel";
-            button6.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.FromArgb(0, 123, 167);
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCancel.ForeColor = Color.Transparent;
+            btnCancel.Location = new Point(43, 733);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(108, 29);
+            btnCancel.TabIndex = 17;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnSearch
             // 
@@ -272,6 +273,7 @@
             btnSearch.TabIndex = 16;
             btnSearch.Text = "Submit";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // panel2
             // 
@@ -374,7 +376,7 @@
         private PictureBox picStar1;
         private Label label7;
         private DateTimePicker dateTimePicker1;
-        private Button button6;
+        private Button btnCancel;
         private Button btnSearch;
         private Label label5;
         private Panel panel2;

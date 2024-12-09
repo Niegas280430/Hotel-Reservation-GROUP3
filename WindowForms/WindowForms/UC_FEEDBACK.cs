@@ -15,10 +15,13 @@ namespace WindowForms
     public partial class UC_FEEDBACK : UserControl
     {
 
+        
+
         ConnectDatabase conn = new ConnectDatabase();
         public UC_FEEDBACK()
         {
             InitializeComponent();
+            
         }
 
         int selectedRating = 0;
@@ -40,43 +43,56 @@ namespace WindowForms
                 star.Image = i <= starNumber ? Resources.fullStarGif : Resources.fullStar;
 
             }
-            }
+        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
-            if(selectedRating == 0)
+            if (selectedRating == 0)
             {
                 MessageBox.Show("Please select a rating before submitting.");
                 return;
             }
-
-            try
+            else
             {
-                
+
                 using (SqlConnection con = conn.DatabaseConnect())
                 {
                     con.Open();
 
                     string query = "INSERT INTO tbFeedback (Comments, Date, Rating) VALUES (@Comments, @Date, @Rating)";
                     using (SqlCommand command = new SqlCommand(query, con))
-            {
+                    {
                         command.Parameters.AddWithValue("@Comments", textBox2.Text);
                         command.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
                         command.Parameters.AddWithValue("@Rating", selectedRating);
+
                         command.ExecuteNonQuery();
                     }
-            }
+                }
 
                 Feedback_Success_PopUp FSP = new Feedback_Success_PopUp();
-                FSP.Show();
+                FSP.ShowDialog();
 
-                
             }
-            catch (Exception ex)
+
+        }
+
+
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+            if (this.ParentForm is MainHomePageFrame mainFrame)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}");
+                mainFrame.LoadDefaultUserControls();
             }
+            else
+            {
+                MessageBox.Show("Unable to navigate back to the main page.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
+
 }
