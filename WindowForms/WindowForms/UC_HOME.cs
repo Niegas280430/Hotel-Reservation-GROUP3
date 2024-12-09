@@ -12,7 +12,8 @@ namespace WindowForms
 {
     public partial class UC_HOME : UserControl
     {
-        public event EventHandler LearnMoreClicked;
+        public event EventHandler LearnMoreClicked,
+            roomAVAILClicked, viewRoomsClicked;
         int guestnum = 1;
         public UC_HOME()
         {
@@ -42,8 +43,7 @@ namespace WindowForms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            BookingConfirmationFrame bcf = new BookingConfirmationFrame();
-            bcf.ShowDialog();
+            roomAVAILClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void btnLearnMore_Click(object sender, EventArgs e)
@@ -55,6 +55,11 @@ namespace WindowForms
         {
             DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
             discountCode_PopUp.Show();
+        }
+
+        private void btnViewAllRooms_Click(object sender, EventArgs e)
+        {
+            viewRoomsClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

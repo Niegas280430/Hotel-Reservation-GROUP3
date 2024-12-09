@@ -21,7 +21,7 @@ namespace WindowForms
         private void InitializeLoad()
         {
             LoadUC_ROOMS(new UC_ROOMS());
-
+            LoadUC(new UC_ROOM_AVAILABILITY());
             LoadUC(new UC_OFFERS());
             LoadUC(new UC_HOME());
         }
@@ -31,10 +31,14 @@ namespace WindowForms
             if (userControl is UC_HOME homeControl)
             {
                 homeControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
+                homeControl.viewRoomsClicked += (sender, e) => LoadUC(new UC_ROOMS());
+                homeControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
             }
             else if (userControl is UC_OFFERS offersControl)
             {
                 offersControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
+                offersControl.viewRoomsClicked += (sender, e) => LoadUC(new UC_ROOMS());
+                offersControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
             }
 
             add_UControls(userControl); 

@@ -398,6 +398,7 @@
             btnViewAllRooms.TabIndex = 13;
             btnViewAllRooms.Text = "VIEW ALL ROOMS";
             btnViewAllRooms.UseVisualStyleBackColor = false;
+            btnViewAllRooms.Click += btnViewAllRooms_Click;
             // 
             // label10
             // 

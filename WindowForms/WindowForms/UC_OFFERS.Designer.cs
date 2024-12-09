@@ -399,6 +399,7 @@
             btnViewAllRooms.TabIndex = 13;
             btnViewAllRooms.Text = "VIEW ALL ROOMS";
             btnViewAllRooms.UseVisualStyleBackColor = false;
+            btnViewAllRooms.Click += btnViewAllRooms_Click;
             // 
             // label10
             // 
@@ -600,6 +601,7 @@
             btnSearch.TabIndex = 3;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // label3
             // 
