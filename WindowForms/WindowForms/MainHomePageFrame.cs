@@ -28,6 +28,8 @@ namespace WindowForms
 
         private void LoadUC<T>(T userControl) where T : UserControl
         {
+
+            // Gonzalo
             if (userControl is UC_HOME homeControl)
             {
                 homeControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
