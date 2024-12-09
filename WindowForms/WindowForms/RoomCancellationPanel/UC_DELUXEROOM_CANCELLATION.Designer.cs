@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_DELUXEROOM_CANCELLATION));
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
+            pictureBox12 = new PictureBox();
             label7 = new Label();
             label24 = new Label();
             label25 = new Label();
@@ -61,17 +63,15 @@
             label20 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -115,6 +115,30 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1152, 1100);
             panel1.TabIndex = 16;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.FromArgb(248, 246, 240);
+            pictureBox2.BackgroundImage = Properties.Resources._4_half_star;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(679, 918);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(84, 36);
+            pictureBox2.TabIndex = 272;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.BackColor = Color.FromArgb(248, 246, 240);
+            pictureBox12.BackgroundImage = Properties.Resources._4_half_star;
+            pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox12.Location = new Point(679, 1093);
+            pictureBox12.Margin = new Padding(3, 2, 3, 2);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(84, 36);
+            pictureBox12.TabIndex = 271;
+            pictureBox12.TabStop = false;
             // 
             // label7
             // 
@@ -365,6 +389,7 @@
             button4.TabIndex = 164;
             button4.Text = "Cancel Reservation";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label17
             // 
@@ -439,30 +464,6 @@
             pbButtomFrame.TabIndex = 52;
             pbButtomFrame.TabStop = false;
             // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = Color.FromArgb(248, 246, 240);
-            pictureBox12.BackgroundImage = Properties.Resources._4_half_star;
-            pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox12.Location = new Point(679, 1093);
-            pictureBox12.Margin = new Padding(3, 2, 3, 2);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(84, 36);
-            pictureBox12.TabIndex = 271;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.FromArgb(248, 246, 240);
-            pictureBox2.BackgroundImage = Properties.Resources._4_half_star;
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(679, 918);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(84, 36);
-            pictureBox2.TabIndex = 272;
-            pictureBox2.TabStop = false;
-            // 
             // UC_DELUXEROOM_CANCELLATION
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -474,14 +475,14 @@
             Size = new Size(1152, 1100);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 

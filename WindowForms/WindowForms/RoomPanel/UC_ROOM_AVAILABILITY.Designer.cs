@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             pnlFill = new Panel();
-            label35 = new Label();
-            button10 = new Button();
-            button12 = new Button();
+            deluxeroomLabel = new Label();
+            deluxeroomSubBtn = new Button();
+            deluxeroomAddBtn = new Button();
             label60 = new Label();
-            label26 = new Label();
-            button7 = new Button();
-            button9 = new Button();
+            suitebedLabel = new Label();
+            suitebedsubBtn = new Button();
+            suitebedAddBtn = new Button();
             label59 = new Label();
-            label57 = new Label();
-            button18 = new Button();
-            button19 = new Button();
+            triplebedLabel = new Label();
+            triplebedsubBtn = new Button();
+            triplebedAddBtn = new Button();
             label58 = new Label();
-            label24 = new Label();
-            button4 = new Button();
+            labelsinglebedGuest = new Label();
+            singlebedSubBtn = new Button();
             button6 = new Button();
             label56 = new Label();
-            label55 = new Label();
-            button16 = new Button();
-            button17 = new Button();
+            standardroomLbl = new Label();
+            standardSubBtn = new Button();
+            standardAddBtn = new Button();
             panel11 = new Panel();
             label45 = new Label();
             label46 = new Label();
@@ -135,25 +135,25 @@
             // pnlFill
             // 
             pnlFill.AutoScroll = true;
-            pnlFill.Controls.Add(label35);
-            pnlFill.Controls.Add(button10);
-            pnlFill.Controls.Add(button12);
+            pnlFill.Controls.Add(deluxeroomLabel);
+            pnlFill.Controls.Add(deluxeroomSubBtn);
+            pnlFill.Controls.Add(deluxeroomAddBtn);
             pnlFill.Controls.Add(label60);
-            pnlFill.Controls.Add(label26);
-            pnlFill.Controls.Add(button7);
-            pnlFill.Controls.Add(button9);
+            pnlFill.Controls.Add(suitebedLabel);
+            pnlFill.Controls.Add(suitebedsubBtn);
+            pnlFill.Controls.Add(suitebedAddBtn);
             pnlFill.Controls.Add(label59);
-            pnlFill.Controls.Add(label57);
-            pnlFill.Controls.Add(button18);
-            pnlFill.Controls.Add(button19);
+            pnlFill.Controls.Add(triplebedLabel);
+            pnlFill.Controls.Add(triplebedsubBtn);
+            pnlFill.Controls.Add(triplebedAddBtn);
             pnlFill.Controls.Add(label58);
-            pnlFill.Controls.Add(label24);
-            pnlFill.Controls.Add(button4);
+            pnlFill.Controls.Add(labelsinglebedGuest);
+            pnlFill.Controls.Add(singlebedSubBtn);
             pnlFill.Controls.Add(button6);
             pnlFill.Controls.Add(label56);
-            pnlFill.Controls.Add(label55);
-            pnlFill.Controls.Add(button16);
-            pnlFill.Controls.Add(button17);
+            pnlFill.Controls.Add(standardroomLbl);
+            pnlFill.Controls.Add(standardSubBtn);
+            pnlFill.Controls.Add(standardAddBtn);
             pnlFill.Controls.Add(panel11);
             pnlFill.Controls.Add(label45);
             pnlFill.Controls.Add(label46);
@@ -223,45 +223,48 @@
             pnlFill.Name = "pnlFill";
             pnlFill.Size = new Size(1152, 1100);
             pnlFill.TabIndex = 6;
+            pnlFill.Paint += pnlFill_Paint;
             // 
-            // label35
+            // deluxeroomLabel
             // 
-            label35.BackColor = Color.White;
-            label35.BorderStyle = BorderStyle.FixedSingle;
-            label35.FlatStyle = FlatStyle.Flat;
-            label35.Font = new Font("Times New Roman", 12F);
-            label35.Location = new Point(83, 4488);
-            label35.Name = "label35";
-            label35.Size = new Size(82, 26);
-            label35.TabIndex = 132;
-            label35.Text = "0";
-            label35.TextAlign = ContentAlignment.MiddleCenter;
+            deluxeroomLabel.BackColor = Color.White;
+            deluxeroomLabel.BorderStyle = BorderStyle.FixedSingle;
+            deluxeroomLabel.FlatStyle = FlatStyle.Flat;
+            deluxeroomLabel.Font = new Font("Times New Roman", 12F);
+            deluxeroomLabel.Location = new Point(83, 4488);
+            deluxeroomLabel.Name = "deluxeroomLabel";
+            deluxeroomLabel.Size = new Size(82, 26);
+            deluxeroomLabel.TabIndex = 132;
+            deluxeroomLabel.Text = "0";
+            deluxeroomLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button10
+            // deluxeroomSubBtn
             // 
-            button10.BackColor = Color.WhiteSmoke;
-            button10.BackgroundImageLayout = ImageLayout.None;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button10.Location = new Point(53, 4488);
-            button10.Name = "button10";
-            button10.Size = new Size(24, 26);
-            button10.TabIndex = 131;
-            button10.Text = "-";
-            button10.UseVisualStyleBackColor = false;
+            deluxeroomSubBtn.BackColor = Color.WhiteSmoke;
+            deluxeroomSubBtn.BackgroundImageLayout = ImageLayout.None;
+            deluxeroomSubBtn.FlatStyle = FlatStyle.Flat;
+            deluxeroomSubBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            deluxeroomSubBtn.Location = new Point(53, 4488);
+            deluxeroomSubBtn.Name = "deluxeroomSubBtn";
+            deluxeroomSubBtn.Size = new Size(24, 26);
+            deluxeroomSubBtn.TabIndex = 131;
+            deluxeroomSubBtn.Text = "-";
+            deluxeroomSubBtn.UseVisualStyleBackColor = false;
+            deluxeroomSubBtn.Click += deluxeroomSubBtn_Click;
             // 
-            // button12
+            // deluxeroomAddBtn
             // 
-            button12.BackColor = Color.WhiteSmoke;
-            button12.BackgroundImageLayout = ImageLayout.None;
-            button12.FlatStyle = FlatStyle.Flat;
-            button12.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button12.Location = new Point(171, 4488);
-            button12.Name = "button12";
-            button12.Size = new Size(24, 26);
-            button12.TabIndex = 130;
-            button12.Text = "+";
-            button12.UseVisualStyleBackColor = false;
+            deluxeroomAddBtn.BackColor = Color.WhiteSmoke;
+            deluxeroomAddBtn.BackgroundImageLayout = ImageLayout.None;
+            deluxeroomAddBtn.FlatStyle = FlatStyle.Flat;
+            deluxeroomAddBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            deluxeroomAddBtn.Location = new Point(171, 4488);
+            deluxeroomAddBtn.Name = "deluxeroomAddBtn";
+            deluxeroomAddBtn.Size = new Size(24, 26);
+            deluxeroomAddBtn.TabIndex = 130;
+            deluxeroomAddBtn.Text = "+";
+            deluxeroomAddBtn.UseVisualStyleBackColor = false;
+            deluxeroomAddBtn.Click += deluxeroomAddBtn_Click;
             // 
             // label60
             // 
@@ -273,44 +276,46 @@
             label60.TabIndex = 129;
             label60.Text = "of 10 accomodations are available";
             // 
-            // label26
+            // suitebedLabel
             // 
-            label26.BackColor = Color.White;
-            label26.BorderStyle = BorderStyle.FixedSingle;
-            label26.FlatStyle = FlatStyle.Flat;
-            label26.Font = new Font("Times New Roman", 12F);
-            label26.Location = new Point(83, 3699);
-            label26.Name = "label26";
-            label26.Size = new Size(82, 26);
-            label26.TabIndex = 128;
-            label26.Text = "0";
-            label26.TextAlign = ContentAlignment.MiddleCenter;
+            suitebedLabel.BackColor = Color.White;
+            suitebedLabel.BorderStyle = BorderStyle.FixedSingle;
+            suitebedLabel.FlatStyle = FlatStyle.Flat;
+            suitebedLabel.Font = new Font("Times New Roman", 12F);
+            suitebedLabel.Location = new Point(83, 3699);
+            suitebedLabel.Name = "suitebedLabel";
+            suitebedLabel.Size = new Size(82, 26);
+            suitebedLabel.TabIndex = 128;
+            suitebedLabel.Text = "0";
+            suitebedLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button7
+            // suitebedsubBtn
             // 
-            button7.BackColor = Color.WhiteSmoke;
-            button7.BackgroundImageLayout = ImageLayout.None;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button7.Location = new Point(53, 3699);
-            button7.Name = "button7";
-            button7.Size = new Size(24, 26);
-            button7.TabIndex = 127;
-            button7.Text = "-";
-            button7.UseVisualStyleBackColor = false;
+            suitebedsubBtn.BackColor = Color.WhiteSmoke;
+            suitebedsubBtn.BackgroundImageLayout = ImageLayout.None;
+            suitebedsubBtn.FlatStyle = FlatStyle.Flat;
+            suitebedsubBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            suitebedsubBtn.Location = new Point(53, 3699);
+            suitebedsubBtn.Name = "suitebedsubBtn";
+            suitebedsubBtn.Size = new Size(24, 26);
+            suitebedsubBtn.TabIndex = 127;
+            suitebedsubBtn.Text = "-";
+            suitebedsubBtn.UseVisualStyleBackColor = false;
+            suitebedsubBtn.Click += suitebedsubBtn_Click;
             // 
-            // button9
+            // suitebedAddBtn
             // 
-            button9.BackColor = Color.WhiteSmoke;
-            button9.BackgroundImageLayout = ImageLayout.None;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button9.Location = new Point(171, 3699);
-            button9.Name = "button9";
-            button9.Size = new Size(24, 26);
-            button9.TabIndex = 126;
-            button9.Text = "+";
-            button9.UseVisualStyleBackColor = false;
+            suitebedAddBtn.BackColor = Color.WhiteSmoke;
+            suitebedAddBtn.BackgroundImageLayout = ImageLayout.None;
+            suitebedAddBtn.FlatStyle = FlatStyle.Flat;
+            suitebedAddBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            suitebedAddBtn.Location = new Point(171, 3699);
+            suitebedAddBtn.Name = "suitebedAddBtn";
+            suitebedAddBtn.Size = new Size(24, 26);
+            suitebedAddBtn.TabIndex = 126;
+            suitebedAddBtn.Text = "+";
+            suitebedAddBtn.UseVisualStyleBackColor = false;
+            suitebedAddBtn.Click += suitebedAddBtn_Click;
             // 
             // label59
             // 
@@ -322,44 +327,46 @@
             label59.TabIndex = 125;
             label59.Text = "of 10 accomodations are available";
             // 
-            // label57
+            // triplebedLabel
             // 
-            label57.BackColor = Color.White;
-            label57.BorderStyle = BorderStyle.FixedSingle;
-            label57.FlatStyle = FlatStyle.Flat;
-            label57.Font = new Font("Times New Roman", 12F);
-            label57.Location = new Point(83, 2909);
-            label57.Name = "label57";
-            label57.Size = new Size(82, 26);
-            label57.TabIndex = 124;
-            label57.Text = "0";
-            label57.TextAlign = ContentAlignment.MiddleCenter;
+            triplebedLabel.BackColor = Color.White;
+            triplebedLabel.BorderStyle = BorderStyle.FixedSingle;
+            triplebedLabel.FlatStyle = FlatStyle.Flat;
+            triplebedLabel.Font = new Font("Times New Roman", 12F);
+            triplebedLabel.Location = new Point(83, 2909);
+            triplebedLabel.Name = "triplebedLabel";
+            triplebedLabel.Size = new Size(82, 26);
+            triplebedLabel.TabIndex = 124;
+            triplebedLabel.Text = "0";
+            triplebedLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button18
+            // triplebedsubBtn
             // 
-            button18.BackColor = Color.WhiteSmoke;
-            button18.BackgroundImageLayout = ImageLayout.None;
-            button18.FlatStyle = FlatStyle.Flat;
-            button18.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button18.Location = new Point(53, 2909);
-            button18.Name = "button18";
-            button18.Size = new Size(24, 26);
-            button18.TabIndex = 123;
-            button18.Text = "-";
-            button18.UseVisualStyleBackColor = false;
+            triplebedsubBtn.BackColor = Color.WhiteSmoke;
+            triplebedsubBtn.BackgroundImageLayout = ImageLayout.None;
+            triplebedsubBtn.FlatStyle = FlatStyle.Flat;
+            triplebedsubBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            triplebedsubBtn.Location = new Point(53, 2909);
+            triplebedsubBtn.Name = "triplebedsubBtn";
+            triplebedsubBtn.Size = new Size(24, 26);
+            triplebedsubBtn.TabIndex = 123;
+            triplebedsubBtn.Text = "-";
+            triplebedsubBtn.UseVisualStyleBackColor = false;
+            triplebedsubBtn.Click += triplebedsubBtn_Click;
             // 
-            // button19
+            // triplebedAddBtn
             // 
-            button19.BackColor = Color.WhiteSmoke;
-            button19.BackgroundImageLayout = ImageLayout.None;
-            button19.FlatStyle = FlatStyle.Flat;
-            button19.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button19.Location = new Point(171, 2909);
-            button19.Name = "button19";
-            button19.Size = new Size(24, 26);
-            button19.TabIndex = 122;
-            button19.Text = "+";
-            button19.UseVisualStyleBackColor = false;
+            triplebedAddBtn.BackColor = Color.WhiteSmoke;
+            triplebedAddBtn.BackgroundImageLayout = ImageLayout.None;
+            triplebedAddBtn.FlatStyle = FlatStyle.Flat;
+            triplebedAddBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            triplebedAddBtn.Location = new Point(171, 2909);
+            triplebedAddBtn.Name = "triplebedAddBtn";
+            triplebedAddBtn.Size = new Size(24, 26);
+            triplebedAddBtn.TabIndex = 122;
+            triplebedAddBtn.Text = "+";
+            triplebedAddBtn.UseVisualStyleBackColor = false;
+            triplebedAddBtn.Click += triplebedAddBtn_Click;
             // 
             // label58
             // 
@@ -371,31 +378,32 @@
             label58.TabIndex = 121;
             label58.Text = "of 10 accomodations are available";
             // 
-            // label24
+            // labelsinglebedGuest
             // 
-            label24.BackColor = Color.White;
-            label24.BorderStyle = BorderStyle.FixedSingle;
-            label24.FlatStyle = FlatStyle.Flat;
-            label24.Font = new Font("Times New Roman", 12F);
-            label24.Location = new Point(83, 2121);
-            label24.Name = "label24";
-            label24.Size = new Size(82, 26);
-            label24.TabIndex = 120;
-            label24.Text = "0";
-            label24.TextAlign = ContentAlignment.MiddleCenter;
+            labelsinglebedGuest.BackColor = Color.White;
+            labelsinglebedGuest.BorderStyle = BorderStyle.FixedSingle;
+            labelsinglebedGuest.FlatStyle = FlatStyle.Flat;
+            labelsinglebedGuest.Font = new Font("Times New Roman", 12F);
+            labelsinglebedGuest.Location = new Point(83, 2121);
+            labelsinglebedGuest.Name = "labelsinglebedGuest";
+            labelsinglebedGuest.Size = new Size(82, 26);
+            labelsinglebedGuest.TabIndex = 120;
+            labelsinglebedGuest.Text = "0";
+            labelsinglebedGuest.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button4
+            // singlebedSubBtn
             // 
-            button4.BackColor = Color.WhiteSmoke;
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button4.Location = new Point(53, 2121);
-            button4.Name = "button4";
-            button4.Size = new Size(24, 26);
-            button4.TabIndex = 119;
-            button4.Text = "-";
-            button4.UseVisualStyleBackColor = false;
+            singlebedSubBtn.BackColor = Color.WhiteSmoke;
+            singlebedSubBtn.BackgroundImageLayout = ImageLayout.None;
+            singlebedSubBtn.FlatStyle = FlatStyle.Flat;
+            singlebedSubBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            singlebedSubBtn.Location = new Point(53, 2121);
+            singlebedSubBtn.Name = "singlebedSubBtn";
+            singlebedSubBtn.Size = new Size(24, 26);
+            singlebedSubBtn.TabIndex = 119;
+            singlebedSubBtn.Text = "-";
+            singlebedSubBtn.UseVisualStyleBackColor = false;
+            singlebedSubBtn.Click += singlebedSubBtn_Click;
             // 
             // button6
             // 
@@ -403,12 +411,13 @@
             button6.BackgroundImageLayout = ImageLayout.None;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button6.Location = new Point(171, 2121);
+            button6.Location = new Point(171, 2122);
             button6.Name = "button6";
             button6.Size = new Size(24, 26);
             button6.TabIndex = 118;
             button6.Text = "+";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label56
             // 
@@ -420,44 +429,46 @@
             label56.TabIndex = 117;
             label56.Text = "of 10 accomodations are available";
             // 
-            // label55
+            // standardroomLbl
             // 
-            label55.BackColor = Color.White;
-            label55.BorderStyle = BorderStyle.FixedSingle;
-            label55.FlatStyle = FlatStyle.Flat;
-            label55.Font = new Font("Times New Roman", 12F);
-            label55.Location = new Point(83, 1332);
-            label55.Name = "label55";
-            label55.Size = new Size(82, 26);
-            label55.TabIndex = 116;
-            label55.Text = "0";
-            label55.TextAlign = ContentAlignment.MiddleCenter;
+            standardroomLbl.BackColor = Color.White;
+            standardroomLbl.BorderStyle = BorderStyle.FixedSingle;
+            standardroomLbl.FlatStyle = FlatStyle.Flat;
+            standardroomLbl.Font = new Font("Times New Roman", 12F);
+            standardroomLbl.Location = new Point(83, 1332);
+            standardroomLbl.Name = "standardroomLbl";
+            standardroomLbl.Size = new Size(82, 26);
+            standardroomLbl.TabIndex = 116;
+            standardroomLbl.Text = "0";
+            standardroomLbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button16
+            // standardSubBtn
             // 
-            button16.BackColor = Color.WhiteSmoke;
-            button16.BackgroundImageLayout = ImageLayout.None;
-            button16.FlatStyle = FlatStyle.Flat;
-            button16.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button16.Location = new Point(53, 1332);
-            button16.Name = "button16";
-            button16.Size = new Size(24, 26);
-            button16.TabIndex = 115;
-            button16.Text = "-";
-            button16.UseVisualStyleBackColor = false;
+            standardSubBtn.BackColor = Color.WhiteSmoke;
+            standardSubBtn.BackgroundImageLayout = ImageLayout.None;
+            standardSubBtn.FlatStyle = FlatStyle.Flat;
+            standardSubBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            standardSubBtn.Location = new Point(53, 1332);
+            standardSubBtn.Name = "standardSubBtn";
+            standardSubBtn.Size = new Size(24, 26);
+            standardSubBtn.TabIndex = 115;
+            standardSubBtn.Text = "-";
+            standardSubBtn.UseVisualStyleBackColor = false;
+            standardSubBtn.Click += standardSubBtn_Click;
             // 
-            // button17
+            // standardAddBtn
             // 
-            button17.BackColor = Color.WhiteSmoke;
-            button17.BackgroundImageLayout = ImageLayout.None;
-            button17.FlatStyle = FlatStyle.Flat;
-            button17.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            button17.Location = new Point(171, 1332);
-            button17.Name = "button17";
-            button17.Size = new Size(24, 26);
-            button17.TabIndex = 114;
-            button17.Text = "+";
-            button17.UseVisualStyleBackColor = false;
+            standardAddBtn.BackColor = Color.WhiteSmoke;
+            standardAddBtn.BackgroundImageLayout = ImageLayout.None;
+            standardAddBtn.FlatStyle = FlatStyle.Flat;
+            standardAddBtn.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
+            standardAddBtn.Location = new Point(171, 1332);
+            standardAddBtn.Name = "standardAddBtn";
+            standardAddBtn.Size = new Size(24, 26);
+            standardAddBtn.TabIndex = 114;
+            standardAddBtn.Text = "+";
+            standardAddBtn.UseVisualStyleBackColor = false;
+            standardAddBtn.Click += button17_Click;
             // 
             // panel11
             // 
@@ -1326,23 +1337,23 @@
         private Panel panel10;
         private Panel panel11;
         private Label label53;
-        private Label label55;
-        private Button button16;
-        private Button button17;
-        private Label label35;
-        private Button button10;
-        private Button button12;
+        private Label standardroomLbl;
+        private Button standardSubBtn;
+        private Button standardAddBtn;
+        private Label deluxeroomLabel;
+        private Button deluxeroomSubBtn;
+        private Button deluxeroomAddBtn;
         private Label label60;
-        private Label label26;
-        private Button button7;
-        private Button button9;
+        private Label suitebedLabel;
+        private Button suitebedsubBtn;
+        private Button suitebedAddBtn;
         private Label label59;
-        private Label label57;
-        private Button button18;
-        private Button button19;
+        private Label triplebedLabel;
+        private Button triplebedsubBtn;
+        private Button triplebedAddBtn;
         private Label label58;
-        private Label label24;
-        private Button button4;
+        private Label labelsinglebedGuest;
+        private Button singlebedSubBtn;
         private Button button6;
         private Label label56;
     }

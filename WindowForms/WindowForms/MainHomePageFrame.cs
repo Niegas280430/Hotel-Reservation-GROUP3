@@ -33,6 +33,7 @@ namespace WindowForms
                 homeControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
                 homeControl.viewRoomsClicked += (sender, e) => LoadUC(new UC_ROOMS());
                 homeControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
+                homeControl.bookconfirmClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
             }
             else if (userControl is UC_OFFERS offersControl)
             {

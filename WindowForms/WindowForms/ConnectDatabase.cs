@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace WindowForms
 {
@@ -11,7 +11,7 @@ namespace WindowForms
     {
         public SqlConnection DatabaseConnect()
         {
-            SqlConnection conn = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=UserDB;Integrated Security=True;Encrypt=True;");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-2TV9723;Initial Catalog=UserInfo;Integrated Security=True;Trust Server Certificate=True");
             return conn;
         }
     }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.Win32;
 
 namespace WindowForms
@@ -36,8 +36,9 @@ namespace WindowForms
             try
             {
                 SqlConnection con = cd.DatabaseConnect();
+
                 con.Open();
-                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)");
+                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)", con);
 
                 if (string.IsNullOrEmpty(TxtFname.Text) && string.IsNullOrEmpty(TxtLname.Text) &&
                     string.IsNullOrEmpty(TxtEmail.Text) && string.IsNullOrEmpty(TxtPhone.Text))
@@ -50,7 +51,17 @@ namespace WindowForms
                         lblNumberOfAdults.Text = Convert.ToString(adultsguest);
                         lblNumberOfChildren.Text = Convert.ToString(childrenguest);
                     }
-                    else
+                }
+                else
+                {
+                    DialogResult option = MessageBox.Show("Is this the correct information?" +
+                                                      "\nLast Name: " + TxtFname.Text +
+                                                      "\nFirst Name: " + TxtLname.Text +
+                                                      "\nEmail: " + TxtEmail.Text +
+                                                      "\nPhone Number: " + TxtPhone.Text,
+                                                      "Confirm", MessageBoxButtons.YesNo);
+
+                    if (option == DialogResult.Yes)
                     {
                         bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text);
                         bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text);
@@ -63,15 +74,7 @@ namespace WindowForms
 
                         if (i != 0)
                         {
-                            MessageBox.Show("Booked Room uccessfully");
-                            TxtFname.Clear();
-                            TxtLname.Clear();
-                            TxtEmail.Clear();
-                            TxtPhone.Clear();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid Information Details"); // need ng label kung ano ung mali or empty
+                            MessageBox.Show("Booked Room successfully");
                             TxtFname.Clear();
                             TxtLname.Clear();
                             TxtEmail.Clear();
@@ -164,7 +167,7 @@ namespace WindowForms
             if (txtDiscountCode.Text == "10%STILOHotel")
             {
                 setDiscount();
-                percentLbl.Text = "12%";
+                percentLbl.Text = "10%";
                 double discountedAmount = applyTax * discount;
                 double finalTotal = applyTax - discountedAmount;
 

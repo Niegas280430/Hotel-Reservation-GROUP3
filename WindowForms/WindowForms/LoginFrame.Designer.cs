@@ -93,6 +93,7 @@
             btnLogin.TabIndex = 50;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // btnCancel
             // 
@@ -134,8 +135,8 @@
         private Panel panel2;
         private Label label1;
         private Label label2;
-        private TextBox txtboxAccountID;
         private Button btnLogin;
         private Button btnCancel;
+        public TextBox txtboxAccountID;
     }
 }

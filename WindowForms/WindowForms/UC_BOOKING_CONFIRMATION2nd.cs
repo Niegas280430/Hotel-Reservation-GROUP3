@@ -22,5 +22,10 @@ namespace WindowForms
         {
             arrowClicked?.Invoke(this, EventArgs.Empty);
         }
+
+        private void booknowBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
