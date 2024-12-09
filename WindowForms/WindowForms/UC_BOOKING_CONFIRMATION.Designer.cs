@@ -46,7 +46,7 @@
             label18 = new Label();
             label23 = new Label();
             label22 = new Label();
-            label19 = new Label();
+            nameofroomLabel = new Label();
             label20 = new Label();
             btnRemove = new Button();
             addBtn = new Button();
@@ -60,7 +60,7 @@
             label29 = new Label();
             label28 = new Label();
             label27 = new Label();
-            label26 = new Label();
+            priceofroomLabel = new Label();
             label21 = new Label();
             label17 = new Label();
             label16 = new Label();
@@ -148,7 +148,7 @@
             panel1.Controls.Add(label18);
             panel1.Controls.Add(label23);
             panel1.Controls.Add(label22);
-            panel1.Controls.Add(label19);
+            panel1.Controls.Add(nameofroomLabel);
             panel1.Controls.Add(label20);
             panel1.Controls.Add(btnRemove);
             panel1.Controls.Add(addBtn);
@@ -162,7 +162,7 @@
             panel1.Controls.Add(label29);
             panel1.Controls.Add(label28);
             panel1.Controls.Add(label27);
-            panel1.Controls.Add(label26);
+            panel1.Controls.Add(priceofroomLabel);
             panel1.Controls.Add(label21);
             panel1.Controls.Add(label17);
             panel1.Controls.Add(label16);
@@ -348,15 +348,15 @@
             label22.TabIndex = 83;
             label22.Text = "Bathrobe";
             // 
-            // label19
+            // nameofroomLabel
             // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.Location = new Point(39, 387);
-            label19.Name = "label19";
-            label19.Size = new Size(142, 21);
-            label19.TabIndex = 82;
-            label19.Text = "(Name Of Room)";
+            nameofroomLabel.AutoSize = true;
+            nameofroomLabel.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            nameofroomLabel.Location = new Point(39, 387);
+            nameofroomLabel.Name = "nameofroomLabel";
+            nameofroomLabel.Size = new Size(142, 21);
+            nameofroomLabel.TabIndex = 82;
+            nameofroomLabel.Text = "(Name Of Room)";
             // 
             // label20
             // 
@@ -496,15 +496,15 @@
             label27.TabIndex = 69;
             label27.Text = "(₱500/PC)";
             // 
-            // label26
+            // priceofroomLabel
             // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label26.Location = new Point(330, 387);
-            label26.Name = "label26";
-            label26.Size = new Size(143, 21);
-            label26.TabIndex = 68;
-            label26.Text = "<Price of Room>";
+            priceofroomLabel.AutoSize = true;
+            priceofroomLabel.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            priceofroomLabel.Location = new Point(330, 387);
+            priceofroomLabel.Name = "priceofroomLabel";
+            priceofroomLabel.Size = new Size(143, 21);
+            priceofroomLabel.TabIndex = 68;
+            priceofroomLabel.Text = "<Price of Room>";
             // 
             // label21
             // 
@@ -875,7 +875,7 @@
         private Label label9;
         private Label label8;
         private Label label12;
-        private Label label19;
+        private Label nameofroomLabel;
         private Label label20;
         private Button btnRemove;
         private Button addBtn;
@@ -889,7 +889,7 @@
         private Label label29;
         private Label label28;
         private Label label27;
-        private Label label26;
+        private Label priceofroomLabel;
         private Label label21;
         private Label label17;
         private Label label16;

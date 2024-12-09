@@ -149,12 +149,12 @@ namespace WindowForms
             Room5Clicked?.Invoke(this, EventArgs.Empty);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e) // add button for single bed
         {
             addGuest("SingleBedRoom");
         }
 
-        private void singlebedSubBtn_Click(object sender, EventArgs e) // subtract button for single bed
+        private void singlebedSubBtn_Click(object sender, EventArgs e) 
         {
             subtractGuest("SingleBedRoom");
         }

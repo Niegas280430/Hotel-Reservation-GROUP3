@@ -54,7 +54,7 @@ namespace WindowForms
                 }
                 else
                 {
-                    DialogResult option = MessageBox.Show("Is this the correct information?" +
+                    DialogResult option = MessageBox.Show("--Is this the correct information?--" +
                                                       "\nLast Name: " + TxtFname.Text +
                                                       "\nFirst Name: " + TxtLname.Text +
                                                       "\nEmail: " + TxtEmail.Text +
@@ -81,6 +81,13 @@ namespace WindowForms
                             TxtPhone.Clear();
                         }
                     }
+                    else
+                    {
+                        TxtFname.Clear();
+                        TxtLname.Clear();
+                        TxtEmail.Clear();
+                        TxtPhone.Clear();
+                    }
                 }
             }
             catch (Exception ex) // iibahin pato ng message
@@ -95,7 +102,6 @@ namespace WindowForms
             if (adultsguest >= 7)
             {
                 adultsguest = 0;
-                lblNumberOfAdults.Text = Convert.ToString(adultsguest);
             }
             lblNumberOfAdults.Text = Convert.ToString(adultsguest);
         }
@@ -106,7 +112,6 @@ namespace WindowForms
             if (adultsguest < 0)
             {
                 adultsguest = 0;
-                lblNumberOfAdults.Text = Convert.ToString(adultsguest);
             }
             lblNumberOfAdults.Text = Convert.ToString(adultsguest);
         }
@@ -117,7 +122,6 @@ namespace WindowForms
             if (childrenguest >= 7)
             {
                 childrenguest = 0;
-                lblNumberOfChildren.Text = Convert.ToString(childrenguest);
             }
             lblNumberOfChildren.Text = Convert.ToString(childrenguest);
         }
@@ -128,7 +132,6 @@ namespace WindowForms
             if (childrenguest < 0)
             {
                 childrenguest = 0;
-                lblNumberOfChildren.Text = Convert.ToString(childrenguest);
             }
             lblNumberOfChildren.Text = Convert.ToString(childrenguest);
         }
@@ -138,6 +141,34 @@ namespace WindowForms
         {
             arrowClicked?.Invoke(this, EventArgs.Empty);
         }     
+
+        private void getRoomNamePrices(string roomType)
+        { 
+
+            switch (roomType)
+            {
+                case "SingleBedRoom":
+                    nameofroomLabel.Text = "Single Bedroom";
+                    double singlebedroomPrice = 2100.00;
+                    break;
+                case "StandardBedRoom":
+                    nameofroomLabel.Text = "Standard Bedroom";
+                    double standardbedroomPrice = 2900.00;
+                    break;
+                case "TripleBedRoom":
+                    nameofroomLabel.Text = "Triple Bedroom";
+                    double triplebedroom = 3675.00;
+                    break;
+                case "SuitedBedRoom":
+                    nameofroomLabel.Text = "Suited Bedroom";
+                    double suitebedroomprice = 3900.00;
+                    break;
+                case "DeluxeBedRoom":
+                    nameofroomLabel.Text = "Deluxe Bedroom";
+                    double deluxebedroomprice = 4500.00;
+                    break;
+            }
+        }
         private void setAdditionals()
         {
             // prices of every additionals
@@ -147,14 +178,14 @@ namespace WindowForms
             int bathrobe = 200;
             int bathtowel = 100;
 
-            // quantity of each additionals
+            // quantity fpr each additionals
             int quantitySingleBed = Convert.ToInt16(txtSB.Text);
             int quantityBlanket = Convert.ToInt16(txtSB.Text);
             int quantityPillow = Convert.ToInt16(txtP.Text);
             int quantityBathrobe = Convert.ToInt16(txtBr.Text);
             int quantityBathTowel = Convert.ToInt16(txtBT.Text);
 
-            // calculate total of additionals with its quantity
+            // calculate total of home room price, and additionals with its quantity - WIP
             int totalSingleBed = singlebed * quantitySingleBed;
             int totalBlanket = blanket * quantityBlanket;
             int totalPillow = pillow * quantityPillow;
@@ -188,6 +219,11 @@ namespace WindowForms
         private void addBtn_Click(object sender, EventArgs e)
         {
             setAdditionals();
+        }
+
+        private void setRoomNamePrices(string chosenRoom)
+        {
+            
         }
     }
 }

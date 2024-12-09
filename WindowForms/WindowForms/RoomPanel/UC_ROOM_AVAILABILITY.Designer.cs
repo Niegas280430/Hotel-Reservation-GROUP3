@@ -1305,11 +1305,9 @@
         private Label label27;
         private Label label28;
         private Label label29;
-        private Label label30;
         private Button button8;
         private Label label31;
         private Label label32;
-        private Label label33;
         private Label label34;
         private PictureBox pictureBox4;
         private Panel panel6;
@@ -1356,5 +1354,7 @@
         private Button singlebedSubBtn;
         private Button button6;
         private Label label56;
+        public Label label30;
+        public Label label33;
     }
 }
