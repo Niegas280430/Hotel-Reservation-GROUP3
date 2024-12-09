@@ -8,56 +8,74 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowForms.Properties;
+using Microsoft.Data.SqlClient;
 
 namespace WindowForms
 {
     public partial class UC_FEEDBACK : UserControl
     {
+
+        ConnectDatabase conn = new ConnectDatabase();
         public UC_FEEDBACK()
         {
             InitializeComponent();
         }
+
+        int selectedRating = 0;
+
         private void Star_Click(object sender, EventArgs e)
         {
             PictureBox clickedStar = (PictureBox)sender;
 
-            // Reset all stars to the empty image
-            picStar1.Image = Resources.fullStar;
-            picStar2.Image = Resources.fullStar;
-            picStar3.Image = Resources.fullStar;
-            picStar4.Image = Resources.fullStar;
-            picStar5.Image = Resources.fullStar;
 
-            // Highlight stars up to and including the clicked star
-            if (clickedStar.Name == "picStar1")
+            int starNumber = int.Parse(clickedStar.Name.Replace("picStar", ""));
+            selectedRating = starNumber;
+
+
+            for (int i = 1; i <= 5; i++)
             {
-                picStar1.Image = Resources.fullStarGif;
+
+                PictureBox star = (PictureBox)this.Controls.Find($"picStar{i}", true)[0];
+
+                star.Image = i <= starNumber ? Resources.fullStarGif : Resources.fullStar;
+
             }
-            else if (clickedStar.Name == "picStar2")
-            {
-                picStar1.Image = Resources.fullStarGif;
-                picStar2.Image = Resources.fullStarGif;
             }
-            else if (clickedStar.Name == "picStar3")
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+            if(selectedRating == 0)
             {
-                picStar1.Image = Resources.fullStarGif;
-                picStar2.Image = Resources.fullStarGif;
-                picStar3.Image = Resources.fullStarGif;
+                MessageBox.Show("Please select a rating before submitting.");
+                return;
             }
-            else if (clickedStar.Name == "picStar4")
+
+            try
             {
-                picStar1.Image = Resources.fullStarGif;
-                picStar2.Image = Resources.fullStarGif;
-                picStar3.Image = Resources.fullStarGif;
-                picStar4.Image = Resources.fullStarGif;
+                
+                using (SqlConnection con = conn.DatabaseConnect())
+                {
+                    con.Open();
+
+                    string query = "INSERT INTO tbFeedback (Comments, Date, Rating) VALUES (@Comments, @Date, @Rating)";
+                    using (SqlCommand command = new SqlCommand(query, con))
+            {
+                        command.Parameters.AddWithValue("@Comments", textBox2.Text);
+                        command.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
+                        command.Parameters.AddWithValue("@Rating", selectedRating);
+                        command.ExecuteNonQuery();
+                    }
             }
-            else if (clickedStar.Name == "picStar5")
+
+                Feedback_Success_PopUp FSP = new Feedback_Success_PopUp();
+                FSP.Show();
+
+                
+            }
+            catch (Exception ex)
             {
-                picStar1.Image = Resources.fullStarGif;
-                picStar2.Image = Resources.fullStarGif;
-                picStar3.Image = Resources.fullStarGif;
-                picStar4.Image = Resources.fullStarGif;
-                picStar5.Image = Resources.fullStarGif;
+                MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
     }
