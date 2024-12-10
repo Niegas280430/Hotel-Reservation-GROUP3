@@ -54,12 +54,14 @@
             label14 = new Label();
             label15 = new Label();
             label17 = new Label();
+            lblBookingID = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(lblBookingID);
             panel1.Controls.Add(label17);
             panel1.Controls.Add(label15);
             panel1.Controls.Add(label14);
@@ -140,9 +142,9 @@
             label3.Font = new Font("Times New Roman", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(12, 114);
             label3.Name = "label3";
-            label3.Size = new Size(740, 20);
+            label3.Size = new Size(660, 20);
             label3.TabIndex = 3;
-            label3.Text = "Thank you for your booking your stay with Stilo Hotel. For reference, Your booking id is (1256306). ";
+            label3.Text = "Thank you for your booking your stay with Stilo Hotel. For reference, Your booking id is  ";
             // 
             // label4
             // 
@@ -344,6 +346,16 @@
             label17.TabIndex = 23;
             label17.Text = "STILO Hotel";
             // 
+            // lblBookingID
+            // 
+            lblBookingID.AutoSize = true;
+            lblBookingID.Font = new Font("Times New Roman", 13F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBookingID.Location = new Point(663, 114);
+            lblBookingID.Name = "lblBookingID";
+            lblBookingID.Size = new Size(57, 20);
+            lblBookingID.TabIndex = 24;
+            lblBookingID.Text = "(1234)";
+            // 
             // EmailConfirmation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -388,5 +400,6 @@
         private Label label15;
         private Label label14;
         private Label label13;
+        private Label lblBookingID;
     }
 }
