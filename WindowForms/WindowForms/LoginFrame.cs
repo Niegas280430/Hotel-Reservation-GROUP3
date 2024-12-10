@@ -23,15 +23,61 @@ namespace WindowForms
             this.Close();
         }
 
+        public event EventHandler LoginSuccessful;
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            GenerateCode gc = new GenerateCode();
-            
-            if (txtboxAccountID.Text == Convert.ToString(gc.generateCode))
+            LoginSuccessful?.Invoke(this, EventArgs.Empty);
+            this.Close();
+            using (SqlConnection con = cd.DatabaseConnect())
             {
-                SqlConnection con = cd.DatabaseConnect();
-                con.Open();
-                MessageBox.Show("Successfully booked");
+                try
+                {
+
+                    string enteredloginId = txtboxAccountID.Text;
+
+                    if (string.IsNullOrWhiteSpace(enteredloginId))
+                    {
+
+                        MessageBox.Show("Please enter your Login Id.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+
+                    }
+
+                    con.Open();
+
+                    string query = "SELECT COUNT(*) FROM BookInfo WHERE loginID = @loginID";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@loginID", enteredloginId);
+
+                    int bilang = (int)cmd.ExecuteScalar();
+
+                    if (bilang > 0)
+                    {
+
+                        MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.DialogResult = DialogResult.OK;
+                        this.Tag = enteredloginId;
+                        this.Close();
+
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Invalid Login ID. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+
+                    con.Close();
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Error! Please try again." + ex.Message);
+
+                }
+
             }
         }
     }
