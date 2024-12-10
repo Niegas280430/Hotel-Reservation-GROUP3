@@ -63,6 +63,7 @@
             label20 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
+            pbArrow = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
@@ -72,11 +73,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(pbArrow);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox12);
             panel1.Controls.Add(label7);
@@ -464,6 +467,17 @@
             pbButtomFrame.TabIndex = 52;
             pbButtomFrame.TabStop = false;
             // 
+            // pbArrow
+            // 
+            pbArrow.Image = Properties.Resources.lefit_arrow;
+            pbArrow.Location = new Point(65, 65);
+            pbArrow.Name = "pbArrow";
+            pbArrow.Size = new Size(60, 60);
+            pbArrow.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow.TabIndex = 273;
+            pbArrow.TabStop = false;
+            pbArrow.Click += pbArrow_Click;
+            // 
             // UC_DELUXEROOM_CANCELLATION
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -483,6 +497,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).EndInit();
             ResumeLayout(false);
         }
 
@@ -521,5 +536,6 @@
         private Label label33;
         private PictureBox pictureBox2;
         private PictureBox pictureBox12;
+        private PictureBox pbArrow;
     }
 }

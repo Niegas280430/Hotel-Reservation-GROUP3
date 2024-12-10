@@ -16,5 +16,14 @@ namespace WindowForms
         {
             InitializeComponent();
         }
+
+        public event EventHandler okayClicked;
+
+
+        private void btnOkay_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            okayClicked?.Invoke(this, EventArgs.Empty); 
+        }
     }
 }

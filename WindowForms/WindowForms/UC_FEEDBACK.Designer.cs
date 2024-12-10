@@ -34,17 +34,16 @@
             panel1 = new Panel();
             label10 = new Label();
             cbAnonymousUsername = new CheckBox();
-            label5 = new Label();
-            textBox2 = new TextBox();
+            txtComment = new TextBox();
             picStar5 = new PictureBox();
             picStar4 = new PictureBox();
             picStar3 = new PictureBox();
             picStar2 = new PictureBox();
             picStar1 = new PictureBox();
             label7 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            button6 = new Button();
-            btnSearch = new Button();
+            selectDataPicker = new DateTimePicker();
+            btnCancel = new Button();
+            btnSubmit = new Button();
             panel2 = new Panel();
             label3 = new Label();
             label4 = new Label();
@@ -98,17 +97,16 @@
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label10);
             panel1.Controls.Add(cbAnonymousUsername);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(txtComment);
             panel1.Controls.Add(picStar5);
             panel1.Controls.Add(picStar4);
             panel1.Controls.Add(picStar3);
             panel1.Controls.Add(picStar2);
             panel1.Controls.Add(picStar1);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(button6);
-            panel1.Controls.Add(btnSearch);
+            panel1.Controls.Add(selectDataPicker);
+            panel1.Controls.Add(btnCancel);
+            panel1.Controls.Add(btnSubmit);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label2);
@@ -140,29 +138,18 @@
             cbAnonymousUsername.TabIndex = 56;
             cbAnonymousUsername.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // txtComment
             // 
-            label5.BackColor = Color.FromArgb(248, 246, 240);
-            label5.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ButtonShadow;
-            label5.Location = new Point(61, 440);
-            label5.Name = "label5";
-            label5.Size = new Size(330, 39);
-            label5.TabIndex = 8;
-            label5.Text = "Add your comments and suggestions here.";
-            label5.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.FromArgb(248, 246, 240);
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Times New Roman", 14.25F);
-            textBox2.Location = new Point(43, 433);
-            textBox2.Margin = new Padding(5);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(473, 115);
-            textBox2.TabIndex = 48;
+            txtComment.BackColor = Color.FromArgb(248, 246, 240);
+            txtComment.BorderStyle = BorderStyle.FixedSingle;
+            txtComment.Font = new Font("Times New Roman", 14.25F);
+            txtComment.Location = new Point(43, 433);
+            txtComment.Margin = new Padding(5);
+            txtComment.Multiline = true;
+            txtComment.Name = "txtComment";
+            txtComment.PlaceholderText = "Add your comments and suggestions here.";
+            txtComment.Size = new Size(473, 115);
+            txtComment.TabIndex = 48;
             // 
             // picStar5
             // 
@@ -236,42 +223,44 @@
             label7.Text = "Select Date";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // selectDataPicker
             // 
-            dateTimePicker1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(43, 613);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(473, 26);
-            dateTimePicker1.TabIndex = 19;
+            selectDataPicker.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectDataPicker.Format = DateTimePickerFormat.Short;
+            selectDataPicker.Location = new Point(43, 613);
+            selectDataPicker.Name = "selectDataPicker";
+            selectDataPicker.Size = new Size(473, 26);
+            selectDataPicker.TabIndex = 19;
             // 
-            // button6
+            // btnCancel
             // 
-            button6.BackColor = Color.FromArgb(0, 123, 167);
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.Transparent;
-            button6.Location = new Point(43, 733);
-            button6.Name = "button6";
-            button6.Size = new Size(108, 29);
-            button6.TabIndex = 17;
-            button6.Text = "Cancel";
-            button6.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.FromArgb(0, 123, 167);
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCancel.ForeColor = Color.Transparent;
+            btnCancel.Location = new Point(43, 733);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(108, 29);
+            btnCancel.TabIndex = 17;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
-            // btnSearch
+            // btnSubmit
             // 
-            btnSearch.BackColor = Color.DarkGoldenrod;
-            btnSearch.FlatAppearance.BorderSize = 0;
-            btnSearch.FlatStyle = FlatStyle.Flat;
-            btnSearch.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSearch.ForeColor = Color.Transparent;
-            btnSearch.Location = new Point(408, 733);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(108, 29);
-            btnSearch.TabIndex = 16;
-            btnSearch.Text = "Submit";
-            btnSearch.UseVisualStyleBackColor = false;
+            btnSubmit.BackColor = Color.DarkGoldenrod;
+            btnSubmit.FlatAppearance.BorderSize = 0;
+            btnSubmit.FlatStyle = FlatStyle.Flat;
+            btnSubmit.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSubmit.ForeColor = Color.Transparent;
+            btnSubmit.Location = new Point(408, 733);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(108, 29);
+            btnSubmit.TabIndex = 16;
+            btnSubmit.Text = "Submit";
+            btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // panel2
             // 
@@ -373,17 +362,16 @@
         private PictureBox picStar2;
         private PictureBox picStar1;
         private Label label7;
-        private DateTimePicker dateTimePicker1;
-        private Button button6;
-        private Button btnSearch;
-        private Label label5;
+        private DateTimePicker selectDataPicker;
+        private Button btnCancel;
+        private Button btnSubmit;
         private Panel panel2;
         private Label label3;
         private Label label4;
         private Label label2;
         private Label label1;
         private PictureBox pbButtomFrame;
-        private TextBox textBox2;
+        private TextBox txtComment;
         private CheckBox cbAnonymousUserName;
         private CheckBox cbVisibleUserName;
         private Label label6;

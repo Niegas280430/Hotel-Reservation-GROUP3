@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_TRIPLEROOM_CANCELLATION));
             panel1 = new Panel();
+            pbArrow = new PictureBox();
             label15 = new Label();
             pictureBox2 = new PictureBox();
             label14 = new Label();
@@ -64,6 +65,7 @@
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -77,6 +79,7 @@
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(pbArrow);
             panel1.Controls.Add(label15);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label14);
@@ -115,6 +118,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1152, 1100);
             panel1.TabIndex = 15;
+            // 
+            // pbArrow
+            // 
+            pbArrow.Image = Properties.Resources.lefit_arrow;
+            pbArrow.Location = new Point(65, 68);
+            pbArrow.Name = "pbArrow";
+            pbArrow.Size = new Size(60, 60);
+            pbArrow.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow.TabIndex = 271;
+            pbArrow.TabStop = false;
+            pbArrow.Click += pbArrow_Click;
             // 
             // label15
             // 
@@ -387,6 +401,7 @@
             btnCancelReservation.TabIndex = 147;
             btnCancelReservation.Text = "Cancel Reservation";
             btnCancelReservation.UseVisualStyleBackColor = false;
+            btnCancelReservation.Click += btnCancelReservation_Click;
             // 
             // label9
             // 
@@ -472,6 +487,7 @@
             Size = new Size(1152, 1100);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
@@ -518,5 +534,6 @@
         private Label label16;
         private Label label17;
         private Label label18;
+        private PictureBox pbArrow;
     }
 }

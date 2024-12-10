@@ -915,7 +915,7 @@
             lblNumberOfGuests.Name = "lblNumberOfGuests";
             lblNumberOfGuests.Size = new Size(82, 26);
             lblNumberOfGuests.TabIndex = 42;
-            lblNumberOfGuests.Text = "0";
+            lblNumberOfGuests.Text = "1";
             lblNumberOfGuests.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSubtract
@@ -930,6 +930,7 @@
             btnSubtract.TabIndex = 8;
             btnSubtract.Text = "-";
             btnSubtract.UseVisualStyleBackColor = false;
+            btnSubtract.Click += btnSubtract_Click;
             // 
             // btnAdd
             // 
@@ -943,6 +944,7 @@
             btnAdd.TabIndex = 3;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dtpCheckOut
             // 

@@ -31,7 +31,6 @@
             panel2 = new Panel();
             label1 = new Label();
             label2 = new Label();
-            btnOkay = new Button();
             btnSubmit = new Button();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -51,9 +50,9 @@
             label1.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(21, 22);
             label1.Name = "label1";
-            label1.Size = new Size(184, 24);
+            label1.Size = new Size(205, 24);
             label1.TabIndex = 0;
-            label1.Text = "Cancel Reservation";
+            label1.Text = "Canceled Successfully";
             // 
             // label2
             // 
@@ -62,22 +61,7 @@
             label2.Name = "label2";
             label2.Size = new Size(350, 102);
             label2.TabIndex = 15;
-            label2.Text = "Thank you for booking at STILO Hotel! An email verification will be shortly delivered which includes all of your booking details.";
-            // 
-            // btnOkay
-            // 
-            btnOkay.BackColor = Color.FromArgb(0, 123, 167);
-            btnOkay.BackgroundImageLayout = ImageLayout.None;
-            btnOkay.FlatAppearance.BorderSize = 0;
-            btnOkay.FlatStyle = FlatStyle.Flat;
-            btnOkay.Font = new Font("Times New Roman", 11.25F);
-            btnOkay.ForeColor = Color.White;
-            btnOkay.Location = new Point(151, 215);
-            btnOkay.Name = "btnOkay";
-            btnOkay.Size = new Size(93, 31);
-            btnOkay.TabIndex = 16;
-            btnOkay.Text = "Cancel";
-            btnOkay.UseVisualStyleBackColor = false;
+            label2.Text = "Thank you for booking at STILO Hotel! An email will be shortly delivered which includes all of your booking details.";
             // 
             // btnSubmit
             // 
@@ -91,8 +75,9 @@
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(93, 31);
             btnSubmit.TabIndex = 17;
-            btnSubmit.Text = "Submit";
+            btnSubmit.Text = "Okay";
             btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnOkay_Click;
             // 
             // Cancel_Reservation_PopUp
             // 
@@ -101,12 +86,12 @@
             BackColor = Color.FromArgb(248, 246, 240);
             ClientSize = new Size(392, 267);
             Controls.Add(btnSubmit);
-            Controls.Add(btnOkay);
             Controls.Add(label2);
             Controls.Add(panel2);
             Font = new Font("Times New Roman", 11.25F);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Cancel_Reservation_PopUp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Cancel_Reservation_PopUp";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -118,7 +103,6 @@
         private Panel panel2;
         private Label label1;
         private Label label2;
-        private Button btnOkay;
         private Button btnSubmit;
     }
 }

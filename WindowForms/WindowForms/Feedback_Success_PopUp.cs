@@ -16,5 +16,10 @@ namespace WindowForms
         {
             InitializeComponent();
         }
+
+        private void btnOkay_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
