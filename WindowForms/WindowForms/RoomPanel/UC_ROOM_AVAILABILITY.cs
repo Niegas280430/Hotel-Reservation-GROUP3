@@ -12,19 +12,14 @@ namespace WindowForms
 {
     public partial class UC_ROOM_AVAILABILITY : UserControl
     {
-        public event EventHandler Room1Clicked, Room2Clicked, Room3Clicked, Room4Clicked, Room5Clicked;
+        public event EventHandler singlebedroomClicked, standardbedroomClicked, triplebedroomClicked, deluxebedroomClicked, suitebedroomClicked;
+        UC_BOOKING_CONFIRMATION ucbookconfirmation = new UC_BOOKING_CONFIRMATION();
 
         private int singlebedroomguestnum = 0;
         private int standardbedroomguestnum = 0;
         private int triplebedroomguestnum = 0;
         private int suitebedroomguestnum = 0;
         private int deluxebedroomguestnum = 0;
-
-        public int standardbedroomPrice = 2900;
-        public int singlebedroomPrice = 2100;
-        public int triplebedroom = 3675;
-        public int suitebedroomprice = 3900;
-        public int deluxebedroomprice = 4500;
 
 
         public UC_ROOM_AVAILABILITY()
@@ -126,27 +121,27 @@ namespace WindowForms
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Room1Clicked?.Invoke(this, EventArgs.Empty);
+            standardbedroomClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Room2Clicked?.Invoke(this, EventArgs.Empty);
+            singlebedroomClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Room3Clicked?.Invoke(this, EventArgs.Empty);
+            triplebedroomClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Room4Clicked?.Invoke(this, EventArgs.Empty);
+            suitebedroomClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Room5Clicked?.Invoke(this, EventArgs.Empty);
+            deluxebedroomClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void button6_Click(object sender, EventArgs e) // add button for single bed
@@ -221,6 +216,11 @@ namespace WindowForms
                 guestnum = 1;
             }
             lblNumberOfGuests.Text = Convert.ToString(guestnum);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

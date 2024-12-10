@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,34 +17,37 @@ namespace WindowForms
     public partial class UC_BOOKING_CONFIRMATION : UserControl
     {
         ConnectDatabase cd = new ConnectDatabase();
+        private UC_ROOM_AVAILABILITY roomsAvail;
 
         int childrenguest = 0;
         int adultsguest = 0;
+
+        int adultguestprice;
         double discount;
+
         public UC_BOOKING_CONFIRMATION()
         {
             InitializeComponent();
-        }
-
-        public void SetRoomDetails(string roomName, string price)
-        {
-            nameofroomLabel.Text = roomName;
-            priceofroomLabel.Text = price;
         }
         private void label20_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        public event EventHandler arrowClicked;
+        private void pbArrow1st_Click(object sender, EventArgs e)
+        {
+            arrowClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void button4_Click(object sender, EventArgs e) // button to enter details and book successfully
         {
             int totalguest = childrenguest + adultsguest;
             try
             {
                 SqlConnection con = cd.DatabaseConnect();
-
                 con.Open();
-                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)", con);
+                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)");
 
                 if (string.IsNullOrEmpty(TxtFname.Text) && string.IsNullOrEmpty(TxtLname.Text) &&
                     string.IsNullOrEmpty(TxtEmail.Text) && string.IsNullOrEmpty(TxtPhone.Text))
@@ -59,27 +63,30 @@ namespace WindowForms
                 }
                 else
                 {
-                    DialogResult option = MessageBox.Show("--Is this the correct information?--" +
-                                                      "\nLast Name: " + TxtFname.Text +
-                                                      "\nFirst Name: " + TxtLname.Text +
-                                                      "\nEmail: " + TxtEmail.Text +
-                                                      "\nPhone Number: " + TxtPhone.Text,
-                                                      "Confirm", MessageBoxButtons.YesNo);
+                    bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text);
+                    bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text);
+                    bookinginfo.Parameters.AddWithValue("@email", TxtEmail.Text);
+                    bookinginfo.Parameters.AddWithValue("@phone", TxtPhone.Text);
+                    bookinginfo.Parameters.AddWithValue("@checkin", dateTimeCheckin.Text);
+                    bookinginfo.Parameters.AddWithValue("@checkout", dateTimeCheckout.Text);
 
-                    if (option == DialogResult.Yes)
+                    int i = bookinginfo.ExecuteNonQuery();
+
+                    if (i != 0)
                     {
-                        bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text);
-                        bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text);
-                        bookinginfo.Parameters.AddWithValue("@email", TxtEmail.Text);
-                        bookinginfo.Parameters.AddWithValue("@phone", TxtPhone.Text);
-                        bookinginfo.Parameters.AddWithValue("@checkin", dateTimeCheckin.Text);
-                        bookinginfo.Parameters.AddWithValue("@checkout", dateTimeCheckout.Text);
-
-                        int i = bookinginfo.ExecuteNonQuery();
-
-                        if (i != 0)
+                        Reservation_Successful_PopUp rsp = new Reservation_Successful_PopUp();
+                        rsp.ShowDialog();
+                        TxtFname.Clear();
+                        TxtLname.Clear();
+                        TxtEmail.Clear();
+                        TxtPhone.Clear();
+                        if (txtDiscountCode.Text != null)
                         {
-                            MessageBox.Show("Booked Room successfully");
+                            txtDiscountCode.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Booked Room uccessfully");
                             TxtFname.Clear();
                             TxtLname.Clear();
                             TxtEmail.Clear();
@@ -88,6 +95,7 @@ namespace WindowForms
                     }
                     else
                     {
+                        MessageBox.Show("Invalid Information Details"); // need ng label kung ano ung mali or empty
                         TxtFname.Clear();
                         TxtLname.Clear();
                         TxtEmail.Clear();
@@ -141,39 +149,6 @@ namespace WindowForms
             lblNumberOfChildren.Text = Convert.ToString(childrenguest);
         }
 
-        public event EventHandler arrowClicked;
-        private void pbArrow1st_Click(object sender, EventArgs e)
-        {
-            arrowClicked?.Invoke(this, EventArgs.Empty);
-        }     
-
-        private void getRoomNamePrices(string roomType)
-        { 
-
-            switch (roomType)
-            {
-                case "SingleBedRoom":
-                    nameofroomLabel.Text = "Single Bedroom";
-                    double singlebedroomPrice = 2100.00;
-                    break;
-                case "StandardBedRoom":
-                    nameofroomLabel.Text = "Standard Bedroom";
-                    double standardbedroomPrice = 2900.00;
-                    break;
-                case "TripleBedRoom":
-                    nameofroomLabel.Text = "Triple Bedroom";
-                    double triplebedroom = 3675.00;
-                    break;
-                case "SuitedBedRoom":
-                    nameofroomLabel.Text = "Suited Bedroom";
-                    double suitebedroomprice = 3900.00;
-                    break;
-                case "DeluxeBedRoom":
-                    nameofroomLabel.Text = "Deluxe Bedroom";
-                    double deluxebedroomprice = 4500.00;
-                    break;
-            }
-        }
         private void setAdditionals()
         {
             // prices of every additionals
@@ -182,6 +157,8 @@ namespace WindowForms
             int pillow = 100;
             int bathrobe = 200;
             int bathtowel = 100;
+
+            int adultguest = 700;
 
             // quantity fpr each additionals
             int quantitySingleBed = Convert.ToInt16(txtSB.Text);
@@ -197,7 +174,10 @@ namespace WindowForms
             int totalBathrobe = bathrobe * quantityBathrobe;
             int totalBathTowel = bathtowel * quantityBathTowel;
 
-            double total = totalSingleBed + totalBlanket + totalPillow + totalBathrobe + totalBathTowel;
+            double roomprice;
+            roomprice = Convert.ToDouble(priceofroomLabel.Text);
+
+            double total = roomprice + totalSingleBed + totalBlanket + totalPillow + totalBathrobe + totalBathTowel;
             double applyTax = total * 1.12;
 
             if (txtDiscountCode.Text == "10%STILOHotel")
@@ -228,7 +208,17 @@ namespace WindowForms
 
         private void setRoomNamePrices(string chosenRoom)
         {
-            
+
+        }
+        public void SetRoomDetails(string roomName, double roomPrice)
+        {
+            nameofroomLabel.Text = roomName;
+            priceofroomLabel.Text = Convert.ToString(roomPrice);
+        }
+       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }

@@ -186,6 +186,7 @@
             uC_home1.Name = "uC_home1";
             uC_home1.Size = new Size(1152, 1013);
             uC_home1.TabIndex = 0;
+            uC_home1.Load += uC_home1_Load;
             // 
             // cmsAbout
             // 
@@ -216,7 +217,7 @@
             cmsAccount.Items.AddRange(new ToolStripItem[] { menuLogin, menuManageReserve });
             cmsAccount.Name = "cmsAbout";
             cmsAccount.ShowItemToolTips = false;
-            cmsAccount.Size = new Size(232, 78);
+            cmsAccount.Size = new Size(232, 56);
             // 
             // menuLogin
             // 

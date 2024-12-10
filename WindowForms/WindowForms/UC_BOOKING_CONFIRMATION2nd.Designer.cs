@@ -221,7 +221,7 @@
             btnTerms_Conditions.FlatAppearance.BorderSize = 0;
             btnTerms_Conditions.FlatStyle = FlatStyle.Flat;
             btnTerms_Conditions.Font = new Font("Times New Roman", 14.25F, FontStyle.Underline);
-            btnTerms_Conditions.Location = new Point(305, 1014);
+            btnTerms_Conditions.Location = new Point(305, 1011);
             btnTerms_Conditions.Name = "btnTerms_Conditions";
             btnTerms_Conditions.Size = new Size(196, 32);
             btnTerms_Conditions.TabIndex = 95;
@@ -392,7 +392,7 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Times New Roman", 12F);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(247, 695);
+            button3.Location = new Point(331, 722);
             button3.Name = "button3";
             button3.Size = new Size(82, 29);
             button3.TabIndex = 79;

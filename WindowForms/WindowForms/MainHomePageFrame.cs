@@ -43,11 +43,11 @@ namespace WindowForms
 
             if (userControl is UC_ROOM_AVAILABILITY roomAvailability)
             {
-                roomAvailability.Room1Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
-                roomAvailability.Room2Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
-                roomAvailability.Room3Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
-                roomAvailability.Room4Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
-                roomAvailability.Room5Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
+                roomAvailability.standardbedroomClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                roomAvailability.singlebedroomClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                roomAvailability.triplebedroomClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                roomAvailability.suitebedroomClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                roomAvailability.deluxebedroomClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
             }
 
             if (userControl is UC_BOOKING_CONFIRMATION2nd booking2nd)
@@ -70,7 +70,7 @@ namespace WindowForms
                 standardRoomControl.StandardReserveClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", "<₱2,900.00>");
+                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", 2900.00);
                     LoadUC(bookingConfirmation);
                 };
                 standardRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -81,9 +81,9 @@ namespace WindowForms
                 singleRoomControl.SingleReserveClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", "<₱2,100.00>");
+                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00);
                     LoadUC(bookingConfirmation);
-                }; 
+                };
                 singleRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
@@ -92,7 +92,7 @@ namespace WindowForms
                 tripleRoomControl.TripleReserveClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", "<₱3,675.00>");
+                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", 3675.00);
                     LoadUC(bookingConfirmation);
                 };
                 tripleRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -103,7 +103,7 @@ namespace WindowForms
                 suiteRoomControl.SuiteReserveClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", "<₱3,900.00>");
+                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", 3900.00);
                     LoadUC(bookingConfirmation);
                 };
                 suiteRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -114,10 +114,57 @@ namespace WindowForms
                 deluxeRoomControl.DeluxeReserveClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", "<₱4,500.00>");
+                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00);
                     LoadUC(bookingConfirmation);
                 };
                 deluxeRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
+            }
+
+            // NAVIGATE TO ROOM_AVAILABILITY start here
+            if (userControl is UC_ROOM_AVAILABILITY singlebedControl)
+            {
+                singlebedControl.singlebedroomClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00);
+                    LoadUC(bookingConfirmation);
+                };    
+            }
+            if (userControl is UC_ROOM_AVAILABILITY standardbedControl)
+            {
+                standardbedControl.standardbedroomClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", 2900.00);
+                    LoadUC(bookingConfirmation);
+                };
+            }
+            if (userControl is UC_ROOM_AVAILABILITY triplebedControl)
+            {
+                triplebedControl.triplebedroomClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", 3675.00);
+                    LoadUC(bookingConfirmation);
+                };
+            }
+            if (userControl is UC_ROOM_AVAILABILITY suitebedControl)
+            {
+                suitebedControl.suitebedroomClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", 3900.00);
+                    LoadUC(bookingConfirmation);
+                };
+            }
+            if (userControl is UC_ROOM_AVAILABILITY deluxebedControl)
+            {
+                deluxebedControl.deluxebedroomClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00);
+                    LoadUC(bookingConfirmation);
+                };
             }
 
             if (userControl is UC_BOOKING_CONFIRMATION booking1st)
@@ -194,11 +241,6 @@ namespace WindowForms
                         add_UControls(new UC_TERMS_CONDITIONS());
                         break;
                     case "menuManageReserve":
-                        
-                        
-                        
-                        
-                        
                         LoadUC(new UC_NO_RESERVATIONS());
                         break;
                 }
@@ -215,6 +257,9 @@ namespace WindowForms
             loginFrame.Show();
         }
 
+        private void uC_home1_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
