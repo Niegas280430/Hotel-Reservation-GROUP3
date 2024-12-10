@@ -15,7 +15,7 @@ namespace WindowForms
     public partial class UC_FEEDBACK : UserControl
     {
 
-        
+        //Gonzalo
 
         ConnectDatabase conn = new ConnectDatabase();
         public UC_FEEDBACK()
@@ -63,12 +63,15 @@ namespace WindowForms
                     string query = "INSERT INTO tbFeedback (Comments, Date, Rating) VALUES (@Comments, @Date, @Rating)";
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
+
                         command.Parameters.AddWithValue("@Comments", textBox2.Text);
                         command.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
                         command.Parameters.AddWithValue("@Rating", selectedRating);
 
                         command.ExecuteNonQuery();
+
                     }
+
                 }
 
                 Feedback_Success_PopUp FSP = new Feedback_Success_PopUp();
@@ -85,14 +88,19 @@ namespace WindowForms
 
             if (this.ParentForm is MainHomePageFrame mainFrame)
             {
+
                 mainFrame.LoadDefaultUserControls();
+
             }
             else
             {
+
                 MessageBox.Show("Unable to navigate back to the main page.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
 
         }
+
     }
 
 }
