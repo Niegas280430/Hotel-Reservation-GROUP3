@@ -39,6 +39,7 @@
             uC_bookinG_confirmation1.Name = "uC_bookinG_confirmation1";
             uC_bookinG_confirmation1.Size = new Size(1152, 1100);
             uC_bookinG_confirmation1.TabIndex = 0;
+            uC_bookinG_confirmation1.Load += uC_bookinG_confirmation1_Load;
             // 
             // BookingConfirmationFrame
             // 
