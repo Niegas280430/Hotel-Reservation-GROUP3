@@ -44,7 +44,8 @@
             termsAndConditionsToolStripMenuItem = new ToolStripMenuItem();
             cmsAccount = new ContextMenuStrip(components);
             menuLogin = new ToolStripMenuItem();
-            menuManageReserve = new ToolStripMenuItem();
+            BEFOREmenuManageReserve1 = new ToolStripMenuItem();
+            AFTERmenuManageReserve1 = new ToolStripMenuItem();
             tableLayoutPanel1.SuspendLayout();
             parentPanel.SuspendLayout();
             cmsAbout.SuspendLayout();
@@ -214,24 +215,30 @@
             // 
             cmsAccount.BackColor = Color.FromArgb(239, 228, 201);
             cmsAccount.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cmsAccount.Items.AddRange(new ToolStripItem[] { menuLogin, menuManageReserve });
+            cmsAccount.Items.AddRange(new ToolStripItem[] { menuLogin, BEFOREmenuManageReserve1, AFTERmenuManageReserve1 });
             cmsAccount.Name = "cmsAbout";
             cmsAccount.ShowItemToolTips = false;
-            cmsAccount.Size = new Size(232, 56);
+            cmsAccount.Size = new Size(290, 104);
             // 
             // menuLogin
             // 
             menuLogin.Name = "menuLogin";
-            menuLogin.Size = new Size(231, 26);
+            menuLogin.Size = new Size(289, 26);
             menuLogin.Text = "Login";
             menuLogin.Click += menuLogin_Click;
             // 
-            // menuManageReserve
+            // BEFOREmenuManageReserve1
             // 
-            menuManageReserve.Name = "menuManageReserve";
-            menuManageReserve.Size = new Size(231, 26);
-            menuManageReserve.Text = "Manage Reservation";
-            menuManageReserve.Click += MenuItem_Click;
+            BEFOREmenuManageReserve1.Name = "BEFOREmenuManageReserve1";
+            BEFOREmenuManageReserve1.Size = new Size(289, 26);
+            BEFOREmenuManageReserve1.Text = "Manage Reservation";
+            BEFOREmenuManageReserve1.Click += MenuItem_Click;
+            // 
+            // AFTERmenuManageReserve1
+            // 
+            AFTERmenuManageReserve1.Name = "AFTERmenuManageReserve1";
+            AFTERmenuManageReserve1.Size = new Size(289, 26);
+            AFTERmenuManageReserve1.Text = "MANAGE RESERVATION";
             // 
             // MainHomePageFrame
             // 
@@ -268,7 +275,8 @@
         private ToolStripMenuItem termsAndConditionsToolStripMenuItem;
         private ContextMenuStrip cmsAccount;
         private ToolStripMenuItem menuLogin;
-        private ToolStripMenuItem menuManageReserve;
+        private ToolStripMenuItem BEFOREmenuManageReserve1;
         private UC_HOME uC_home1;
+        private ToolStripMenuItem AFTERmenuManageReserve1;
     }
 }

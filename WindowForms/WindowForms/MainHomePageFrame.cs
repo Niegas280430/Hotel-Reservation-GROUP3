@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace WindowForms
 {
@@ -15,6 +16,7 @@ namespace WindowForms
         public MainHomePageFrame()
         {
             InitializeComponent();
+            BEFOREmenuManageReserve1.Visible = false;
             LoadUC(new UC_HOME());
         }
 
@@ -250,8 +252,55 @@ namespace WindowForms
                     case "termsAndConditionsToolStripMenuItem":
                         add_UControls(new UC_TERMS_CONDITIONS());
                         break;
-                    case "menuManageReserve":
-                        LoadUC(new UC_NO_RESERVATIONS());
+                    case "AFTERmenuManageReserve1":
+                        LoginFrame loginFrame = new LoginFrame();
+                        loginFrame.ShowDialog();
+
+
+                        if (!string.IsNullOrEmpty(loginFrame.txtboxAccountID.Text))
+                        {
+
+                            using (SqlConnection con = cd.DatabaseConnect())
+                            {
+
+                                con.Open();
+                                string query = "SELECT RoomType FROM RoomsTable WHERE RoomID = @loginID";
+                                SqlCommand cmd = new SqlCommand(query, con);
+                                cmd.Parameters.AddWithValue("@loginID", loginFrame.txtboxAccountID.Text);
+
+                                string roomType = (string)cmd.ExecuteScalar();
+
+                                if (!string.IsNullOrEmpty(roomType))
+                                {
+
+                                    switch (roomType)
+                                    {
+                                        case "Standard":
+                                            LoadUC(new UC_STANDARD_ROOM());
+                                            break;
+                                        case "Single":
+                                            LoadUC(new UC_SINGLE_ROOM());
+                                            break;
+                                        case "Triple":
+                                            LoadUC(new UC_TRIPLE_ROOM());
+                                            break;
+                                        case "Suite":
+                                            LoadUC(new UC_SUITE_ROOM());
+                                            break;
+                                        case "Deluxe":
+                                            LoadUC(new UC_DELUXE_ROOM());
+                                            break;
+                                        default:
+                                            MessageBox.Show("No matching room found for the login ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                            break;
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No matching room found for the login ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                        }
                         break;
                 }
             }
@@ -264,7 +313,15 @@ namespace WindowForms
         private void menuLogin_Click(object sender, EventArgs e)
         {
             LoginFrame loginFrame = new LoginFrame();
-            loginFrame.Show();
+            loginFrame.LoginSuccessful += (s, args) =>
+            {
+
+
+                menuLogin.Visible = false;
+                BEFOREmenuManageReserve1.Visible = false;
+                BEFOREmenuManageReserve1.Visible = true;
+
+            };
         }
 
         private void uC_home1_Load(object sender, EventArgs e)
