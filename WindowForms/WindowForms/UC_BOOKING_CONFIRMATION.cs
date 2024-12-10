@@ -159,6 +159,8 @@ namespace WindowForms
             int bathtowel = 100;
 
             int adultguest = 700;
+            int adultguestquantity = Convert.ToInt16(lblNumberOfAdults.Text);
+            int totaladultprice = adultguest * adultguestquantity;
 
             // quantity fpr each additionals
             int quantitySingleBed = Convert.ToInt16(txtSB.Text);
@@ -182,8 +184,7 @@ namespace WindowForms
 
             if (txtDiscountCode.Text == "10%STILOHotel")
             {
-                setDiscount();
-                percentLbl.Text = "10%";
+                setDiscount();    
                 double discountedAmount = applyTax * discount;
                 double finalTotal = applyTax - discountedAmount;
 

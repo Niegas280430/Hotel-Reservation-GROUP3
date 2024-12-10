@@ -222,5 +222,10 @@ namespace WindowForms
         {
 
         }
+        public void setCheckInOutDate(string checkin, string checkout)
+        {
+            dtpCheckIn.Value = DateTime.Parse(checkin);
+            dtpCheckOut.Value = DateTime.Parse(checkout);
+        }
     }
 }

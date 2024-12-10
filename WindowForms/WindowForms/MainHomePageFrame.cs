@@ -120,7 +120,7 @@ namespace WindowForms
                 deluxeRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
-            // NAVIGATE TO ROOM_AVAILABILITY start here
+            // NAVIGATE TO UC_ROOM_AVAILABILITY start here
             if (userControl is UC_ROOM_AVAILABILITY singlebedControl)
             {
                 singlebedControl.singlebedroomClicked += (sender, e) =>
@@ -163,6 +163,16 @@ namespace WindowForms
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
                     bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00);
+                    LoadUC(bookingConfirmation);
+                };
+            }
+
+            if (userControl is UC_HOME uchomeControl)
+            {
+                uchomeControl.TripleReserveClicked += (sender, e) =>
+                {
+                    var roomAvail = new UC_ROOM_AVAILABILITY();
+                    roomAvail.SetRoomDetails("(Triple Bedroom)", 3675.00);
                     LoadUC(bookingConfirmation);
                 };
             }
