@@ -27,5 +27,26 @@ namespace WindowForms
         {
             arrowClicked?.Invoke(this, EventArgs.Empty);
         }
+
+        int guestnum = 1;
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            guestnum++;
+            if (guestnum >= 7)
+            {
+                guestnum = 1;
+            }
+            lblNumberOfGuests.Text = Convert.ToString(guestnum);
+        }
+
+        private void btnSubtract_Click(object sender, EventArgs e)
+        {
+            guestnum--;
+            if (guestnum <= 0)
+            {
+                guestnum = 1;
+            }
+            lblNumberOfGuests.Text = Convert.ToString(guestnum);
+        }
     }
 }

@@ -215,6 +215,7 @@
             cmsAccount.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmsAccount.Items.AddRange(new ToolStripItem[] { menuLogin, menuManageReserve });
             cmsAccount.Name = "cmsAbout";
+            cmsAccount.ShowItemToolTips = false;
             cmsAccount.Size = new Size(232, 78);
             // 
             // menuLogin

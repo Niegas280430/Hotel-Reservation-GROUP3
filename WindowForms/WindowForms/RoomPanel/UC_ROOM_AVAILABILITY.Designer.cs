@@ -110,7 +110,7 @@
             label5 = new Label();
             label4 = new Label();
             pnlForCheckINandOut = new Panel();
-            label53 = new Label();
+            lblNumberOfGuests = new Label();
             btnSubtract = new Button();
             btnAdd = new Button();
             dtpCheckOut = new DateTimePicker();
@@ -1100,7 +1100,7 @@
             // pnlForCheckINandOut
             // 
             pnlForCheckINandOut.BackColor = Color.FromArgb(248, 246, 240);
-            pnlForCheckINandOut.Controls.Add(label53);
+            pnlForCheckINandOut.Controls.Add(lblNumberOfGuests);
             pnlForCheckINandOut.Controls.Add(btnSubtract);
             pnlForCheckINandOut.Controls.Add(btnAdd);
             pnlForCheckINandOut.Controls.Add(dtpCheckOut);
@@ -1115,17 +1115,17 @@
             pnlForCheckINandOut.Size = new Size(1028, 79);
             pnlForCheckINandOut.TabIndex = 38;
             // 
-            // label53
+            // lblNumberOfGuests
             // 
-            label53.BackColor = Color.White;
-            label53.BorderStyle = BorderStyle.FixedSingle;
-            label53.Font = new Font("Times New Roman", 12F);
-            label53.Location = new Point(698, 40);
-            label53.Name = "label53";
-            label53.Size = new Size(82, 26);
-            label53.TabIndex = 43;
-            label53.Text = "0";
-            label53.TextAlign = ContentAlignment.MiddleCenter;
+            lblNumberOfGuests.BackColor = Color.White;
+            lblNumberOfGuests.BorderStyle = BorderStyle.FixedSingle;
+            lblNumberOfGuests.Font = new Font("Times New Roman", 12F);
+            lblNumberOfGuests.Location = new Point(698, 40);
+            lblNumberOfGuests.Name = "lblNumberOfGuests";
+            lblNumberOfGuests.Size = new Size(82, 26);
+            lblNumberOfGuests.TabIndex = 43;
+            lblNumberOfGuests.Text = "1";
+            lblNumberOfGuests.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSubtract
             // 
@@ -1139,6 +1139,7 @@
             btnSubtract.TabIndex = 8;
             btnSubtract.Text = "-";
             btnSubtract.UseVisualStyleBackColor = false;
+            btnSubtract.Click += btnSubtract_Click;
             // 
             // btnAdd
             // 
@@ -1152,6 +1153,7 @@
             btnAdd.TabIndex = 3;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dtpCheckOut
             // 
@@ -1334,7 +1336,7 @@
         private PictureBox pictureBox6;
         private Panel panel10;
         private Panel panel11;
-        private Label label53;
+        private Label lblNumberOfGuests;
         private Label standardroomLbl;
         private Button standardSubBtn;
         private Button standardAddBtn;

@@ -11,8 +11,8 @@ namespace WindowForms
     {
         public SqlConnection DatabaseConnect()
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-2TV9723;Initial Catalog=UserInfo;Integrated Security=True;Trust Server Certificate=True");
-            return conn;
+            SqlConnection conn1 = new SqlConnection("Data Source=,\\sqlexpress;Initial Catalog=MainDB;Integrated Security=True;Trust Server Certificate=True");
+            return conn1;
         }
     }
 }

@@ -46,7 +46,7 @@ namespace WindowForms
                     break;
                 case "StandardBedRoom":
                     standardbedroomguestnum++;
-                    if (standardbedroomguestnum >= 11) 
+                    if (standardbedroomguestnum >= 11)
                     {
                         standardbedroomguestnum = 0;
                     }
@@ -154,11 +154,11 @@ namespace WindowForms
             addGuest("SingleBedRoom");
         }
 
-        private void singlebedSubBtn_Click(object sender, EventArgs e) 
+        private void singlebedSubBtn_Click(object sender, EventArgs e)
         {
             subtractGuest("SingleBedRoom");
         }
-        
+
         private void button17_Click(object sender, EventArgs e) //add button for standard bed
         {
             addGuest("StandardBedRoom");
@@ -170,7 +170,7 @@ namespace WindowForms
 
         private void triplebedAddBtn_Click(object sender, EventArgs e)
         {
-            addGuest("TripleBedRoom");    
+            addGuest("TripleBedRoom");
         }
 
         private void triplebedsubBtn_Click(object sender, EventArgs e)
@@ -200,6 +200,27 @@ namespace WindowForms
         private void pnlFill_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        int guestnum = 1;
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            guestnum++;
+            if (guestnum >= 7)
+            {
+                guestnum = 1;
+            }
+            lblNumberOfGuests.Text = Convert.ToString(guestnum);
+        }
+
+        private void btnSubtract_Click(object sender, EventArgs e)
+        {
+            guestnum--;
+            if (guestnum <= 0)
+            {
+                guestnum = 1;
+            }
+            lblNumberOfGuests.Text = Convert.ToString(guestnum);
         }
     }
 }

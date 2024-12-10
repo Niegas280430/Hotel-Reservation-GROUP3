@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SINGLE_ROOM));
             pnlFill = new Panel();
+            pbArrow1 = new PictureBox();
             label8 = new Label();
             label7 = new Label();
             label24 = new Label();
@@ -60,15 +61,14 @@
             label33 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
-            pbArrow1 = new PictureBox();
             pnlFill.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pnlForCheckINandOut.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbArrow1).BeginInit();
             SuspendLayout();
             // 
             // pnlFill
@@ -101,6 +101,17 @@
             pnlFill.Name = "pnlFill";
             pnlFill.Size = new Size(1152, 1100);
             pnlFill.TabIndex = 11;
+            // 
+            // pbArrow1
+            // 
+            pbArrow1.Image = Properties.Resources.lefit_arrow;
+            pbArrow1.Location = new Point(53, 48);
+            pbArrow1.Name = "pbArrow1";
+            pbArrow1.Size = new Size(60, 60);
+            pbArrow1.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow1.TabIndex = 188;
+            pbArrow1.TabStop = false;
+            pbArrow1.Click += pbArrow1_Click;
             // 
             // label8
             // 
@@ -305,7 +316,7 @@
             lblNumberOfGuests.Name = "lblNumberOfGuests";
             lblNumberOfGuests.Size = new Size(82, 26);
             lblNumberOfGuests.TabIndex = 43;
-            lblNumberOfGuests.Text = "0";
+            lblNumberOfGuests.Text = "1";
             lblNumberOfGuests.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSubtract
@@ -320,6 +331,7 @@
             btnSubtract.TabIndex = 8;
             btnSubtract.Text = "-";
             btnSubtract.UseVisualStyleBackColor = false;
+            btnSubtract.Click += btnSubtract_Click;
             // 
             // btnAdd
             // 
@@ -333,6 +345,7 @@
             btnAdd.TabIndex = 3;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dtpCheckOut
             // 
@@ -431,17 +444,6 @@
             pbButtomFrame.TabIndex = 47;
             pbButtomFrame.TabStop = false;
             // 
-            // pbArrow1
-            // 
-            pbArrow1.Image = Properties.Resources.lefit_arrow;
-            pbArrow1.Location = new Point(53, 48);
-            pbArrow1.Name = "pbArrow1";
-            pbArrow1.Size = new Size(60, 60);
-            pbArrow1.SizeMode = PictureBoxSizeMode.Zoom;
-            pbArrow1.TabIndex = 188;
-            pbArrow1.TabStop = false;
-            pbArrow1.Click += pbArrow1_Click;
-            // 
             // UC_SINGLE_ROOM
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -452,6 +454,7 @@
             Size = new Size(1152, 1100);
             pnlFill.ResumeLayout(false);
             pnlFill.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -459,7 +462,6 @@
             pnlForCheckINandOut.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbArrow1).EndInit();
             ResumeLayout(false);
         }
 

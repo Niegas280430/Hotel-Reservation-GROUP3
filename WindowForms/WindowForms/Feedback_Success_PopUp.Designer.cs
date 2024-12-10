@@ -68,6 +68,7 @@
             btnOkay.TabIndex = 14;
             btnOkay.Text = "Okay";
             btnOkay.UseVisualStyleBackColor = false;
+            btnOkay.Click += btnOkay_Click;
             // 
             // label2
             // 

@@ -17,9 +17,30 @@ namespace WindowForms
             InitializeComponent();
         }
 
+        public event EventHandler arrowClicked;
         private void button4_Click(object sender, EventArgs e)
         {
+            arrowClicked?.Invoke(this, EventArgs.Empty);
+        }
 
+        private void pbArrow_Click(object sender, EventArgs e)
+        {
+            string title = "Cancel Reservation";
+            string message = "Are you sure?";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            MessageBoxIcon icon = MessageBoxIcon.Warning;
+            DialogResult result = MessageBox.Show(message, title, buttons, icon);
+
+            if (result == DialogResult.Yes)
+            {
+                Cancel_Reservation_PopUp cancelPopup = new Cancel_Reservation_PopUp();
+                cancelPopup.okayClicked += (s, args) =>
+                {
+                    MainHomePageFrame mainForm = (MainHomePageFrame)FindForm();
+                    mainForm.LoadUC(new UC_HOME());
+                };
+                cancelPopup.ShowDialog();
+            }
         }
     }
 }

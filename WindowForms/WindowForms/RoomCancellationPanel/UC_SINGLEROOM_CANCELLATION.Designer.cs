@@ -32,7 +32,17 @@
             panel1 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox12 = new PictureBox();
+            label6 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            label26 = new Label();
+            label27 = new Label();
+            label28 = new Label();
+            label29 = new Label();
             label30 = new Label();
+            label31 = new Label();
+            label32 = new Label();
+            label33 = new Label();
             panel3 = new Panel();
             label23 = new Label();
             label22 = new Label();
@@ -53,16 +63,7 @@
             label8 = new Label();
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
-            label33 = new Label();
-            label32 = new Label();
-            label31 = new Label();
-            label6 = new Label();
-            label28 = new Label();
-            label27 = new Label();
-            label26 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label29 = new Label();
+            pbArrow = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
@@ -72,11 +73,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(pbArrow);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox12);
             panel1.Controls.Add(label6);
@@ -140,6 +143,77 @@
             pictureBox12.TabIndex = 178;
             pictureBox12.TabStop = false;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Times New Roman", 14.25F);
+            label6.Location = new Point(168, 1018);
+            label6.Name = "label6";
+            label6.Size = new Size(127, 21);
+            label6.TabIndex = 177;
+            label6.Text = "Single-Size Bed";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Times New Roman", 14.25F);
+            label24.Location = new Point(128, 972);
+            label24.Name = "label24";
+            label24.Size = new Size(53, 21);
+            label24.TabIndex = 176;
+            label24.Text = "20 m²";
+            // 
+            // label25
+            // 
+            label25.Font = new Font("Times New Roman", 14.25F);
+            label25.Location = new Point(129, 910);
+            label25.Name = "label25";
+            label25.Size = new Size(373, 55);
+            label25.TabIndex = 175;
+            label25.Text = "Offers a picturesque outlook over the city and the pool";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Font = new Font("Times New Roman", 14.25F);
+            label26.ForeColor = Color.DarkGoldenrod;
+            label26.Location = new Point(65, 1018);
+            label26.Name = "label26";
+            label26.Size = new Size(87, 21);
+            label26.TabIndex = 174;
+            label26.Text = "Bed Type:";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Times New Roman", 14.25F);
+            label27.ForeColor = Color.DarkGoldenrod;
+            label27.Location = new Point(66, 972);
+            label27.Name = "label27";
+            label27.Size = new Size(50, 21);
+            label27.TabIndex = 173;
+            label27.Text = "Size: ";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Times New Roman", 14.25F);
+            label28.ForeColor = Color.DarkGoldenrod;
+            label28.Location = new Point(66, 910);
+            label28.Name = "label28";
+            label28.Size = new Size(51, 21);
+            label28.TabIndex = 172;
+            label28.Text = "View:";
+            // 
+            // label29
+            // 
+            label29.Font = new Font("Times New Roman", 14.25F);
+            label29.Location = new Point(65, 714);
+            label29.Name = "label29";
+            label29.Size = new Size(224, 186);
+            label29.TabIndex = 171;
+            label29.Text = "Wireless Internet access\nTelevision\nAir-Conditioned Unit\nHot and Cold Shower\nBathroom Essentials\nPersonal Care Kit\nTelephone\nRoom Service";
+            // 
             // label30
             // 
             label30.AutoSize = true;
@@ -148,6 +222,38 @@
             label30.Name = "label30";
             label30.Size = new Size(0, 24);
             label30.TabIndex = 170;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Times New Roman", 14.25F);
+            label31.Location = new Point(143, 630);
+            label31.Name = "label31";
+            label31.Size = new Size(19, 21);
+            label31.TabIndex = 169;
+            label31.Text = "1";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Times New Roman", 14.25F);
+            label32.ForeColor = Color.DarkGoldenrod;
+            label32.Location = new Point(66, 667);
+            label32.Name = "label32";
+            label32.Size = new Size(87, 21);
+            label32.TabIndex = 168;
+            label32.Text = "Amenities:";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Times New Roman", 14.25F);
+            label33.ForeColor = Color.DarkGoldenrod;
+            label33.Location = new Point(66, 630);
+            label33.Name = "label33";
+            label33.Size = new Size(58, 21);
+            label33.TabIndex = 167;
+            label33.Text = "Guest:";
             // 
             // panel3
             // 
@@ -284,6 +390,7 @@
             button1.TabIndex = 141;
             button1.Text = "Cancel Reservation";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label7
             // 
@@ -358,108 +465,16 @@
             pbButtomFrame.TabIndex = 52;
             pbButtomFrame.TabStop = false;
             // 
-            // label33
+            // pbArrow
             // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Times New Roman", 14.25F);
-            label33.ForeColor = Color.DarkGoldenrod;
-            label33.Location = new Point(66, 630);
-            label33.Name = "label33";
-            label33.Size = new Size(58, 21);
-            label33.TabIndex = 167;
-            label33.Text = "Guest:";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Times New Roman", 14.25F);
-            label32.ForeColor = Color.DarkGoldenrod;
-            label32.Location = new Point(66, 667);
-            label32.Name = "label32";
-            label32.Size = new Size(87, 21);
-            label32.TabIndex = 168;
-            label32.Text = "Amenities:";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Times New Roman", 14.25F);
-            label31.Location = new Point(143, 630);
-            label31.Name = "label31";
-            label31.Size = new Size(19, 21);
-            label31.TabIndex = 169;
-            label31.Text = "1";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Times New Roman", 14.25F);
-            label6.Location = new Point(168, 1018);
-            label6.Name = "label6";
-            label6.Size = new Size(127, 21);
-            label6.TabIndex = 177;
-            label6.Text = "Single-Size Bed";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Times New Roman", 14.25F);
-            label28.ForeColor = Color.DarkGoldenrod;
-            label28.Location = new Point(66, 910);
-            label28.Name = "label28";
-            label28.Size = new Size(51, 21);
-            label28.TabIndex = 172;
-            label28.Text = "View:";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Times New Roman", 14.25F);
-            label27.ForeColor = Color.DarkGoldenrod;
-            label27.Location = new Point(66, 972);
-            label27.Name = "label27";
-            label27.Size = new Size(50, 21);
-            label27.TabIndex = 173;
-            label27.Text = "Size: ";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Times New Roman", 14.25F);
-            label26.ForeColor = Color.DarkGoldenrod;
-            label26.Location = new Point(65, 1018);
-            label26.Name = "label26";
-            label26.Size = new Size(87, 21);
-            label26.TabIndex = 174;
-            label26.Text = "Bed Type:";
-            // 
-            // label25
-            // 
-            label25.Font = new Font("Times New Roman", 14.25F);
-            label25.Location = new Point(129, 910);
-            label25.Name = "label25";
-            label25.Size = new Size(373, 55);
-            label25.TabIndex = 175;
-            label25.Text = "Offers a picturesque outlook over the city and the pool";
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Times New Roman", 14.25F);
-            label24.Location = new Point(128, 972);
-            label24.Name = "label24";
-            label24.Size = new Size(53, 21);
-            label24.TabIndex = 176;
-            label24.Text = "20 m²";
-            // 
-            // label29
-            // 
-            label29.Font = new Font("Times New Roman", 14.25F);
-            label29.Location = new Point(65, 714);
-            label29.Name = "label29";
-            label29.Size = new Size(224, 186);
-            label29.TabIndex = 171;
-            label29.Text = "Wireless Internet access\nTelevision\nAir-Conditioned Unit\nHot and Cold Shower\nBathroom Essentials\nPersonal Care Kit\nTelephone\nRoom Service";
+            pbArrow.Image = Properties.Resources.lefit_arrow;
+            pbArrow.Location = new Point(66, 56);
+            pbArrow.Name = "pbArrow";
+            pbArrow.Size = new Size(60, 60);
+            pbArrow.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow.TabIndex = 180;
+            pbArrow.TabStop = false;
+            pbArrow.Click += pbArrow_Click;
             // 
             // UC_SINGLEROOM_CANCELLATION
             // 
@@ -480,6 +495,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbButtomFrame).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbArrow).EndInit();
             ResumeLayout(false);
         }
 
@@ -518,5 +534,6 @@
         private Label label31;
         private Label label32;
         private Label label33;
+        private PictureBox pbArrow;
     }
 }

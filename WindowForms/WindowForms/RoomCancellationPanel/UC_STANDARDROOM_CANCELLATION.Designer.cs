@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_STANDARDROOM_CANCELLATION));
             panel1 = new Panel();
+            pbArrow11 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox12 = new PictureBox();
             panel3 = new Panel();
@@ -54,7 +55,7 @@
             label7 = new Label();
             label16 = new Label();
             label18 = new Label();
-            btnSearch = new Button();
+            btnCancel = new Button();
             label1 = new Label();
             pictureBox2 = new PictureBox();
             label4 = new Label();
@@ -62,6 +63,7 @@
             pictureBox1 = new PictureBox();
             pbButtomFrame = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -75,6 +77,7 @@
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(pbArrow11);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox12);
             panel1.Controls.Add(panel3);
@@ -99,7 +102,7 @@
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label16);
             panel1.Controls.Add(label18);
-            panel1.Controls.Add(btnSearch);
+            panel1.Controls.Add(btnCancel);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label4);
@@ -112,6 +115,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1152, 1100);
             panel1.TabIndex = 15;
+            // 
+            // pbArrow11
+            // 
+            pbArrow11.Image = Properties.Resources.lefit_arrow;
+            pbArrow11.Location = new Point(66, 49);
+            pbArrow11.Name = "pbArrow11";
+            pbArrow11.Size = new Size(60, 60);
+            pbArrow11.SizeMode = PictureBoxSizeMode.Zoom;
+            pbArrow11.TabIndex = 252;
+            pbArrow11.TabStop = false;
+            pbArrow11.Click += pbArrow11_Click;
             // 
             // pictureBox3
             // 
@@ -362,19 +376,20 @@
             label18.TabIndex = 135;
             label18.Text = "Guests:";
             // 
-            // btnSearch
+            // btnCancel
             // 
-            btnSearch.BackColor = Color.DarkGoldenrod;
-            btnSearch.FlatAppearance.BorderSize = 0;
-            btnSearch.FlatStyle = FlatStyle.Flat;
-            btnSearch.Font = new Font("Times New Roman", 14.25F);
-            btnSearch.ForeColor = Color.Transparent;
-            btnSearch.Location = new Point(886, 529);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(204, 34);
-            btnSearch.TabIndex = 134;
-            btnSearch.Text = "Cancel Reservation";
-            btnSearch.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.DarkGoldenrod;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Times New Roman", 14.25F);
+            btnCancel.ForeColor = Color.Transparent;
+            btnCancel.Location = new Point(886, 529);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(204, 34);
+            btnCancel.TabIndex = 134;
+            btnCancel.Text = "Cancel Reservation";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
             // label1
             // 
@@ -446,6 +461,7 @@
             Size = new Size(1152, 1100);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbArrow11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
@@ -461,7 +477,7 @@
         private Panel panel1;
         private PictureBox pbButtomFrame;
         private PictureBox pictureBox1;
-        private Button btnSearch;
+        private Button btnCancel;
         private Label label1;
         private PictureBox pictureBox2;
         private Label label4;
@@ -490,5 +506,6 @@
         private Panel panel3;
         private PictureBox pictureBox12;
         private PictureBox pictureBox3;
+        private PictureBox pbArrow11;
     }
 }
