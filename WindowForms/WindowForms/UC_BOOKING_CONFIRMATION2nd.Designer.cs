@@ -650,7 +650,7 @@
             lblNumberOfChildren.Name = "lblNumberOfChildren";
             lblNumberOfChildren.Size = new Size(82, 26);
             lblNumberOfChildren.TabIndex = 48;
-            lblNumberOfChildren.Text = "0";
+            lblNumberOfChildren.Text = "1";
             lblNumberOfChildren.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSubChildren
@@ -688,7 +688,7 @@
             lblNumberOfAdults.Name = "lblNumberOfAdults";
             lblNumberOfAdults.Size = new Size(82, 26);
             lblNumberOfAdults.TabIndex = 45;
-            lblNumberOfAdults.Text = "0";
+            lblNumberOfAdults.Text = "1";
             lblNumberOfAdults.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSubAdult

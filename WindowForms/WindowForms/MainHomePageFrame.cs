@@ -28,13 +28,11 @@ namespace WindowForms
 
         public void LoadUC<T>(T userControl) where T : UserControl
         {
-            //MainHomePage
             if (userControl is UC_HOME homeControl)
             {
                 homeControl.LearnMoreClicked += (sender, e) => LoadUC(new UC_LEARNMORE());
                 homeControl.viewRoomsClicked += (sender, e) => LoadUC(new UC_ROOMS());
                 homeControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
-                homeControl.bookconfirmClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
             }
             else if (userControl is UC_OFFERS offersControl)
             {
@@ -43,7 +41,6 @@ namespace WindowForms
                 offersControl.roomAVAILClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
             }
 
-            //HomePage search button => UC_ROOM_AVAILABILITY => UC_BOOKING_CONFIRMATION2nd 
             if (userControl is UC_ROOM_AVAILABILITY roomAvailability)
             {
                 roomAvailability.Room1Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
@@ -53,13 +50,11 @@ namespace WindowForms
                 roomAvailability.Room5Clicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION2nd());
             }
 
-            //UC_BOOKING_CONFIRMATION2nd => UC_ROOM_AVAILABILITY
             if (userControl is UC_BOOKING_CONFIRMATION2nd booking2nd)
             {
                 booking2nd.arrowClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
             }
 
-            //HomePage => UC_ROOMS
             if (userControl is UC_ROOMS roomsControl)
             {
                 roomsControl.roomSearchClicked += (sender, e) => LoadUC(new UC_ROOM_AVAILABILITY());
@@ -70,44 +65,66 @@ namespace WindowForms
                 roomsControl.DeluxeRoom += (sender, e) => LoadUC(new UC_DELUXE_ROOM());
             }
 
-            // Any ROOMS Clicked => UC_BOOKING_CONFIRMATION(
             if (userControl is UC_STANDARD_ROOM standardRoomControl)
             {
-                standardRoomControl.StandardReserveClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                standardRoomControl.StandardReserveClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", "<₱2,900.00>");
+                    LoadUC(bookingConfirmation);
+                };
                 standardRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
             if (userControl is UC_SINGLE_ROOM singleRoomControl)
             {
-                singleRoomControl.SingleReserveClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                singleRoomControl.SingleReserveClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", "<₱2,100.00>");
+                    LoadUC(bookingConfirmation);
+                }; 
                 singleRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
             if (userControl is UC_TRIPLE_ROOM tripleRoomControl)
             {
-                tripleRoomControl.TripleReserveClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                tripleRoomControl.TripleReserveClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", "<₱3,675.00>");
+                    LoadUC(bookingConfirmation);
+                };
                 tripleRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
             if (userControl is UC_SUITE_ROOM suiteRoomControl)
             {
-                suiteRoomControl.SuiteReserveClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                suiteRoomControl.SuiteReserveClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", "<₱3,900.00>");
+                    LoadUC(bookingConfirmation);
+                };
                 suiteRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
             if (userControl is UC_DELUXE_ROOM deluxeRoomControl)
             {
-                deluxeRoomControl.DeluxeReserveClicked += (sender, e) => LoadUC(new UC_BOOKING_CONFIRMATION());
+                deluxeRoomControl.DeluxeReserveClicked += (sender, e) =>
+                {
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
+                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", "<₱4,500.00>");
+                    LoadUC(bookingConfirmation);
+                };
                 deluxeRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
-            //UC_BOOKING_CONFIRMATION back to => UC_ROOMS
             if (userControl is UC_BOOKING_CONFIRMATION booking1st)
             {
                 booking1st.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
             }
 
-            //Clicked Manage Reservation && No Reservation =>  UC_NO_RESERVATIONS
             if (userControl is UC_NO_RESERVATIONS searchControl)
             {
                 searchControl.searchClicked1 += (sender, e) => LoadUC(new UC_STANDARD_ROOM());
@@ -115,33 +132,6 @@ namespace WindowForms
                 searchControl.searchClicked3 += (sender, e) => LoadUC(new UC_TRIPLE_ROOM());
                 searchControl.searchClicked4 += (sender, e) => LoadUC(new UC_SUITE_ROOM());
                 searchControl.searchClicked5 += (sender, e) => LoadUC(new UC_DELUXE_ROOM());
-            }
-
-
-            //Any ROOMS Cancellation && Login => HomePage
-            if (userControl is UC_STANDARDROOM_CANCELLATION standardCancelControl)
-            {
-                standardCancelControl.arrowClicked += (sender, e) => LoadUC(new UC_HOME());
-            }
-
-            if (userControl is UC_SINGLE_ROOM singleCancelControl)
-            {
-                singleCancelControl.arrowClicked += (sender, e) => LoadUC(new UC_HOME());
-            }
-
-            if (userControl is UC_TRIPLE_ROOM tripleCancelControl)
-            {
-                tripleCancelControl.arrowClicked += (sender, e) => LoadUC(new UC_HOME());
-            }
-
-            if (userControl is UC_SUITE_ROOM suiteCancelControl)
-            {
-                suiteCancelControl.arrowClicked += (sender, e) => LoadUC(new UC_HOME());
-            }
-
-            if (userControl is UC_DELUXE_ROOM deluxeCancelControl)
-            {
-                deluxeCancelControl.arrowClicked += (sender, e) => LoadUC(new UC_HOME());
             }
 
             add_UControls(userControl);

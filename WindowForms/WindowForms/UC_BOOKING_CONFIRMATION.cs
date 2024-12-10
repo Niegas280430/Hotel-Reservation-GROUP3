@@ -25,6 +25,11 @@ namespace WindowForms
             InitializeComponent();
         }
 
+        public void SetRoomDetails(string roomName, string price)
+        {
+            nameofroomLabel.Text = roomName;
+            priceofroomLabel.Text = price;
+        }
         private void label20_Click(object sender, EventArgs e)
         {
 
