@@ -716,7 +716,7 @@
             btnAdd.BackgroundImageLayout = ImageLayout.None;
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Times New Roman", 9.75F, FontStyle.Bold);
-            btnAdd.Location = new Point(305, 180);
+            btnAdd.Location = new Point(305, 179);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(24, 26);
             btnAdd.TabIndex = 43;

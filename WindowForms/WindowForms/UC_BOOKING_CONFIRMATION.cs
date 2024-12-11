@@ -165,7 +165,7 @@ namespace WindowForms
 
             // quantity for each additionals
             int quantitySingleBed = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text);
-            int quantityBlanket = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text); // Assuming this is for blankets, change if needed
+            int quantityBlanket = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text);
             int quantityPillow = string.IsNullOrWhiteSpace(txtP.Text) ? 0 : Convert.ToInt16(txtP.Text);
             int quantityBathrobe = string.IsNullOrWhiteSpace(txtBr.Text) ? 0 : Convert.ToInt16(txtBr.Text);
             int quantityBathTowel = string.IsNullOrWhiteSpace(txtBT.Text) ? 0 : Convert.ToInt16(txtBT.Text);
@@ -231,6 +231,36 @@ namespace WindowForms
             txtBr.Clear();
             txtBT.Clear();
             lblTotalPrice1.Text = "<Total Price>";
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            adultsguest++;
+            if (adultsguest >= 7)
+            {
+                adultsguest = 0;
+            }
+            lblNumberOfAdults.Text = Convert.ToString(adultsguest);
+        }
+
+        private void btnSubAdult_Click(object sender, EventArgs e)
+        {
+            adultsguest--;
+            if (adultsguest < 0)
+            {
+                adultsguest = 0;
+            }
+            lblNumberOfAdults.Text = Convert.ToString(adultsguest);
+        }
+
+        private void btnAddChildren_Click(object sender, EventArgs e)
+        {
+            childrenguest++;
+            if (childrenguest >= 7)
+            {
+                childrenguest = 0;
+            }
+            lblNumberOfChildren.Text = Convert.ToString(childrenguest);
         }
     }
 }
