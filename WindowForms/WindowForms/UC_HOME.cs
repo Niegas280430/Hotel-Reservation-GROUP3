@@ -52,9 +52,8 @@ namespace WindowForms
 
         private void btnViewCode_Click(object sender, EventArgs e)
         {
-            bookconfirmClicked?.Invoke(this, EventArgs.Empty);
-            /*DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
-            discountCode_PopUp.Show();*/
+            DiscountCode_PopUp discountCode_PopUp = new DiscountCode_PopUp();
+            discountCode_PopUp.Show();
         }
 
         private void btnViewAllRooms_Click(object sender, EventArgs e)

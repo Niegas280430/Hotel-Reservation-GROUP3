@@ -12,7 +12,7 @@ namespace WindowForms
 {
     public partial class UC_ROOM_AVAILABILITY : UserControl
     {
-        public event EventHandler singlebedroomClicked, standardbedroomClicked, triplebedroomClicked, deluxebedroomClicked, suitebedroomClicked;
+        public event EventHandler singlebedroomClicked, standardbedroomClicked, triplebedroomClicked, deluxebedroomClicked, suitebedroomClicked, searchClicked;
         UC_BOOKING_CONFIRMATION ucbookconfirmation = new UC_BOOKING_CONFIRMATION();
 
         private int singlebedroomguestnum = 0;
@@ -220,7 +220,7 @@ namespace WindowForms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            searchClicked?.Invoke(this, EventArgs.Empty);
         }
         public void setCheckInOutDate(string checkin, string checkout)
         {

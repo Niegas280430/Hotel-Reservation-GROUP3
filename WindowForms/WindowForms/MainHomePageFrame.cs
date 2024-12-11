@@ -13,6 +13,7 @@ namespace WindowForms
 {
     public partial class MainHomePageFrame : Form
     {
+        ConnectDatabase cd = new ConnectDatabase();
         public MainHomePageFrame()
         {
             InitializeComponent();
@@ -168,16 +169,7 @@ namespace WindowForms
                     LoadUC(bookingConfirmation);
                 };
             }
-
-            if (userControl is UC_HOME uchomeControl)
-            {
-                uchomeControl.TripleReserveClicked += (sender, e) =>
-                {
-                    var roomAvail = new UC_ROOM_AVAILABILITY();
-                    roomAvail.SetRoomDetails("(Triple Bedroom)", 3675.00);
-                    LoadUC(bookingConfirmation);
-                };
-            }
+            
 
             if (userControl is UC_BOOKING_CONFIRMATION booking1st)
             {

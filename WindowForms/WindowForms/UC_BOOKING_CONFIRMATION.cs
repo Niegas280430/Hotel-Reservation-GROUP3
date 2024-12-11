@@ -43,100 +43,101 @@ namespace WindowForms
         private void button4_Click(object sender, EventArgs e) // button to enter details and book successfully
         {
             int totalguest = childrenguest + adultsguest;
+
+            // Input validation
+            if (string.IsNullOrWhiteSpace(TxtFname.Text))
+            {
+                MessageBox.Show("First name is required.");
+                TxtFname.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(TxtLname.Text))
+            {
+                MessageBox.Show("Last name is required.");
+                TxtLname.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(TxtEmail.Text))
+            {
+                MessageBox.Show("Email is required.");
+                TxtEmail.Focus();
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(
+                         TxtEmail.Text,
+                         @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Invalid email format.");
+                TxtEmail.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(TxtPhone.Text))
+            {
+                MessageBox.Show("Phone number is required.");
+                TxtPhone.Focus();
+                return;
+            }
+            else if (!System.Text.RegularExpressions.Regex.IsMatch(
+                         TxtPhone.Text,
+                         @"^\d{10}$"))
+            {
+                MessageBox.Show("Phone number must contain exactly 10 digits.");
+                TxtPhone.Focus();
+                return;
+            }
+
+            if (totalguest > 6)
+            {
+                MessageBox.Show("The number of guests exceeds the maximum limit of 6.");
+                return;
+            }
+
+            // Database insertion
             try
             {
                 SqlConnection con = cd.DatabaseConnect();
                 con.Open();
-                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)");
+                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)", con);
 
-                if (string.IsNullOrEmpty(TxtFname.Text) && string.IsNullOrEmpty(TxtLname.Text) &&
-                    string.IsNullOrEmpty(TxtEmail.Text) && string.IsNullOrEmpty(TxtPhone.Text))
+                bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text.Trim());
+                bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text.Trim());
+                bookinginfo.Parameters.AddWithValue("@email", TxtEmail.Text.Trim());
+                bookinginfo.Parameters.AddWithValue("@phone", TxtPhone.Text.Trim());
+                bookinginfo.Parameters.AddWithValue("@checkin", dateTimeCheckin.Value.ToString("yyyy-MM-dd"));
+                bookinginfo.Parameters.AddWithValue("@checkout", dateTimeCheckout.Value.ToString("yyyy-MM-dd"));
+
+                int i = bookinginfo.ExecuteNonQuery();
+                con.Close();
+
+                if (i != 0)
                 {
-                    if (totalguest > 6)
-                    {
-                        MessageBox.Show("Number of Guest exceeds the 6 amount!");
-                        adultsguest = 1;
-                        childrenguest = 1;
-                        lblNumberOfAdults.Text = Convert.ToString(adultsguest);
-                        lblNumberOfChildren.Text = Convert.ToString(childrenguest);
-                    }
+                    Reservation_Successful_PopUp rsp = new Reservation_Successful_PopUp();
+                    rsp.ShowDialog();
+                    ClearInputs();
                 }
                 else
                 {
-                    bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text);
-                    bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text);
-                    bookinginfo.Parameters.AddWithValue("@email", TxtEmail.Text);
-                    bookinginfo.Parameters.AddWithValue("@phone", TxtPhone.Text);
-                    bookinginfo.Parameters.AddWithValue("@checkin", dateTimeCheckin.Text);
-                    bookinginfo.Parameters.AddWithValue("@checkout", dateTimeCheckout.Text);
-
-                    int i = bookinginfo.ExecuteNonQuery();
-
-                    if (i != 0)
-                    {
-                        Reservation_Successful_PopUp rsp = new Reservation_Successful_PopUp();
-                        rsp.ShowDialog();
-                        TxtFname.Clear();
-                        TxtLname.Clear();
-                        TxtEmail.Clear();
-                        TxtPhone.Clear();
-                        if (txtDiscountCode.Text != null)
-                        {
-                            txtDiscountCode.Clear();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Booked Room uccessfully");
-                            TxtFname.Clear();
-                            TxtLname.Clear();
-                            TxtEmail.Clear();
-                            TxtPhone.Clear();
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid Information Details"); // need ng label kung ano ung mali or empty
-                        TxtFname.Clear();
-                        TxtLname.Clear();
-                        TxtEmail.Clear();
-                        TxtPhone.Clear();
-                    }
+                    MessageBox.Show("Error occurred while booking. Please try again.");
                 }
             }
-            catch (Exception ex) // iibahin pato ng message
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void ClearInputs()
         {
-            adultsguest++;
-            if (adultsguest >= 7)
-            {
-                adultsguest = 0;
-            }
-            lblNumberOfAdults.Text = Convert.ToString(adultsguest);
-        }
-
-        private void btnSubAdult_Click(object sender, EventArgs e)
-        {
-            adultsguest--;
-            if (adultsguest < 0)
-            {
-                adultsguest = 0;
-            }
-            lblNumberOfAdults.Text = Convert.ToString(adultsguest);
-        }
-
-        private void btnAddChildren_Click(object sender, EventArgs e)
-        {
-            childrenguest++;
-            if (childrenguest >= 7)
-            {
-                childrenguest = 0;
-            }
-            lblNumberOfChildren.Text = Convert.ToString(childrenguest);
+            TxtFname.Clear();
+            TxtLname.Clear();
+            TxtEmail.Clear();
+            TxtPhone.Clear();
+            txtDiscountCode.Clear();
+            lblNumberOfAdults.Text = "0";
+            lblNumberOfChildren.Text = "0";
         }
 
         private void btnSubChildren_Click(object sender, EventArgs e)
@@ -162,12 +163,12 @@ namespace WindowForms
             int adultguestquantity = Convert.ToInt16(lblNumberOfAdults.Text);
             int totaladultprice = adultguest * adultguestquantity;
 
-            // quantity fpr each additionals
-            int quantitySingleBed = Convert.ToInt16(txtSB.Text);
-            int quantityBlanket = Convert.ToInt16(txtSB.Text);
-            int quantityPillow = Convert.ToInt16(txtP.Text);
-            int quantityBathrobe = Convert.ToInt16(txtBr.Text);
-            int quantityBathTowel = Convert.ToInt16(txtBT.Text);
+            // quantity for each additionals
+            int quantitySingleBed = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text);
+            int quantityBlanket = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text); // Assuming this is for blankets, change if needed
+            int quantityPillow = string.IsNullOrWhiteSpace(txtP.Text) ? 0 : Convert.ToInt16(txtP.Text);
+            int quantityBathrobe = string.IsNullOrWhiteSpace(txtBr.Text) ? 0 : Convert.ToInt16(txtBr.Text);
+            int quantityBathTowel = string.IsNullOrWhiteSpace(txtBT.Text) ? 0 : Convert.ToInt16(txtBT.Text);
 
             // calculate total of home room price, and additionals with its quantity - WIP
             int totalSingleBed = singlebed * quantitySingleBed;
@@ -184,15 +185,15 @@ namespace WindowForms
 
             if (txtDiscountCode.Text == "10%STILOHotel")
             {
-                setDiscount();    
+                setDiscount();
                 double discountedAmount = applyTax * discount;
                 double finalTotal = applyTax - discountedAmount;
 
-                lblTotalPrice1.Text = finalTotal.ToString();
+                lblTotalPrice1.Text = finalTotal.ToString("F2");
             }
             else
             {
-                lblTotalPrice1.Text = applyTax.ToString();
+                lblTotalPrice1.Text = applyTax.ToString("F2");
             }
         }
         private void setDiscount()
@@ -216,10 +217,20 @@ namespace WindowForms
             nameofroomLabel.Text = roomName;
             priceofroomLabel.Text = Convert.ToString(roomPrice);
         }
-       
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-           
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            txtSB.Clear();
+            txtB.Clear();
+            txtP.Clear();
+            txtBr.Clear();
+            txtBT.Clear();
+            lblTotalPrice1.Text = "<Total Price>";
         }
     }
 }
