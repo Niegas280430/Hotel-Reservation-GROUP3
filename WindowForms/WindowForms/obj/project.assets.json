@@ -1854,11 +1854,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LEGION\\Documents\\GitHub\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\WindowForms.csproj",
+      "projectUniqueName": "C:\\Users\\LEGION\\Documents\\Hotel\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\WindowForms.csproj",
       "projectName": "WindowForms",
-      "projectPath": "C:\\Users\\LEGION\\Documents\\GitHub\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\WindowForms.csproj",
+      "projectPath": "C:\\Users\\LEGION\\Documents\\Hotel\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\WindowForms.csproj",
       "packagesPath": "C:\\Users\\LEGION\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LEGION\\Documents\\GitHub\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\obj\\",
+      "outputPath": "C:\\Users\\LEGION\\Documents\\Hotel\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PNMo1MhKAs9xdG9jyS/+PBzR2mfGmvhqpRCS3dMPzBiNua7jUKuy5znBiBfVrQGJ4cTtfMVlvyqZLc7HIb2oaQ==",
+  "dgSpecHash": "NvdM8E9AQoxEjyudajOUgMVlpvjoDNZX248FiC+TmbCF+BJrlcrPwZPL8KpqiMkyjRPsggEHUGOrgglCT2+muA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LEGION\\Documents\\GitHub\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\WindowForms.csproj",
+  "projectFilePath": "C:\\Users\\LEGION\\Documents\\Hotel\\Hotel-Reservation-GROUP3\\WindowForms\\WindowForms\\WindowForms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEGION\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

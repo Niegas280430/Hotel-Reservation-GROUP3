@@ -17,7 +17,7 @@ namespace WindowForms
         public MainHomePageFrame()
         {
             InitializeComponent();
-            BEFOREmenuManageReserve1.Visible = false;
+            AFTERmenuManageReserve1.Visible = false;
             LoadUC(new UC_HOME());
         }
 
@@ -131,7 +131,7 @@ namespace WindowForms
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
                     bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00);
                     LoadUC(bookingConfirmation);
-                };    
+                };
             }
             if (userControl is UC_ROOM_AVAILABILITY standardbedControl)
             {
@@ -169,7 +169,7 @@ namespace WindowForms
                     LoadUC(bookingConfirmation);
                 };
             }
-            
+
 
             if (userControl is UC_BOOKING_CONFIRMATION booking1st)
             {
@@ -245,55 +245,8 @@ namespace WindowForms
                         add_UControls(new UC_TERMS_CONDITIONS());
                         break;
                     case "AFTERmenuManageReserve1":
-                        LoginFrame loginFrame = new LoginFrame();
-                        loginFrame.ShowDialog();
-
-
-                        if (!string.IsNullOrEmpty(loginFrame.txtboxAccountID.Text))
-                        {
-
-                            using (SqlConnection con = cd.DatabaseConnect())
-                            {
-
-                                con.Open();
-                                string query = "SELECT RoomType FROM RoomsTable WHERE RoomID = @loginID";
-                                SqlCommand cmd = new SqlCommand(query, con);
-                                cmd.Parameters.AddWithValue("@loginID", loginFrame.txtboxAccountID.Text);
-
-                                string roomType = (string)cmd.ExecuteScalar();
-
-                                if (!string.IsNullOrEmpty(roomType))
-                                {
-
-                                    switch (roomType)
-                                    {
-                                        case "Standard":
-                                            LoadUC(new UC_STANDARD_ROOM());
-                                            break;
-                                        case "Single":
-                                            LoadUC(new UC_SINGLE_ROOM());
-                                            break;
-                                        case "Triple":
-                                            LoadUC(new UC_TRIPLE_ROOM());
-                                            break;
-                                        case "Suite":
-                                            LoadUC(new UC_SUITE_ROOM());
-                                            break;
-                                        case "Deluxe":
-                                            LoadUC(new UC_DELUXE_ROOM());
-                                            break;
-                                        default:
-                                            MessageBox.Show("No matching room found for the login ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                            break;
-                                    }
-                                }
-                                else
-                                {
-                                    MessageBox.Show("No matching room found for the login ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                }
-                            }
-                        }
                         break;
+                        
                 }
             }
             else
@@ -305,19 +258,84 @@ namespace WindowForms
         private void menuLogin_Click(object sender, EventArgs e)
         {
             LoginFrame loginFrame = new LoginFrame();
+
+
             loginFrame.LoginSuccessful += (s, args) =>
             {
 
-
                 menuLogin.Visible = false;
                 BEFOREmenuManageReserve1.Visible = false;
-                BEFOREmenuManageReserve1.Visible = true;
-
+                AFTERmenuManageReserve1.Visible = true;
             };
+
+
+            var dialogResult = loginFrame.ShowDialog();
+
+            if (dialogResult == DialogResult.OK && loginFrame.Tag != null)
+            {
+                string loginId = loginFrame.Tag.ToString();
+
+                MessageBox.Show($"Welcome, {loginId}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void uC_home1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void AFTERmenuManageReserve1_Click(object sender, EventArgs e)
+        {
+            /*LoginFrame loginFrame = new LoginFrame();
+            
+
+            if (!string.IsNullOrEmpty(loginFrame.txtboxAccountID.Text))
+            {
+
+                using (SqlConnection con = cd.DatabaseConnect())
+                {
+
+                    con.Open();
+                    string query = "SELECT MainDB FROM bookInfo WHERE LoginID = @RoomType";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@loginID", loginFrame.txtboxAccountID.Text);
+
+                    string roomType = (string)cmd.ExecuteScalar();
+
+                    if (!string.IsNullOrEmpty(roomType))
+                    {
+
+                        switch (roomType)
+                        {
+                            case "Standard":
+                                LoadUC(new UC_STANDARD_ROOM());
+                                break;
+                            case "Single":
+                                LoadUC(new UC_SINGLE_ROOM());
+                                break;
+                            case "Triple":
+                                LoadUC(new UC_TRIPLE_ROOM());
+                                break;
+                            case "Suite":
+                                LoadUC(new UC_SUITE_ROOM());
+                                break;
+                            case "Deluxe":
+                                LoadUC(new UC_DELUXE_ROOM());
+                                break;
+                            default:
+                                MessageBox.Show("No matching room found for the login ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No matching room found for the login ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }*/
+
+            add_UControls(new UC_DELUXEROOM_CANCELLATION());
+               
+           
+            
 
         }
     }

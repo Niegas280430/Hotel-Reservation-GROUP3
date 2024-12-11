@@ -40,7 +40,7 @@ namespace WindowForms
             arrowClicked?.Invoke(this, EventArgs.Empty);
         }
 
-        private void button4_Click(object sender, EventArgs e) // button to enter details and book successfully
+        private void button4_Click(object sender, EventArgs e) 
         {
             int totalguest = childrenguest + adultsguest;
 

@@ -77,6 +77,7 @@
             btnOkay.TabIndex = 15;
             btnOkay.Text = "Okay";
             btnOkay.UseVisualStyleBackColor = false;
+            btnOkay.Click += btnOkay_Click;
             // 
             // Reservation_Successful_PopUp
             // 

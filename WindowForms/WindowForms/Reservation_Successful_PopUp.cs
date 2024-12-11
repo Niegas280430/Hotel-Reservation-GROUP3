@@ -14,7 +14,18 @@ namespace WindowForms
     {
         public Reservation_Successful_PopUp()
         {
+        }
+
+        public Reservation_Successful_PopUp(int loginID)
+        {
             InitializeComponent();
+        }
+
+        private void btnOkay_Click(object sender, EventArgs e)
+        {
+
+                
+
         }
     }
 }

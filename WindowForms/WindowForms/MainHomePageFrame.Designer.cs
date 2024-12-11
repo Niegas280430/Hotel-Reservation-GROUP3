@@ -239,6 +239,7 @@
             AFTERmenuManageReserve1.Name = "AFTERmenuManageReserve1";
             AFTERmenuManageReserve1.Size = new Size(289, 26);
             AFTERmenuManageReserve1.Text = "MANAGE RESERVATION";
+            AFTERmenuManageReserve1.Click += AFTERmenuManageReserve1_Click;
             // 
             // MainHomePageFrame
             // 
