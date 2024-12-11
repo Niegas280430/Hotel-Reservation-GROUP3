@@ -7,20 +7,7 @@ Applications used
 - [MS SQL Server 2022 Express](https://download.microsoft.com/download/5/1/4/5145fe04-4d30-4b85-b0d1-39533663a2f1/SQL2022-SSEI-Expr.exe) | [SSMS](https://aka.ms/ssmsfullsetup)
 
 ## Tasks to Accomplish 📝
-### USER SIDE
-- Reservation Management - Bamo | Abejar
-- Room Discovery - Lucas | Paghubasan
-- Popup Ads - Angeles | Quiambao | Abejar
-- Payment Processing - Niegas | Cruz | Paghubasan
-- Review and Feedback - Niegas | Cruz | Lucas
-
-### ADMIN SIDE
-- Reservation Management - Quiambao | Abejar | Bamo
-- Customer Support - Gonzalo | Angeles
-
-### SYSTEM DESIGN AND MANAGEMENT
-- Database - Bamo | Gonzalo | Niegas
-- User Interface - Paghubasan | Lucas | Angeles | Cruz
+- Implemented ✅
 
 ## Progress 🛠️
 - HomePage
