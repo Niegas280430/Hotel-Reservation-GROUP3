@@ -90,6 +90,7 @@
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Reservation_Successful_PopUp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Reservation_Successful_PopUp";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

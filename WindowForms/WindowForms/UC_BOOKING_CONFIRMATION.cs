@@ -19,8 +19,8 @@ namespace WindowForms
         ConnectDatabase cd = new ConnectDatabase();
         private UC_ROOM_AVAILABILITY roomsAvail;
 
-        int childrenguest = 0;
-        int adultsguest = 0;
+        int childrenguest = 1;
+        int adultsguest = 1;
 
         int adultguestprice;
         double discount;
@@ -28,10 +28,8 @@ namespace WindowForms
         public UC_BOOKING_CONFIRMATION()
         {
             InitializeComponent();
-        }
-        private void label20_Click(object sender, EventArgs e)
-        {
-
+            termsandconditioncheckBox.CheckedChanged += termsandconditioncheckBox_CheckedChanged;
+            booknowBtn.Enabled = false;
         }
 
         public event EventHandler arrowClicked;
@@ -40,11 +38,46 @@ namespace WindowForms
             arrowClicked?.Invoke(this, EventArgs.Empty);
         }
 
-        private void button4_Click(object sender, EventArgs e) 
+        private string GenerateRandomCode(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                                        .Select(s => s[random.Next(s.Length)])
+                                        .ToArray());
+        }
+        private void btnBook_Click(object sender, EventArgs e) // button to enter details and book successfully
         {
             int totalguest = childrenguest + adultsguest;
 
-            // Input validation
+            if (dateTimeCheckin.Value.Date < DateTime.Now.Date && dateTimeCheckout.Value.Date < DateTime.Now.Date)
+            {
+                string title = "Invalid Date";
+                string message = "Please select current date";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Warning;
+                MessageBox.Show(message, title, buttons, icon);
+                return;
+            }
+            else if (dateTimeCheckin.Value.Date < DateTime.Now.Date)
+            {
+                string title = "Invalid Date";
+                string message = "Please select current date";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Warning;
+                MessageBox.Show(message, title, buttons, icon);
+                return;
+            }
+            else if (dateTimeCheckout.Value.Date < DateTime.Now.Date)
+            {
+                string title = "Invalid Date";
+                string message = "Please select current date";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Warning;
+                MessageBox.Show(message, title, buttons, icon);
+                return;
+            }
+
             if (string.IsNullOrWhiteSpace(TxtFname.Text))
             {
                 MessageBox.Show("First name is required.");
@@ -100,28 +133,39 @@ namespace WindowForms
             {
                 SqlConnection con = cd.DatabaseConnect();
                 con.Open();
-                SqlCommand bookinginfo = new SqlCommand("INSERT INTO BookInfo (firstname, lastname, email, phone, checkin, checkout) VALUES (@firstname, @lastname, @email, @phone, @checkin, @checkout)", con);
 
+                string generatedLoginCode = GenerateRandomCode(5);
+
+                SqlCommand bookinginfo = new SqlCommand(
+                    "INSERT INTO BookInfo (loginID, firstname, lastname, email, phone, checkin, checkout) " +
+                    "VALUES (@loginID, @firstname, @lastname, @email, @phone, @checkin, @checkout)",
+                    con);
+
+                bookinginfo.Parameters.AddWithValue("@loginID", generatedLoginCode); // Assign generated code
                 bookinginfo.Parameters.AddWithValue("@firstname", TxtFname.Text.Trim());
                 bookinginfo.Parameters.AddWithValue("@lastname", TxtLname.Text.Trim());
                 bookinginfo.Parameters.AddWithValue("@email", TxtEmail.Text.Trim());
                 bookinginfo.Parameters.AddWithValue("@phone", TxtPhone.Text.Trim());
                 bookinginfo.Parameters.AddWithValue("@checkin", dateTimeCheckin.Value.ToString("yyyy-MM-dd"));
                 bookinginfo.Parameters.AddWithValue("@checkout", dateTimeCheckout.Value.ToString("yyyy-MM-dd"));
+                bookinginfo.Parameters.AddWithValue("@RoomType", nameofroomLabel.Text);
 
                 int i = bookinginfo.ExecuteNonQuery();
                 con.Close();
 
                 if (i != 0)
                 {
-                    Reservation_Successful_PopUp rsp = new Reservation_Successful_PopUp();
-                    rsp.ShowDialog();
+                    MessageBox.Show($"Booking successful! Your login code is: {generatedLoginCode}");
                     ClearInputs();
+                    Reservation_Successful_PopUp rsp = new Reservation_Successful_PopUp();
+                    rsp.Show();
+
                 }
                 else
                 {
                     MessageBox.Show("Error occurred while booking. Please try again.");
                 }
+            
             }
             catch (Exception ex)
             {
@@ -165,7 +209,7 @@ namespace WindowForms
 
             // quantity for each additionals
             int quantitySingleBed = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text);
-            int quantityBlanket = string.IsNullOrWhiteSpace(txtSB.Text) ? 0 : Convert.ToInt16(txtSB.Text);
+            int quantityBlanket = string.IsNullOrWhiteSpace(txtB.Text) ? 0 : Convert.ToInt16(txtB.Text); // Assuming this is for blankets, change if needed
             int quantityPillow = string.IsNullOrWhiteSpace(txtP.Text) ? 0 : Convert.ToInt16(txtP.Text);
             int quantityBathrobe = string.IsNullOrWhiteSpace(txtBr.Text) ? 0 : Convert.ToInt16(txtBr.Text);
             int quantityBathTowel = string.IsNullOrWhiteSpace(txtBT.Text) ? 0 : Convert.ToInt16(txtBT.Text);
@@ -208,14 +252,11 @@ namespace WindowForms
             setAdditionals();
         }
 
-        private void setRoomNamePrices(string chosenRoom)
-        {
-
-        }
-        public void SetRoomDetails(string roomName, double roomPrice)
+        public void SetRoomDetails(string roomName, double roomPrice, double roomPriceLabel)
         {
             nameofroomLabel.Text = roomName;
-            priceofroomLabel.Text = Convert.ToString(roomPrice);
+            priceofroomLabel.Text = roomPrice.ToString("F2");
+            lblTotalPrice1.Text = roomPriceLabel.ToString("F2");
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -233,12 +274,12 @@ namespace WindowForms
             lblTotalPrice1.Text = "<Total Price>";
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e) // add adults
         {
             adultsguest++;
             if (adultsguest >= 7)
             {
-                adultsguest = 0;
+                adultsguest = 1;
             }
             lblNumberOfAdults.Text = Convert.ToString(adultsguest);
         }
@@ -248,7 +289,7 @@ namespace WindowForms
             adultsguest--;
             if (adultsguest < 0)
             {
-                adultsguest = 0;
+                adultsguest = 1;
             }
             lblNumberOfAdults.Text = Convert.ToString(adultsguest);
         }
@@ -258,9 +299,30 @@ namespace WindowForms
             childrenguest++;
             if (childrenguest >= 7)
             {
-                childrenguest = 0;
+                childrenguest = 1;
             }
             lblNumberOfChildren.Text = Convert.ToString(childrenguest);
+        }
+
+        private void btnSubChildren_Click_1(object sender, EventArgs e)
+        {
+            childrenguest--;
+            if (childrenguest < 0)
+            {
+                childrenguest = 1;
+            }
+            lblNumberOfChildren.Text = Convert.ToString(childrenguest);
+        }
+
+        private void termsandconditioncheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            booknowBtn.Enabled = termsandconditioncheckBox.Checked;
+        }
+
+        private void btnTerms_Conditions_Click(object sender, EventArgs e)
+        {
+            Terms_ConditionsFrame tc = new Terms_ConditionsFrame();
+            tc.ShowDialog();
         }
     }
 }

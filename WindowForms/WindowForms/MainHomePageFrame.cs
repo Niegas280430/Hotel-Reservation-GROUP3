@@ -73,8 +73,8 @@ namespace WindowForms
             {
                 standardRoomControl.StandardReserveClicked += (sender, e) =>
                 {
-                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", 2900.00);
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION2nd();
+                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", 2900.00, 2900.00);
                     LoadUC(bookingConfirmation);
                 };
                 standardRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -84,8 +84,8 @@ namespace WindowForms
             {
                 singleRoomControl.SingleReserveClicked += (sender, e) =>
                 {
-                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00);
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION2nd();
+                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00, 2100.00);
                     LoadUC(bookingConfirmation);
                 };
                 singleRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -95,8 +95,8 @@ namespace WindowForms
             {
                 tripleRoomControl.TripleReserveClicked += (sender, e) =>
                 {
-                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", 3675.00);
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION2nd();
+                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", 3675.00, 3675.00);
                     LoadUC(bookingConfirmation);
                 };
                 tripleRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -106,8 +106,8 @@ namespace WindowForms
             {
                 suiteRoomControl.SuiteReserveClicked += (sender, e) =>
                 {
-                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", 3900.00);
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION2nd();
+                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", 3900.00, 3900.00);
                     LoadUC(bookingConfirmation);
                 };
                 suiteRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -117,8 +117,8 @@ namespace WindowForms
             {
                 deluxeRoomControl.DeluxeReserveClicked += (sender, e) =>
                 {
-                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00);
+                    var bookingConfirmation = new UC_BOOKING_CONFIRMATION2nd();
+                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00, 4500.00);
                     LoadUC(bookingConfirmation);
                 };
                 deluxeRoomControl.arrowClicked += (sender, e) => LoadUC(new UC_ROOMS());
@@ -130,7 +130,7 @@ namespace WindowForms
                 singlebedControl.singlebedroomClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00);
+                    bookingConfirmation.SetRoomDetails("(Single Bedroom)", 2100.00, 2100.00);
                     LoadUC(bookingConfirmation);
                 };
             }
@@ -139,7 +139,7 @@ namespace WindowForms
                 standardbedControl.standardbedroomClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", 2900.00);
+                    bookingConfirmation.SetRoomDetails("(Standard Bedroom)", 2900.00, 2900.00);
                     LoadUC(bookingConfirmation);
                 };
             }
@@ -148,7 +148,7 @@ namespace WindowForms
                 triplebedControl.triplebedroomClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", 3675.00);
+                    bookingConfirmation.SetRoomDetails("(Triple Bedroom)", 3675.00, 3675.00);
                     LoadUC(bookingConfirmation);
                 };
             }
@@ -157,7 +157,7 @@ namespace WindowForms
                 suitebedControl.suitebedroomClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", 3900.00);
+                    bookingConfirmation.SetRoomDetails("(Suite Bedroom)", 3900.00, 3900.00);
                     LoadUC(bookingConfirmation);
                 };
             }
@@ -166,7 +166,7 @@ namespace WindowForms
                 deluxebedControl.deluxebedroomClicked += (sender, e) =>
                 {
                     var bookingConfirmation = new UC_BOOKING_CONFIRMATION();
-                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00);
+                    bookingConfirmation.SetRoomDetails("(Deluxe Bedroom)", 4500.00, 4500.00);
                     LoadUC(bookingConfirmation);
                 };
             }
@@ -331,19 +331,19 @@ namespace WindowForms
                             // Load appropriate UserControl based on room type
                             switch (roomType)
                             {
-                                case "Standard":
+                                case "(Standard Bedroom)":
                                     LoadUC(new UC_STANDARDROOM_CANCELLATION());
                                     break;
-                                case "Single":
+                                case "(Single Bedroom)":
                                     LoadUC(new UC_SINGLEROOM_CANCELLATION());
                                     break;
-                                case "Triple":
+                                case "(Triple Bedroom)":
                                     LoadUC(new UC_TRIPLEROOM_CANCELLATION());
                                     break;
-                                case "Suite":
+                                case "(Suite Bedroom)":
                                     LoadUC(new UC_SUITEROOM_CANCELLATION());
                                     break;
-                                case "Deluxe":
+                                case "(Deluxe Bedroom)":
                                     LoadUC(new UC_DELUXEROOM_CANCELLATION());
                                     break;
                                 default:

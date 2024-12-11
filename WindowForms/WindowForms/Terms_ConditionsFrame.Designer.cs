@@ -29,16 +29,28 @@
         private void InitializeComponent()
         {
             uC_termS_conditions1 = new UC_TERMS_CONDITIONS();
+            label1 = new Label();
             SuspendLayout();
             // 
             // uC_termS_conditions1
             // 
             uC_termS_conditions1.AutoScroll = true;
             uC_termS_conditions1.BackColor = Color.White;
-            uC_termS_conditions1.Location = new Point(0, 0);
+            uC_termS_conditions1.Location = new Point(-1, 2);
             uC_termS_conditions1.Name = "uC_termS_conditions1";
             uC_termS_conditions1.Size = new Size(1152, 1100);
             uC_termS_conditions1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(1065, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(45, 42);
+            label1.TabIndex = 1;
+            label1.Text = "X";
+            label1.Click += label1_Click;
             // 
             // Terms_ConditionsFrame
             // 
@@ -46,15 +58,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1152, 1100);
+            Controls.Add(label1);
             Controls.Add(uC_termS_conditions1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Terms_ConditionsFrame";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Terms_ConditionsFrame";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private UC_TERMS_CONDITIONS uC_termS_conditions1;
+        private Label label1;
     }
 }

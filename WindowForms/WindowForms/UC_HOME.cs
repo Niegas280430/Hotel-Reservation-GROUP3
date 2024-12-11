@@ -20,6 +20,7 @@ namespace WindowForms
             InitializeComponent();
         }
 
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             guestnum++;
@@ -42,7 +43,39 @@ namespace WindowForms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            roomAVAILClicked?.Invoke(this, EventArgs.Empty);
+
+            if (dtpCheckIn.Value.Date < DateTime.Now.Date && dtpCheckOut.Value.Date < DateTime.Now.Date)
+            {
+                string title = "Invalid Date";
+                string message = "Please select current date";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Warning;
+                MessageBox.Show(message, title, buttons, icon);
+                return;
+            }
+            else if (dtpCheckIn.Value.Date < DateTime.Now.Date)
+            {
+                string title = "Invalid Date";
+                string message = "Please select current date";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Warning;
+                MessageBox.Show(message, title, buttons, icon);
+                return;
+            }
+            else if (dtpCheckOut.Value.Date < DateTime.Now.Date)
+            {
+                string title = "Invalid Date";
+                string message = "Please select current date";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Warning;
+                MessageBox.Show(message, title, buttons, icon);
+                return;
+            }
+            else
+            {
+                roomAVAILClicked?.Invoke(this, EventArgs.Empty);
+            }
+
         }
 
         private void btnLearnMore_Click(object sender, EventArgs e)

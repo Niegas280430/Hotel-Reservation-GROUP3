@@ -35,7 +35,7 @@
             booknowBtn = new Button();
             btnTerms_Conditions = new Button();
             label35 = new Label();
-            checkBox = new CheckBox();
+            termsandconditioncheckBox = new CheckBox();
             label34 = new Label();
             label24 = new Label();
             label25 = new Label();
@@ -137,7 +137,7 @@
             panel1.Controls.Add(booknowBtn);
             panel1.Controls.Add(btnTerms_Conditions);
             panel1.Controls.Add(label35);
-            panel1.Controls.Add(checkBox);
+            panel1.Controls.Add(termsandconditioncheckBox);
             panel1.Controls.Add(label34);
             panel1.Controls.Add(label24);
             panel1.Controls.Add(label25);
@@ -212,7 +212,7 @@
             booknowBtn.TabIndex = 96;
             booknowBtn.Text = "Book Now";
             booknowBtn.UseVisualStyleBackColor = false;
-            booknowBtn.Click += button4_Click;
+            booknowBtn.Click += btnBook_Click;
             // 
             // btnTerms_Conditions
             // 
@@ -227,6 +227,7 @@
             btnTerms_Conditions.TabIndex = 95;
             btnTerms_Conditions.Text = "Terms and Conditions*";
             btnTerms_Conditions.UseVisualStyleBackColor = false;
+            btnTerms_Conditions.Click += btnTerms_Conditions_Click;
             // 
             // label35
             // 
@@ -238,14 +239,15 @@
             label35.TabIndex = 94;
             label35.Text = "I have read and accepted the ";
             // 
-            // checkBox
+            // termsandconditioncheckBox
             // 
-            checkBox.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBox.Location = new Point(46, 1022);
-            checkBox.Name = "checkBox";
-            checkBox.Size = new Size(15, 14);
-            checkBox.TabIndex = 93;
-            checkBox.UseVisualStyleBackColor = true;
+            termsandconditioncheckBox.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            termsandconditioncheckBox.Location = new Point(46, 1022);
+            termsandconditioncheckBox.Name = "termsandconditioncheckBox";
+            termsandconditioncheckBox.Size = new Size(15, 14);
+            termsandconditioncheckBox.TabIndex = 93;
+            termsandconditioncheckBox.UseVisualStyleBackColor = true;
+            termsandconditioncheckBox.Click += termsandconditioncheckBox_CheckedChanged;
             // 
             // label34
             // 
@@ -368,7 +370,6 @@
             label20.Size = new Size(268, 38);
             label20.TabIndex = 81;
             label20.Text = "Price Breakdown";
-            label20.Click += label20_Click;
             // 
             // btnRemove
             // 
@@ -906,7 +907,7 @@
         private Label label34;
         private Label label24;
         private Label label25;
-        private CheckBox checkBox;
+        private CheckBox termsandconditioncheckBox;
         private Button btnTerms_Conditions;
         private Label label35;
         private Panel panel2;
